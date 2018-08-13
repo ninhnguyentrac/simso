@@ -1,0 +1,36 @@
+D:\WebExample\SimSoDep\SimSoDepStore\bin\Debug\SimSoDepStore.exe.config
+D:\WebExample\SimSoDep\SimSoDepStore\bin\Debug\SimSoDepStore.exe
+D:\WebExample\SimSoDep\SimSoDepStore\bin\Debug\SimSoDepStore.pdb
+D:\WebExample\SimSoDep\SimSoDepStore\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\WebExample\SimSoDep\SimSoDepStore\obj\x86\Debug\SimSoDepStore.exe
+D:\WebExample\SimSoDep\SimSoDepStore\obj\x86\Debug\SimSoDepStore.pdb
+E:\SimSoDep\SimSoDep\SimSoDepStore\bin\Debug\SimSoDepStore.exe.config
+E:\SimSoDep\SimSoDep\SimSoDepStore\bin\Debug\SimSoDepStore.exe
+E:\SimSoDep\SimSoDep\SimSoDepStore\bin\Debug\SimSoDepStore.pdb
+E:\SimSoDep\SimSoDep\SimSoDepStore\obj\x86\Debug\ResolveAssemblyReference.cache
+E:\SimSoDep\SimSoDep\SimSoDepStore\obj\x86\Debug\SimSoDepStore.exe
+E:\SimSoDep\SimSoDep\SimSoDepStore\obj\x86\Debug\SimSoDepStore.pdb
+D:\WebExample\SimSoDep - Copy\SimSoDepStore\bin\Debug\SimSoDepStore.exe.config
+D:\WebExample\SimSoDep - Copy\SimSoDepStore\bin\Debug\SimSoDepStore.exe
+D:\WebExample\SimSoDep - Copy\SimSoDepStore\bin\Debug\SimSoDepStore.pdb
+D:\WebExample\SimSoDep - Copy\SimSoDepStore\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\WebExample\SimSoDep - Copy\SimSoDepStore\obj\x86\Debug\SimSoDepStore.exe
+D:\WebExample\SimSoDep - Copy\SimSoDepStore\obj\x86\Debug\SimSoDepStore.pdb
+D:\WebExample\SimSoDepNewest\SimSoDepStore\bin\Debug\SimSoDepStore.exe.config
+D:\WebExample\SimSoDepNewest\SimSoDepStore\bin\Debug\SimSoDepStore.exe
+D:\WebExample\SimSoDepNewest\SimSoDepStore\bin\Debug\SimSoDepStore.pdb
+D:\WebExample\SimSoDepNewest\SimSoDepStore\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\WebExample\SimSoDepNewest\SimSoDepStore\obj\x86\Debug\SimSoDepStore.exe
+D:\WebExample\SimSoDepNewest\SimSoDepStore\obj\x86\Debug\SimSoDepStore.pdb
+E:\Website\SimSoDepNewest\SimSoDepStore\bin\Debug\SimSoDepStore.exe.config
+E:\Website\SimSoDepNewest\SimSoDepStore\bin\Debug\SimSoDepStore.exe
+E:\Website\SimSoDepNewest\SimSoDepStore\bin\Debug\SimSoDepStore.pdb
+E:\Website\SimSoDepNewest\SimSoDepStore\obj\x86\Debug\ResolveAssemblyReference.cache
+E:\Website\SimSoDepNewest\SimSoDepStore\obj\x86\Debug\SimSoDepStore.exe
+E:\Website\SimSoDepNewest\SimSoDepStore\obj\x86\Debug\SimSoDepStore.pdb
+E:\simsodep\SimSoDepStore\bin\Debug\SimSoDepStore.exe.config
+E:\simsodep\SimSoDepStore\obj\x86\Debug\SimSoDepStore.exe
+E:\simsodep\SimSoDepStore\obj\x86\Debug\SimSoDepStore.pdb
+E:\simsodep\SimSoDepStore\bin\Debug\SimSoDepStore.exe
+E:\simsodep\SimSoDepStore\bin\Debug\SimSoDepStore.pdb
+E:\simsodep\SimSoDepStore\obj\x86\Debug\SimSoDepStore.csprojResolveAssemblyReference.cache

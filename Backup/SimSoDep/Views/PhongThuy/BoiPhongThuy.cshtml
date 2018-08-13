@@ -1,0 +1,257 @@
+﻿@using SimSoDep.DataBasesManager
+@model SimSoDep.Models.KetQuaPhongThuyModel
+@{
+    var phanTramAm = (double)(Model.SoSoAm * 100) / Model.SoDienThoai.Length;
+    var phanTramDuong = (double)(Model.SoSoDuong * 100) / Model.SoDienThoai.Length;
+    double diem = 0.0;
+}
+<h4>
+    Biện giải:</h4>
+<p>
+    Con người là tổng hoà các mối quan hệ, trong đó chịu sự ảnh hưởng chi phối của thiên
+    nhiên và xã hội. Người xưa coi con người là một vũ trụ thu nhỏ, là 1 trong 3 yếu
+    tố tam Tài là Thiên - Địa - Nhân. Con người đóng vai trò trung tâm của vũ trụ, trời
+    và đất. Do vậy xét những con số tốt xấu phải theo các khía cạnh Âm Dương, Ngũ Hành,
+    Thiên Thời, Quẻ dịch và cả Quan niệm dân gian nữa.
+</p>
+<h4>
+    1. Âm dương</h4>
+<p>
+    Có @Model.SoSoAm số mang vận âm, chiếm @string.Format("{0}%", Math.Round(phanTramAm, 0))</p>
+<p>
+    Có @Model.SoSoDuong số mang vận dương, chiếm @string.Format("{0}%", Math.Round(phanTramDuong, 0))</p>
+@if (@Model.LoaiAmDuong == (int)LoaiAmDuong.AmDuongCanBang)
+{
+    <p>
+        Số lượng số mang vận âm dương hoàn toàn cân bằng, dãy số đạt được hoà hợp âm dương,
+        rất tốt.</p>
+}
+else
+{
+    if (@Model.LoaiAmDuong == (int)LoaiAmDuong.AmDuongGanCanBang)
+    {
+    <p>
+        Số lượng số mang vận âm dương khá cân bằng, dãy số đạt được hoà hợp âm dương, rất
+        tốt.</p>
+    }
+    else
+    {
+        if (@Model.LoaiAmDuong == (int)LoaiAmDuong.AmDuongLechNhieu)
+        {
+    <p>
+        Số lượng số mang vận âm và dương chênh lệch nhiều, dãy số này không thực sự hoà
+        hợp.</p>
+        }
+        else
+        {
+    <p>
+        Số lượng số mang vận âm và dương chênh lệch nhiều, dãy số này không thực sự hoà
+        hợp.</p>
+        }
+
+    }
+}
+<h4>
+    2. Ngũ hành</h4>
+<p>
+    Hành của thân chủ: @Model.TenNguHanhNam</p>
+<p>
+    Hành của dãy số: @Model.TenNguHanhSo</p>
+@switch (Model.IdNguHanhNam)
+{
+    case (int)NguHanh.Moc:
+        if (Model.IdNguHanhSo == (int)NguHanh.Kim)
+        {
+    <p>
+        Hành của dãy số tương khắc với hành của thân chủ, rất xấu.</p>
+        }
+        else
+        {
+            if (Model.IdNguHanhSo == (int)NguHanh.Thuy)
+            {
+    <p>
+        Hành của dãy số tương sinh với hành của thân chủ, rất tốt.</p>
+            }
+            else
+            {
+    <p>
+        Hành của dãy số không sinh không khắc với hành của thân chủ, chấp nhận được.</p>
+            }
+        }
+        break;
+    case (int)NguHanh.Hoa:
+        if (Model.IdNguHanhSo == (int)NguHanh.Thuy)
+        {
+    <p>
+        Hành của dãy số tương khắc với hành của thân chủ, rất xấu.</p>
+        }
+        else
+        {
+            if (Model.IdNguHanhSo == (int)NguHanh.Moc)
+            {
+    <p>
+        Hành của dãy số tương sinh với hành của thân chủ, rất tốt.</p>
+            }
+            else
+            {
+    <p>
+        Hành của dãy số không sinh không khắc với hành của thân chủ, chấp nhận được.</p>
+            }
+        }
+        break;
+    case (int)NguHanh.Tho:
+        if (Model.IdNguHanhSo == (int)NguHanh.Moc)
+        {
+    <p>
+        Hành của dãy số tương khắc với hành của thân chủ, rất xấu.</p>
+        }
+        else
+        {
+            if (Model.IdNguHanhSo == (int)NguHanh.Hoa)
+            {
+    <p>
+        Hành của dãy số tương sinh với hành của thân chủ, rất tốt.</p>
+            }
+            else
+            {
+    <p>
+        Hành của dãy số không sinh không khắc với hành của thân chủ, chấp nhận được.</p>
+            }
+        }
+        break;
+    case (int)NguHanh.Kim:
+        if (Model.IdNguHanhSo == (int)NguHanh.Hoa)
+        {
+    <p>
+        Hành của dãy số tương khắc với hành của thân chủ, rất xấu.</p>
+        }
+        else
+        {
+            if (Model.IdNguHanhSo == (int)NguHanh.Tho)
+            {
+    <p>
+        Hành của dãy số tương sinh với hành của thân chủ, rất tốt.</p>
+            }
+            else
+            {
+    <p>
+        Hành của dãy số không sinh không khắc với hành của thân chủ, chấp nhận được.</p>
+            }
+        }
+        break;
+    case (int)NguHanh.Thuy:
+        if (Model.IdNguHanhSo == (int)NguHanh.Tho)
+        {
+    <p>
+        Hành của dãy số tương khắc với hành của thân chủ, rất xấu.</p>
+        }
+        else
+        {
+            if (Model.IdNguHanhSo == (int)NguHanh.Kim)
+            {
+    <p>
+        Hành của dãy số tương sinh với hành của thân chủ, rất tốt.</p>
+            }
+            else
+            {
+    <p>
+        Hành của dãy số không sinh không khắc với hành của thân chủ, chấp nhận được.</p>
+            }
+        }
+        break;
+
+}
+<h4>
+    3. Thiên thời</h4>
+@if (Model.IsContainSo8)
+{
+    <p>
+        Chúng ta đang ở thời kỳ từ năm 2004 - 2023 do sao Bát bạch quản. Dãy số được về
+        Thiên Thời</p>
+}
+else
+{
+    <p>
+        Chúng ta đang ở thời kỳ từ năm 2004 - 2023 do sao Bát bạch quản. Dãy số không được
+        về Thiên Thời</p>
+}
+<h4>
+    4. Quẻ dịch</h4>
+<p>
+    Dãy số biện giải ứng với quẻ | @Model.TenQue</p>
+<p>
+    Ký hiệu quẻ @Model.HinhQue</p>
+<p>
+    Ý nghĩa: @Model.YNghia</p>
+@if (Model.LoaiQue == (int)LoaiQue.Cat)
+{
+    <p>
+        Quẻ dịch này mang điềm cát, dãy số rất tốt cho người sử dụng</p>
+}
+else
+{
+    if (Model.LoaiQue == (int)LoaiQue.Hung)
+    {
+    <p>
+        Quẻ dịch này mang điềm hung, dãy số không tốt cho người sử dụng</p>
+    }
+    else
+    {
+    <p>
+        Quẻ dịch này không phân định rõ cát hung, dãy số không tốt không xấu, có thể chấp
+        nhận được</p>
+    }
+}
+<h4>
+    5. Quan niệm</h4>
+@if (@Model.SoNuoc == 0)
+{
+    <p>
+        Tổng số nút của dãy số: 0 - Số nước tịt, dãy số xấu.</p>
+}
+else
+{
+    if (@Model.SoNuoc == 1)
+    {
+    <p>
+        Tổng số nút của dãy số: 1 - Số nước tịt, dãy số xấu.</p>
+    }
+    else
+    {
+        if (@Model.SoNuoc >= 2 && @Model.SoNuoc <= 4)
+        {
+    <p>
+        Tổng số nút của dãy số: @Model.SoNuoc - Số nước thấp, dãy số không đẹp.</p>
+        }
+        else
+        {
+            if (@Model.SoNuoc >= 5 && @Model.SoNuoc <= 7)
+            {
+    <p>
+        Tổng số nút của dãy số: @Model.SoNuoc - Số nước bình thường</p>
+            }
+            else
+            {
+                if (@Model.SoNuoc > 7)
+                {
+    <p>
+        Tổng số nút của dãy số: @Model.SoNuoc - Số nước cao, dãy số đẹp.</p>
+                }
+            }
+        }
+    }
+}
+@if (Model.SoDienThoai.LastIndexOf("4") != -1)
+{
+    <p>
+        Số tận cùng là Tử (4), không tốt.</p>
+}
+else
+{
+    if (@Model.SoDienThoai.Contains("4"))
+    {
+    <p>
+        Trong chuỗi có chứa số 4 với ý nghĩa là Tử (Chết), không tốt.</p>
+    }
+
+}

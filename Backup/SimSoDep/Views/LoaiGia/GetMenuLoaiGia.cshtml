@@ -1,0 +1,9 @@
+﻿@model List<SimSoDep.Models.LoaiGiaModel> 
+<ul class="accordion">
+    @foreach (var loaigia in Model)
+    { 
+        <li>
+        @Html.ActionLink(loaigia.Ten, "ChiTiet", new { id = loaigia.Alias }, new { @class="trigger"})
+        </li>
+    }
+</ul>

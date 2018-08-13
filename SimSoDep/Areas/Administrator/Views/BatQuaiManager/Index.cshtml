@@ -1,0 +1,27 @@
+﻿@using SimSoDep.Models
+@model List<BatQuaiModel>
+@{
+    ViewBag.Title = "Bát quái";
+    var grid = new WebGrid(Model, rowsPerPage: 100);
+}
+<h2>
+    Loại giá</h2>
+@Html.Partial("_BoiSimSoMenu")
+<div class="tableContent">
+    @Html.ActionLink("Thêm bát quái", "Create", "BatQuaiManager")
+    @grid.GetHtml(columns: grid.Columns(
+                                     grid.Column("IdQueBatQuai", "ID"),
+                                     grid.Column("TenQue", "Tên quẻ"),
+                                     grid.Column("HinhQue", "Hình Quẻ"),
+                                     grid.Column("PhienAm", "Phiên âm"),
+                             grid.Column("MoTa", "Mô tả"),
+                             grid.Column(columnName: "", header: "", format: (item) =>
+                             {
+                                 var links = Html.ActionLink("Edit", "Edit", new { controller = "BatQuaiManager", id = item.IdQueBatQuai }) + " | " +
+                                             Html.ActionLink("Delete", "Delete", new { controller = "BatQuaiManager", id = item.IdQueBatQuai });
+
+                                 return Html.Raw(links);
+
+                             })
+                       ))
+</div>

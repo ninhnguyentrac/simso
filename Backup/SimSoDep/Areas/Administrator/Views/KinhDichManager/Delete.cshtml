@@ -1,0 +1,68 @@
+﻿@model SimSoDep.Models.KinhDichModel
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<fieldset>
+    <legend>KinhDichModel</legend>
+
+    <div class="display-label">IdKinhDich</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.IdKinhDich)
+    </div>
+
+    <div class="display-label">IdQueThuong</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.IdQueThuong)
+    </div>
+
+    <div class="display-label">QueThuong</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.QueThuong)
+    </div>
+
+    <div class="display-label">IdQueHa</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.IdQueHa)
+    </div>
+
+    <div class="display-label">QueHa</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.QueHa)
+    </div>
+
+    <div class="display-label">TenQue</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.TenQue)
+    </div>
+
+    <div class="display-label">PhienAm</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.PhienAm)
+    </div>
+
+    <div class="display-label">LoiDich</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.LoiDich)
+    </div>
+
+    <div class="display-label">YNghia</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.YNghia)
+    </div>
+
+    <div class="display-label">HinhQue</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.HinhQue)
+    </div>
+</fieldset>
+@using (Html.BeginForm()) {
+    <p>
+        <input type="submit" value="Delete" /> |
+        @Html.ActionLink("Back to List", "Index")
+    </p>
+}

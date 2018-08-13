@@ -1,0 +1,1451 @@
+<Configuration>
+  <RecentFiles>
+    <RecentFiles>
+      <File id="B4A0D470-95CB-4FFA-8F44-730C14AF59D3/f:Web.config" caret="697" fromTop="11" />
+      <File id="B4A0D470-95CB-4FFA-8F44-730C14AF59D3/d:Models/f:TangTrietKhauModel.cs" caret="0" fromTop="0" />
+      <File id="B4A0D470-95CB-4FFA-8F44-730C14AF59D3/d:DataBasesManager/f:EnumVariable.cs" caret="1947" fromTop="10" />
+      <File id="B4A0D470-95CB-4FFA-8F44-730C14AF59D3/d:Models/f:SessionManagerModel.cs" caret="157" fromTop="1" />
+      <File id="B4A0D470-95CB-4FFA-8F44-730C14AF59D3/f:Global.asax.cs" caret="1914" fromTop="8" />
+      <File id="B4A0D470-95CB-4FFA-8F44-730C14AF59D3/d:Models/f:ThongKeSimModel.cs" caret="153" fromTop="7" />
+      <File id="B4A0D470-95CB-4FFA-8F44-730C14AF59D3/d:Content/f:style.css" caret="15811" fromTop="16" />
+      <File id="B4A0D470-95CB-4FFA-8F44-730C14AF59D3/d:Views/d:TimKiem/f:Index.cshtml" caret="543" fromTop="15" />
+      <File id="B4A0D470-95CB-4FFA-8F44-730C14AF59D3/d:Views/d:LoaiGia/f:GetMenuLoaiGia.cshtml" caret="0" fromTop="0" />
+      <File id="B4A0D470-95CB-4FFA-8F44-730C14AF59D3/d:Controllers/f:DauSoController.cs" caret="0" fromTop="0" />
+      <File id="B4A0D470-95CB-4FFA-8F44-730C14AF59D3/d:Controllers/f:BaseController.cs" caret="378" fromTop="15" />
+      <File id="B4A0D470-95CB-4FFA-8F44-730C14AF59D3/d:DataBasesManager/f:SimSoDepRepository.cs" caret="58548" fromTop="13" />
+      <File id="B4A0D470-95CB-4FFA-8F44-730C14AF59D3/d:Controllers/f:LoaiGiaController.cs" caret="496" fromTop="15" />
+      <File id="B4A0D470-95CB-4FFA-8F44-730C14AF59D3/d:Views/d:Shared/f:_ListNumber.cshtml" caret="0" fromTop="0" />
+      <File id="B4A0D470-95CB-4FFA-8F44-730C14AF59D3/d:Controllers/f:HomeController.cs" caret="335" fromTop="13" />
+      <File id="B4A0D470-95CB-4FFA-8F44-730C14AF59D3/d:Content/f:webgridtable.css" caret="283" fromTop="16" />
+      <File id="B4A0D470-95CB-4FFA-8F44-730C14AF59D3/d:Views/d:Shared/f:_Layout.cshtml" caret="15089" fromTop="23" />
+      <File id="B4A0D470-95CB-4FFA-8F44-730C14AF59D3/d:DataBasesManager/f:ISimSoDepRepository.cs" caret="953" fromTop="20" />
+      <File id="B4A0D470-95CB-4FFA-8F44-730C14AF59D3/d:Views/d:Shared/f:_TimKiem.cshtml" caret="173" fromTop="5" />
+      <File id="B4A0D470-95CB-4FFA-8F44-730C14AF59D3/d:Views/d:DauSo/f:GetMenuDauSo.cshtml" caret="40" fromTop="0" />
+      <File id="B4A0D470-95CB-4FFA-8F44-730C14AF59D3/d:Views/d:Shared/f:ChiTiet.cshtml" caret="177" fromTop="8" />
+      <File id="B4A0D470-95CB-4FFA-8F44-730C14AF59D3/d:Views/d:DatMua/f:Index.cshtml" caret="55" fromTop="4" />
+      <File id="B4A0D470-95CB-4FFA-8F44-730C14AF59D3/d:Views/d:DatMua/f:DatSim.cshtml" caret="124" fromTop="4" />
+      <File id="B4A0D470-95CB-4FFA-8F44-730C14AF59D3/d:Content/f:formDatMua.css" caret="351" fromTop="19" />
+      <File id="B4A0D470-95CB-4FFA-8F44-730C14AF59D3/d:Views/d:PhongThuy/f:BoiPhongThuy.cshtml" caret="6599" fromTop="250" />
+      <File id="B4A0D470-95CB-4FFA-8F44-730C14AF59D3/d:Views/d:Home/f:Index.cshtml" caret="422" fromTop="14" />
+      <File id="B4A0D470-95CB-4FFA-8F44-730C14AF59D3/d:Controllers/f:PhongThuyController.cs" caret="1118" fromTop="19" />
+      <File id="B4A0D470-95CB-4FFA-8F44-730C14AF59D3/d:Views/d:PhongThuy/f:Index.cshtml" caret="749" fromTop="20" />
+      <File id="B4A0D470-95CB-4FFA-8F44-730C14AF59D3/d:Models/f:PhongThuyModel.cs" caret="138" fromTop="7" />
+      <File id="B4A0D470-95CB-4FFA-8F44-730C14AF59D3/d:Views/d:Shared/f:_PhongThuy.cshtml" caret="1670" fromTop="15" />
+    </RecentFiles>
+    <RecentEdits>
+      <File id="B4A0D470-95CB-4FFA-8F44-730C14AF59D3/d:Views/d:PhongThuy/f:BoiPhongThuy.cshtml" caret="6741" fromTop="22" />
+      <File id="B4A0D470-95CB-4FFA-8F44-730C14AF59D3/d:Views/d:PhongThuy/f:BoiPhongThuy.cshtml" caret="6741" fromTop="18" />
+      <File id="B4A0D470-95CB-4FFA-8F44-730C14AF59D3/d:Views/d:PhongThuy/f:BoiPhongThuy.cshtml" caret="6741" fromTop="26" />
+      <File id="B4A0D470-95CB-4FFA-8F44-730C14AF59D3/d:Views/d:PhongThuy/f:BoiPhongThuy.cshtml" caret="6741" fromTop="21" />
+      <File id="B4A0D470-95CB-4FFA-8F44-730C14AF59D3/d:Views/d:PhongThuy/f:BoiPhongThuy.cshtml" caret="6741" fromTop="26" />
+      <File id="B4A0D470-95CB-4FFA-8F44-730C14AF59D3/d:Views/d:PhongThuy/f:BoiPhongThuy.cshtml" caret="6741" fromTop="22" />
+      <File id="B4A0D470-95CB-4FFA-8F44-730C14AF59D3/d:Views/d:PhongThuy/f:BoiPhongThuy.cshtml" caret="6741" fromTop="24" />
+      <File id="B4A0D470-95CB-4FFA-8F44-730C14AF59D3/d:Views/d:PhongThuy/f:BoiPhongThuy.cshtml" caret="6741" fromTop="23" />
+      <File id="B4A0D470-95CB-4FFA-8F44-730C14AF59D3/d:Views/d:PhongThuy/f:BoiPhongThuy.cshtml" caret="6741" fromTop="25" />
+      <File id="B4A0D470-95CB-4FFA-8F44-730C14AF59D3/d:Views/d:PhongThuy/f:BoiPhongThuy.cshtml" caret="6741" fromTop="24" />
+      <File id="B4A0D470-95CB-4FFA-8F44-730C14AF59D3/d:Views/d:PhongThuy/f:BoiPhongThuy.cshtml" caret="6741" fromTop="21" />
+      <File id="B4A0D470-95CB-4FFA-8F44-730C14AF59D3/d:Views/d:PhongThuy/f:BoiPhongThuy.cshtml" caret="4682" fromTop="18" />
+      <File id="B4A0D470-95CB-4FFA-8F44-730C14AF59D3/d:Views/d:PhongThuy/f:BoiPhongThuy.cshtml" caret="4700" fromTop="17" />
+      <File id="B4A0D470-95CB-4FFA-8F44-730C14AF59D3/d:Views/d:PhongThuy/f:BoiPhongThuy.cshtml" caret="4973" fromTop="21" />
+      <File id="B4A0D470-95CB-4FFA-8F44-730C14AF59D3/d:Views/d:PhongThuy/f:BoiPhongThuy.cshtml" caret="5569" fromTop="20" />
+      <File id="B4A0D470-95CB-4FFA-8F44-730C14AF59D3/d:Views/d:PhongThuy/f:BoiPhongThuy.cshtml" caret="5282" fromTop="11" />
+      <File id="B4A0D470-95CB-4FFA-8F44-730C14AF59D3/d:Views/d:PhongThuy/f:BoiPhongThuy.cshtml" caret="5432" fromTop="18" />
+      <File id="B4A0D470-95CB-4FFA-8F44-730C14AF59D3/d:Views/d:PhongThuy/f:BoiPhongThuy.cshtml" caret="6162" fromTop="13" />
+      <File id="B4A0D470-95CB-4FFA-8F44-730C14AF59D3/d:Views/d:PhongThuy/f:BoiPhongThuy.cshtml" caret="6662" fromTop="28" />
+      <File id="B4A0D470-95CB-4FFA-8F44-730C14AF59D3/d:Views/d:PhongThuy/f:BoiPhongThuy.cshtml" caret="6736" fromTop="23" />
+      <File id="B4A0D470-95CB-4FFA-8F44-730C14AF59D3/d:Views/d:PhongThuy/f:BoiPhongThuy.cshtml" caret="6599" fromTop="22" />
+      <File id="B4A0D470-95CB-4FFA-8F44-730C14AF59D3/d:Views/d:Shared/f:_PhongThuy.cshtml" caret="324" fromTop="0" />
+      <File id="B4A0D470-95CB-4FFA-8F44-730C14AF59D3/d:Models/f:PhongThuyModel.cs" caret="404" fromTop="14" />
+      <File id="B4A0D470-95CB-4FFA-8F44-730C14AF59D3/d:Models/f:PhongThuyModel.cs" caret="193" fromTop="9" />
+      <File id="B4A0D470-95CB-4FFA-8F44-730C14AF59D3/d:Controllers/f:PhongThuyController.cs" caret="1417" fromTop="5" />
+      <File id="B4A0D470-95CB-4FFA-8F44-730C14AF59D3/d:Controllers/f:PhongThuyController.cs" caret="1136" fromTop="19" />
+      <File id="B4A0D470-95CB-4FFA-8F44-730C14AF59D3/d:Views/d:Shared/f:_PhongThuy.cshtml" caret="958" fromTop="23" />
+      <File id="B4A0D470-95CB-4FFA-8F44-730C14AF59D3/d:Views/d:Shared/f:_PhongThuy.cshtml" caret="1248" fromTop="15" />
+      <File id="B4A0D470-95CB-4FFA-8F44-730C14AF59D3/d:Views/d:PhongThuy/f:Index.cshtml" caret="749" fromTop="20" />
+      <File id="B4A0D470-95CB-4FFA-8F44-730C14AF59D3/d:Views/d:Shared/f:_PhongThuy.cshtml" caret="1936" fromTop="21" />
+    </RecentEdits>
+  </RecentFiles>
+  <NAntValidationSettings>
+    <NAntPath value="" />
+  </NAntValidationSettings>
+  <UnitTestRunner>
+    <Providers />
+  </UnitTestRunner>
+  <UnitTestRunnerNUnit>
+    <NUnitInstallDir IsNull="False">
+    </NUnitInstallDir>
+    <UseAddins>Never</UseAddins>
+  </UnitTestRunnerNUnit>
+  <SettingsComponent>
+    <string />
+    <integer />
+    <boolean>
+      <setting name="livetemplates.csharp.usevar">True</setting>
+      <setting name="SolutionAnalysisEnabled">False</setting>
+    </boolean>
+  </SettingsComponent>
+  <CompletionStatisticsManager>
+    <ItemStatistics item="CSharpCodeCompletionContext">
+      <Item value="~" priority="22" />
+      <Item value="Areas" priority="22" />
+      <Item value="Administrator" priority="22" />
+      <Item value="Views" priority="22" />
+      <Item value="Shared" priority="22" />
+      <Item value="_Layout.cshtml" priority="22" />
+      <Item value="AdminHome" priority="27" />
+      <Item value="Account" priority="88" />
+      <Item value="public" priority="6149" />
+      <Item value="BaseController`0" priority="63" />
+      <Item value="ImportExcel" priority="65" />
+      <Item value="string" priority="3211" />
+      <Item value="View`0" priority="639" />
+      <Item value="ViewBag" priority="785" />
+      <Item value="bool" priority="2039" />
+      <Item value="ISimSoDepRepository`0" priority="31" />
+      <Item value="private" priority="95" />
+      <Item value="using" priority="92" />
+      <Item value="SimSoDepEntities`0" priority="85" />
+      <Item value="SimSoDepEntities" priority="60" />
+      <Item value="SimSoDepStore" priority="94" />
+      <Item value="entities" priority="96" />
+      <Item value="SimSoDepRepository`0" priority="31" />
+      <Item value="new" priority="2946" />
+      <Item value="var" priority="5503" />
+      <Item value="u" priority="63" />
+      <Item value="userName" priority="63" />
+      <Item value="return" priority="4230" />
+      <Item value="true" priority="1951" />
+      <Item value="SimSoDepRepository" priority="1579" />
+      <Item value="_simSoDepRepository" priority="31" />
+      <Item value="passWord" priority="63" />
+      <Item value="if" priority="3759" />
+      <Item value="user" priority="63" />
+      <Item value="null" priority="1053" />
+      <Item value="false" priority="1808" />
+      <Item value="ChangePassword" priority="32" />
+      <Item value="changePasswordSucceeded" priority="31" />
+      <Item value="Username" priority="31" />
+      <Item value="model" priority="275" />
+      <Item value="newPass" priority="31" />
+      <Item value="passWordNewEncrypt" priority="31" />
+      <Item value="EncryptPassword`0" priority="63" />
+      <Item value="_entities" priority="3471" />
+      <Item value="SimSoDep.js" priority="22" />
+      <Item value="file" priority="31" />
+      <Item value="importSuccess" priority="95" />
+      <Item value="else" priority="895" />
+      <Item value="try" priority="319" />
+      <Item value="path" priority="31" />
+      <Item value="Index" priority="380" />
+      <Item value="List" priority="1028" />
+      <Item value="SimSoModel`0" priority="282" />
+      <Item value="ls" priority="1377" />
+      <Item value="id" priority="897" />
+      <Item value="from" priority="527" />
+      <Item value="where" priority="447" />
+      <Item value="s" priority="326" />
+      <Item value="idLoaiSim" priority="63" />
+      <Item value="select" priority="607" />
+      <Item value="SimSoModel" priority="114" />
+      <Item value="GiaTien" priority="110" />
+      <Item value="SoDienThaoi" priority="26" />
+      <Item value="NhaMang" priority="92" />
+      <Item value="listSim" priority="31" />
+      <Item value="result" priority="2332" />
+      <Item value="WebGrid" priority="58" />
+      <Item value="Model" priority="1763" />
+      <Item value="webGrid" priority="29" />
+      <Item value="#endregion" priority="1019" />
+      <Item value="static" priority="831" />
+      <Item value="chuoi" priority="448" />
+      <Item value="int" priority="2746" />
+      <Item value="switch" priority="413" />
+      <Item value="length" priority="30" />
+      <Item value="case" priority="575" />
+      <Item value="break" priority="735" />
+      <Item value="foreach" priority="447" />
+      <Item value="for" priority="95" />
+      <Item value="splitString" priority="189" />
+      <Item value="Length" priority="107" />
+      <Item value="ICollection" priority="31" />
+      <Item value="i" priority="127" />
+      <Item value="j" priority="31" />
+      <Item value="isLike" priority="95" />
+      <Item value="enum" priority="347" />
+      <Item value="SortedDictionary" priority="31" />
+      <Item value="dependencyProperty" priority="31" />
+      <Item value="Catagory" priority="560" />
+      <Item value="ActionResult`0" priority="1087" />
+      <Item value="LoaiSimModel" priority="57" />
+      <Item value="Alias" priority="224" />
+      <Item value="LoaiSimModel`0" priority="224" />
+      <Item value="tblSimSoDepLoaiSim" priority="784" />
+      <Item value="Ten" priority="121" />
+      <Item value="Id" priority="258" />
+      <Item value="Html" priority="689" />
+      <Item value="_CatagoryMenu" priority="27" />
+      <Item value="grid" priority="253" />
+      <Item value="columnName" priority="346" />
+      <Item value="header" priority="368" />
+      <Item value="format" priority="131" />
+      <Item value="NhaMangModel`0" priority="159" />
+      <Item value="rowsPerPage" priority="90" />
+      <Item value="LoaiSimSo" priority="65" />
+      <Item value="HttpPost" priority="757" />
+      <Item value="loaiSimSoModel" priority="789" />
+      <Item value="RedirectToAction`0" priority="223" />
+      <Item value="l" priority="255" />
+      <Item value="loaisimso" priority="287" />
+      <Item value="NhaMangModel" priority="29" />
+      <Item value="TenDayDu" priority="32" />
+      <Item value="nhaMangModel" priority="613" />
+      <Item value="nhamang" priority="223" />
+      <Item value="#region" priority="447" />
+      <Item value="NhaMangManager" priority="131" />
+      <Item value="#define" priority="31" />
+      <Item value="Authorize" priority="373" />
+      <Item value="class" priority="278" />
+      <Item value="BaseLoaiModel`0" priority="127" />
+      <Item value="EnumFixed" priority="401" />
+      <Item value="loaiChiTiet" priority="32" />
+      <Item value="loai" priority="131" />
+      <Item value="DauSoModel`0" priority="155" />
+      <Item value="DauSoModel" priority="59" />
+      <Item value="DauSo" priority="131" />
+      <Item value="dauSoModel" priority="704" />
+      <Item value="dauSo" priority="286" />
+      <Item value="LoaiGiaModel`0" priority="95" />
+      <Item value="LoaiGiaModel" priority="83" />
+      <Item value="LoaiGia" priority="98" />
+      <Item value="input" priority="59" />
+      <Item value="LoaiSimSoManager" priority="65" />
+      <Item value="FormMethod" priority="57" />
+      <Item value="FormMethod`0" priority="58" />
+      <Item value="loaiSim" priority="63" />
+      <Item value="loaiSimModel" priority="323" />
+      <Item value="tbl_SimSoDep_LoaiSim" priority="86" />
+      <Item value="TenLoaiSim" priority="27" />
+      <Item value="LoaiSimSoChiTietManager" priority="65" />
+      <Item value="LoaiSimSoChiTiet" priority="32" />
+      <Item value="c" priority="31" />
+      <Item value="lsChitiet" priority="95" />
+      <Item value="LoaiSimChiTietModel`0" priority="31" />
+      <Item value="loaiSimChiTietModel" priority="356" />
+      <Item value="tbl_SimSoDep_LoaiSimChiTiet" priority="90" />
+      <Item value="MaLoaiSim" priority="179" />
+      <Item value="TenLoaiSimChiTiet" priority="27" />
+      <Item value="MaLoaiSimChiTiet" priority="63" />
+      <Item value="SelectList" priority="221" />
+      <Item value="listParent" priority="31" />
+      <Item value="tbl_SimSoDep_NhaMang" priority="28" />
+      <Item value="MaNhaMang" priority="93" />
+      <Item value="MoTaThem" priority="27" />
+      <Item value="TenMoTaDayDu" priority="27" />
+      <Item value="TenNhaMang" priority="65" />
+      <Item value="DauSoManager" priority="60" />
+      <Item value="d" priority="191" />
+      <Item value="dauso" priority="127" />
+      <Item value="tbl_SimSoDep_DauSo" priority="28" />
+      <Item value="TenDauSo" priority="27" />
+      <Item value="LoaiGiaController`0" priority="31" />
+      <Item value="loaiGiaModel" priority="864" />
+      <Item value="loaigia" priority="314" />
+      <Item value="tbl_SimSoDep_LoaiGia" priority="28" />
+      <Item value="TenLoaiGia" priority="27" />
+      <Item value="g" priority="31" />
+      <Item value="global" priority="32" />
+      <Item value="DaiLyManager" priority="197" />
+      <Item value="DaiLyModel`0" priority="94" />
+      <Item value="DaiLyModel" priority="115" />
+      <Item value="tblSimSoDepDaiLy" priority="229" />
+      <Item value="DiDong" priority="55" />
+      <Item value="DiaChi" priority="82" />
+      <Item value="Email" priority="83" />
+      <Item value="MayBan" priority="55" />
+      <Item value="daiLyModel" priority="416" />
+      <Item value="tbl_SimSoDep_DaiLy" priority="28" />
+      <Item value="TenDaiLy" priority="54" />
+      <Item value="daily" priority="387" />
+      <Item value="DropDownList`0" priority="7" />
+      <Item value="as" priority="191" />
+      <Item value="SelectList`0" priority="261" />
+      <Item value="label" priority="179" />
+      <Item value="BinaryReader`0" priority="29" />
+      <Item value="long" priority="575" />
+      <Item value="BaseTangTrietKhauModel`0" priority="63" />
+      <Item value="TrietKhauModel`0" priority="159" />
+      <Item value="TrietKhauModels" priority="27" />
+      <Item value="TangThemModel`0" priority="159" />
+      <Item value="TangThemModels" priority="27" />
+      <Item value="daiLy" priority="127" />
+      <Item value="tangThem" priority="251" />
+      <Item value="TangThemModel" priority="57" />
+      <Item value="tblSimSoDepTangThem" priority="159" />
+      <Item value="GiaTu" priority="233" />
+      <Item value="Den" priority="236" />
+      <Item value="MaDaiLy" priority="171" />
+      <Item value="trietKhaus" priority="64" />
+      <Item value="TrietKhauModel" priority="57" />
+      <Item value="item" priority="323" />
+      <Item value="TangThems" priority="27" />
+      <Item value="TrietKhaus" priority="27" />
+      <Item value="Edit" priority="131" />
+      <Item value="trietKhauModel" priority="475" />
+      <Item value="t" priority="580" />
+      <Item value="trietKhau" priority="247" />
+      <Item value="tbl_SimSoDep_DaiLyTrietKhau" priority="28" />
+      <Item value="TrietKhau" priority="83" />
+      <Item value="NewsStyleUriParser`0" priority="26" />
+      <Item value="tblSimSoDepDaiLyTrietKhau" priority="196" />
+      <Item value="k" priority="651" />
+      <Item value="tkhau" priority="62" />
+      <Item value="gridTangThem" priority="29" />
+      <Item value="tangThemModel" priority="374" />
+      <Item value="tbl_SimSoDep_TangThem" priority="28" />
+      <Item value="TangThem" priority="27" />
+      <Item value="AddTangThem" priority="27" />
+      <Item value="maDaiLy" priority="95" />
+      <Item value="HttpPostedFileBase`0" priority="31" />
+      <Item value="importModel" priority="91" />
+      <Item value="tbl_SimSoDep_SimSo`0" priority="58" />
+      <Item value="soDienThoai" priority="832" />
+      <Item value="simso" priority="1216" />
+      <Item value="EnumVariable`0" priority="63" />
+      <Item value="soLength" priority="31" />
+      <Item value="MoTa" priority="403" />
+      <Item value="dauSoData" priority="63" />
+      <Item value="SoDienThoai" priority="170" />
+      <Item value="giaTien" priority="351" />
+      <Item value="itemTang" priority="91" />
+      <Item value="lg" priority="159" />
+      <Item value="maLoaiGia" priority="160" />
+      <Item value="bonSoCuoi" priority="318" />
+      <Item value="Collection&lt;tbl_SimSoDep_LoaiSim&gt;" priority="57" />
+      <Item value="LoaiSimSo`0" priority="63" />
+      <Item value="LoaiSimSoChiTiet`0" priority="191" />
+      <Item value="isTuQuy" priority="95" />
+      <Item value="isDacBiet" priority="191" />
+      <Item value="default" priority="63" />
+      <Item value="baSoCuoi" priority="94" />
+      <Item value="isTamHoa" priority="31" />
+      <Item value="SimSoHelper`0" priority="991" />
+      <Item value="namSoCuoi" priority="126" />
+      <Item value="sauSoCuoi" priority="414" />
+      <Item value="countNum" priority="95" />
+      <Item value="soGiua" priority="159" />
+      <Item value="sotienGiua" priority="63" />
+      <Item value="Collection&lt;tbl_SimSoDep_LoaiSimChiTiet&gt;" priority="28" />
+      <Item value="soCuoi" priority="63" />
+      <Item value="soDau" priority="223" />
+      <Item value="isAddSimTienDon" priority="63" />
+      <Item value="isAddSimTienDoi" priority="127" />
+      <Item value="arr" priority="63" />
+      <Item value="arrStr" priority="1567" />
+      <Item value="isAddSoKep" priority="95" />
+      <Item value="CheckSoKepAABB`0" priority="31" />
+      <Item value="subString" priority="127" />
+      <Item value="isTrue" priority="127" />
+      <Item value="tamSoCuoi" priority="223" />
+      <Item value="CheckSoLapABAB`0" priority="31" />
+      <Item value="isSolapKhac" priority="31" />
+      <Item value="isTaxiLap3" priority="31" />
+      <Item value="isAddSimDao" priority="63" />
+      <Item value="haiSoCuoi" priority="95" />
+      <Item value="tbl_SimSoDep_SimSoLoaiSim`0" priority="31" />
+      <Item value="tbl_SimSoDep_LoaiSimChiTietSimSo" priority="32" />
+      <Item value="continue" priority="255" />
+      <Item value="ChiTiet" priority="98" />
+      <Item value="SubLoaiSimSo" priority="32" />
+      <Item value="MaSoDienThoai" priority="117" />
+      <Item value="listLoaiGia" priority="31" />
+      <Item value="listDauSo" priority="26" />
+      <Item value="count" priority="63" />
+      <Item value="File`0" priority="31" />
+      <Item value="IO" priority="26" />
+      <Item value="mode" priority="31" />
+      <Item value="numericLinksCount" priority="31" />
+      <Item value="ViewBagModel`0" priority="191" />
+      <Item value="ViewBagModel" priority="28" />
+      <Item value="HeadName" priority="26" />
+      <Item value="ToString`0" priority="30" />
+      <Item value="DisplayName" priority="31" />
+      <Item value="Status" priority="461" />
+      <Item value="SapXep" priority="537" />
+      <Item value="orderby" priority="154" />
+      <Item value="BoiSimSo" priority="60" />
+      <Item value="NamSinhModel`0" priority="90" />
+      <Item value="NamSinhModel" priority="57" />
+      <Item value="IdNguHanh" priority="108" />
+      <Item value="b" priority="751" />
+      <Item value="Nam" priority="115" />
+      <Item value="IdNamSinh" priority="58" />
+      <Item value="Redirect`0" priority="31" />
+      <Item value="TenNguHanh" priority="32" />
+      <Item value="NamSinhManager" priority="131" />
+      <Item value="Create" priority="32" />
+      <Item value="NguHanhModel`0" priority="31" />
+      <Item value="NguHanhModel" priority="28" />
+      <Item value="n" priority="393" />
+      <Item value="TuongKhac" priority="27" />
+      <Item value="TuongSinh" priority="32" />
+      <Item value="namSinhModel" priority="415" />
+      <Item value="tbl_SimSoDep_BanMenh" priority="28" />
+      <Item value="IdBanMenh" priority="26" />
+      <Item value="TenBanMenh" priority="55" />
+      <Item value="namSinh" priority="117" />
+      <Item value="HiddenFor`2" priority="3" />
+      <Item value="collection" priority="63" />
+      <Item value="type" priority="31" />
+      <Item value="typeof" priority="31" />
+      <Item value="idNamSinh" priority="31" />
+      <Item value="nn" priority="30" />
+      <Item value="BatQuaiModel`0" priority="127" />
+      <Item value="BatQuaiModel" priority="57" />
+      <Item value="IdQueBatQuai" priority="80" />
+      <Item value="TenQue" priority="165" />
+      <Item value="HinhQue" priority="138" />
+      <Item value="PhienAm" priority="116" />
+      <Item value="_BoiSimSoMenu" priority="32" />
+      <Item value="BatQuaiManager" priority="131" />
+      <Item value="batQuaiModel" priority="448" />
+      <Item value="batQuai" priority="191" />
+      <Item value="tbl_SimSoDep_BatQuai" priority="28" />
+      <Item value="ValidateInput" priority="127" />
+      <Item value="KinhDichModel`0" priority="159" />
+      <Item value="kinhDichModel" priority="762" />
+      <Item value="KinhDichModel" priority="28" />
+      <Item value="IdKinhDich" priority="27" />
+      <Item value="IdQueHa" priority="60" />
+      <Item value="IdQueThuong" priority="55" />
+      <Item value="LoiDich" priority="55" />
+      <Item value="kinhdich" priority="267" />
+      <Item value="tbl_SimSoDep_KinhDich" priority="28" />
+      <Item value="YNghia" priority="27" />
+      <Item value="KinhDichManager" priority="98" />
+      <Item value="QueHa" priority="27" />
+      <Item value="QueThuong" priority="32" />
+      <Item value="float" priority="31" />
+      <Item value="double" priority="128" />
+      <Item value="List&lt;double&gt;" priority="28" />
+      <Item value="soAm" priority="127" />
+      <Item value="soDuong" priority="128" />
+      <Item value="listDouble" priority="63" />
+      <Item value="Math`0" priority="58" />
+      <Item value="phanAm" priority="127" />
+      <Item value="phanDuong" priority="95" />
+      <Item value="LoaiAmDuong`0" priority="94" />
+      <Item value="tong" priority="860" />
+      <Item value="while" priority="63" />
+      <Item value="NguHanh`0" priority="63" />
+      <Item value="kinhDiches" priority="27" />
+      <Item value="BatQuai`0" priority="31" />
+      <Item value="kq" priority="31" />
+      <Item value="CheckBatQuai`0" priority="63" />
+      <Item value="nuaDau" priority="31" />
+      <Item value="nuaSau" priority="31" />
+      <Item value="kinhDichs" priority="31" />
+      <Item value="idQueThuong" priority="31" />
+      <Item value="idQueHa" priority="31" />
+      <Item value="listQueDich" priority="95" />
+      <Item value="listItems" priority="32" />
+      <Item value="SelectListItem" priority="57" />
+      <Item value="list" priority="31" />
+      <Item value="cat" priority="63" />
+      <Item value="list1" priority="31" />
+      <Item value="SelectListItem`0" priority="31" />
+      <Item value="listItem" priority="127" />
+      <Item value="hung" priority="31" />
+      <Item value="koHungKoCat" priority="31" />
+      <Item value="object" priority="92" />
+      <Item value="selected" priority="31" />
+      <Item value="GetLoaiQue`0" priority="31" />
+      <Item value="LoaiQue" priority="65" />
+      <Item value="IdLoaiQue" priority="32" />
+      <Item value="LoaiQue`0" priority="127" />
+      <Item value="googleSearch.css" priority="22" />
+      <Item value="DauSoStatus`0" priority="250" />
+      <Item value="GetDanhMucStatus`0" priority="31" />
+      <Item value="TenStatus" priority="32" />
+      <Item value="onlyShowHienThi" priority="32" />
+      <Item value="timKiemModel" priority="220" />
+      <Item value="listSimSo" priority="63" />
+      <Item value="TimKiemModel" priority="26" />
+      <Item value="hightlightsearch.js" priority="22" />
+      <Item value="purl.js" priority="22" />
+      <Item value="section" priority="59" />
+      <Item value="StringLength" priority="31" />
+      <Item value="ErrorMessage" priority="31" />
+      <Item value="MinimumLength" priority="31" />
+      <Item value="DatMua" priority="32" />
+      <Item value="formDatMua.css" priority="22" />
+      <Item value="DataType`0" priority="63" />
+      <Item value="DataType" priority="26" />
+      <Item value="khachHang" priority="128" />
+      <Item value="Home" priority="65" />
+      <Item value="KhachHangModel`0" priority="63" />
+      <Item value="khachHangModel" priority="256" />
+      <Item value="Index`0" priority="31" />
+      <Item value="tbl_SimSoDep_KhachHang" priority="28" />
+      <Item value="GhiChu" priority="27" />
+      <Item value="TenKhachHang" priority="27" />
+      <Item value="tbl_SimSoDep_DatHang" priority="118" />
+      <Item value="dathang" priority="96" />
+      <Item value="Collection&lt;tbl_SimSoDep_DatHang&gt;" priority="28" />
+      <Item value="Error" priority="32" />
+      <Item value="logUser" priority="63" />
+      <Item value="clientIp" priority="97" />
+      <Item value="tbl_SimSoDep_ClientIp" priority="28" />
+      <Item value="IdClientIp" priority="26" />
+      <Item value="IpAddress" priority="27" />
+      <Item value="Request" priority="63" />
+      <Item value="ip" priority="31" />
+      <Item value="Session" priority="31" />
+      <Item value="phongThuyModel" priority="246" />
+      <Item value="dataTime" priority="63" />
+      <Item value="PartialView`0" priority="191" />
+      <Item value="yyyy" priority="95" />
+      <Item value="KetQuaPhongThuyModel" priority="28" />
+      <Item value="lst" priority="95" />
+      <Item value="tbl_SimSoDep_LoaiSimChiTiet`0" priority="31" />
+      <Item value="ketQuaPhongThuyModel" priority="59" />
+      <Item value="void" priority="31" />
+      <Item value="kequa" priority="255" />
+      <Item value="listKinhDich" priority="63" />
+      <Item value="idQueDich" priority="31" />
+      <Item value="KetQuaPhongThuyModel`0" priority="31" />
+      <Item value="idNguHanh" priority="31" />
+      <Item value="namEntities" priority="63" />
+      <Item value="queDich" priority="127" />
+      <Item value="ketqua" priority="223" />
+      <Item value="vnCal" priority="95" />
+      <Item value="mm" priority="31" />
+      <Item value="date" priority="31" />
+      <Item value="RenderSection`0" priority="29" />
+      <Item value="required" priority="31" />
+      <Item value="MetaDescription" priority="329" />
+      <Item value="MetaKeyword" priority="329" />
+      <Item value="showAll" priority="63" />
+      <Item value="GetMenuDauSo" priority="27" />
+      <Item value="GetMenuLoaiGia" priority="32" />
+      <Item value="TimKiemManager" priority="32" />
+      <Item value="SimSoDepBaseModels`0" priority="63" />
+      <Item value="List&lt;SimSoDaiLyModes&gt;" priority="28" />
+      <Item value="so" priority="95" />
+      <Item value="SimSoDaiLyModes`0" priority="31" />
+      <Item value="giaBanDau" priority="256" />
+      <Item value="r" priority="294" />
+      <Item value="tienHoaHong" priority="96" />
+      <Item value="lstResult" priority="63" />
+      <Item value="SimSoDaiLyModes" priority="28" />
+      <Item value="DaiLyThuVe" priority="27" />
+      <Item value="GiaDaiLy" priority="27" />
+      <Item value="TimSo" priority="32" />
+      <Item value="phanTramAm" priority="351" />
+      <Item value="phanTramDuong" priority="95" />
+      <Item value="ActionMethodSelectorAttribute`0" priority="31" />
+      <Item value="PhongThuy" priority="32" />
+      <Item value="BoiPhongThuy" priority="60" />
+      <Item value="CheckSoModel`0" priority="31" />
+      <Item value="CheckSoModel" priority="28" />
+      <Item value="sonuoc" priority="64" />
+      <Item value="amduong" priority="94" />
+      <Item value="q" priority="63" />
+      <Item value="que" priority="31" />
+      <Item value="loaique" priority="95" />
+      <Item value="listNguHanh" priority="63" />
+      <Item value="h" priority="63" />
+      <Item value="nguhanh" priority="31" />
+      <Item value="tenQue" priority="32" />
+      <Item value="LoaiAmDuong" priority="27" />
+      <Item value="NguHanh" priority="27" />
+      <Item value="tenNguHanh" priority="32" />
+      <Item value="SoNuoc" priority="27" />
+      <Item value="cs" priority="31" />
+      <Item value="CheckSim" priority="65" />
+      <Item value="Details" priority="27" />
+      <Item value="socuoi" priority="63" />
+      <Item value="forr" priority="95" />
+      <Item value="madaily" priority="127" />
+      <Item value="get" priority="32" />
+      <Item value="ThongKeSimModel`0" priority="96" />
+      <Item value="ThongKeSimModel" priority="116" />
+      <Item value="NhaMang`0" priority="127" />
+      <Item value="SimBeeline" priority="26" />
+      <Item value="SimMobi" priority="32" />
+      <Item value="SimSfone" priority="32" />
+      <Item value="SimVietnamMobi" priority="32" />
+      <Item value="SimViettel" priority="32" />
+      <Item value="SimVina" priority="32" />
+      <Item value="modelSession" priority="31" />
+      <Item value="simSoModel" priority="31" />
+      <Item value="css" priority="22" />
+      <Item value="bootstrap.min.css" priority="22" />
+      <Item value="PhongThuyModel`0" priority="63" />
+      <Item value="sodienthoai" priority="31" />
+      <Item value="Ngay" priority="31" />
+      <Item value="ngay" priority="31" />
+      <Item value="Thang" priority="31" />
+      <Item value="thang" priority="31" />
+      <Item value="nam" priority="63" />
+    </ItemStatistics>
+    <ItemStatistics item="HtmlCodeCompletionContext">
+      <Item value="h4" priority="47" />
+      <Item value="id" priority="62" />
+      <Item value="style" priority="59" />
+      <Item value="float" priority="13" />
+      <Item value="left" priority="17" />
+      <Item value="div" priority="29" />
+      <Item value="class" priority="31" />
+      <Item value="input" priority="63" />
+      <Item value="type" priority="88" />
+      <Item value="hidden" priority="17" />
+      <Item value="label" priority="78" />
+      <Item value="BinaryReader`0" priority="7" />
+      <Item value="br" priority="48" />
+      <Item value="fieldset" priority="11" />
+      <Item value="legend" priority="11" />
+      <Item value="name" priority="30" />
+      <Item value="value" priority="42" />
+      <Item value="readonly" priority="11" />
+      <Item value="span" priority="11" />
+      <Item value="font-weight" priority="6" />
+      <Item value="bold" priority="8" />
+      <Item value="text" priority="17" />
+      <Item value="placeholder" priority="18" />
+      <Item value="form" priority="11" />
+      <Item value="POST" priority="6" />
+      <Item value="GET" priority="12" />
+      <Item value="script" priority="36" />
+      <Item value="text/javascript" priority="34" />
+      <Item value="reset" priority="5" />
+      <Item value="em" priority="5" />
+      <Item value="b" priority="11" />
+      <Item value="color" priority="18" />
+      <Item value="red" priority="17" />
+      <Item value="h3" priority="17" />
+      <Item value="text-align" priority="13" />
+      <Item value="center" priority="8" />
+      <Item value="blue" priority="8" />
+      <Item value="right" priority="8" />
+      <Item value="MetaSection" priority="5" />
+      <Item value="button" priority="11" />
+      <Item value="submit" priority="37" />
+      <Item value="action" priority="5" />
+      <Item value="method" priority="5" />
+      <Item value="h2" priority="5" />
+      <Item value="clear" priority="12" />
+      <Item value="option" priority="4" />
+      <Item value="selected" priority="5" />
+      <Item value="height" priority="4" />
+      <Item value="SoDienThoai" priority="5" />
+      <Item value="table" priority="5" />
+      <Item value="th" priority="5" />
+      <Item value="td" priority="12" />
+      <Item value="tr" priority="11" />
+      <Item value="p" priority="69" />
+    </ItemStatistics>
+    <ItemStatistics item="RazorTransitionCompletionContext">
+      <Item value="ViewBag" priority="45" />
+      <Item value="webGrid" priority="9" />
+      <Item value="Html" priority="189" />
+      <Item value="model" priority="49" />
+      <Item value="grid" priority="7" />
+      <Item value="if" priority="63" />
+      <Item value="Model" priority="128" />
+      <Item value="gridTangThem" priority="9" />
+      <Item value="section" priority="15" />
+      <Item value="RenderSection`0" priority="7" />
+      <Item value="string" priority="9" />
+      <Item value="switch" priority="7" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:SimSoDepStore.SimSoDepEntities">
+      <Item value="tbl_Global_User" priority="26" />
+      <Item value="SaveChanges`0" priority="756" />
+      <Item value="tbl_SimSoDep_LoaiSim" priority="292" />
+      <Item value="tbl_SimSoDep_SimSo" priority="130" />
+      <Item value="tbl_SimSoDep_NhaMang" priority="182" />
+      <Item value="tbl_SimSoDep_LoaiSimChiTiet" priority="228" />
+      <Item value="tbl_SimSoDep_DauSo" priority="265" />
+      <Item value="tbl_SimSoDep_LoaiGia" priority="268" />
+      <Item value="tbl_SimSoDep_DaiLy" priority="215" />
+      <Item value="tbl_SimSoDep_DaiLyTrietKhau" priority="161" />
+      <Item value="tbl_SimSoDep_TangThem" priority="161" />
+      <Item value="tbl_SimSoDep_SimSoLoaiSim" priority="27" />
+      <Item value="tbl_SimSoDep_LoaiSimChiTietSimSo" priority="22" />
+      <Item value="tbl_SimSoDep_BanMenh" priority="157" />
+      <Item value="tbl_SimSoDep_NguHanh" priority="107" />
+      <Item value="tbl_SimSoDep_BatQuai" priority="134" />
+      <Item value="tbl_SimSoDep_KinhDich" priority="161" />
+      <Item value="SearchSimSo`0" priority="26" />
+      <Item value="tbl_SimSoDep_KhachHang" priority="26" />
+      <Item value="tbl_SimSoDep_ClientIp" priority="26" />
+      <Item value="ThongKeSim`0" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Data.Objects.ObjectSet`1">
+      <Item value="Where`0" priority="797" />
+      <Item value="Select`0" priority="26" />
+      <Item value="DeleteObject`0" priority="336" />
+      <Item value="AddObject`0" priority="415" />
+      <Item value="ToList`1" priority="166" />
+      <Item value="FirstOrDefault`1" priority="27" />
+      <Item value="OrderBy`0" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:SimSoDepStore.tbl_Global_User">
+      <Item value="UserName" priority="26" />
+      <Item value="PassWord" priority="53" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Linq.IQueryable`1">
+      <Item value="FirstOrDefault`1" priority="902" />
+      <Item value="ToArray`1" priority="131" />
+      <Item value="ToList`1" priority="134" />
+      <Item value="Select`2" priority="162" />
+    </ItemStatistics>
+    <ItemStatistics item="CssCodeCompletionContext">
+      <Item value="lightblue" priority="11" />
+      <Item value="file" priority="4" />
+      <Item value="float" priority="17" />
+      <Item value="left" priority="17" />
+      <Item value="tableContent" priority="4" />
+      <Item value="margin-left" priority="5" />
+      <Item value="display" priority="21" />
+      <Item value="block" priority="13" />
+      <Item value="danhmuc" priority="4" />
+      <Item value="white" priority="6" />
+      <Item value="font-weight" priority="0" />
+      <Item value="bold" priority="1" />
+      <Item value="a" priority="17" />
+      <Item value="none" priority="34" />
+      <Item value="background" priority="17" />
+      <Item value="text-align" priority="19" />
+      <Item value="center" priority="15" />
+      <Item value="lightcyan" priority="4" />
+      <Item value="red" priority="31" />
+      <Item value="linen" priority="4" />
+      <Item value="mistyrose" priority="4" />
+      <Item value="gridTable" priority="4" />
+      <Item value="width" priority="17" />
+      <Item value="inline-block" priority="11" />
+      <Item value="searchContainer" priority="9" />
+      <Item value="field" priority="9" />
+      <Item value="min-width" priority="11" />
+      <Item value="fieldset" priority="5" />
+      <Item value="em" priority="5" />
+      <Item value="color" priority="14" />
+      <Item value="div" priority="5" />
+      <Item value="DiaChi" priority="4" />
+      <Item value="input" priority="11" />
+      <Item value="name" priority="5" />
+      <Item value="blue" priority="8" />
+      <Item value="right" priority="8" />
+      <Item value="searchStringManager" priority="4" />
+      <Item value="timKiemResult" priority="9" />
+      <Item value="clear" priority="0" />
+      <Item value="ptLabel" priority="3" />
+      <Item value="inputValue" priority="3" />
+      <Item value="height" priority="10" />
+      <Item value="fPhongThuy" priority="3" />
+      <Item value="thangSinh" priority="3" />
+      <Item value="btnXemPhongThuy" priority="4" />
+      <Item value="boiPhongThuy" priority="4" />
+      <Item value="highlight" priority="4" />
+      <Item value="yellow" priority="6" />
+      <Item value="background-color" priority="5" />
+      <Item value="greenyellow" priority="6" />
+      <Item value="tblthongkesim" priority="14" />
+      <Item value="td" priority="5" />
+      <Item value="padding" priority="5" />
+      <Item value="padding-right" priority="5" />
+      <Item value="lefttitle" priority="4" />
+      <Item value="righttitle" priority="4" />
+      <Item value="h3" priority="5" />
+      <Item value="text-decoration" priority="5" />
+      <Item value="ngaySinh" priority="4" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:SimSoDep.Areas.Administrator.Models.LogOnModel">
+      <Item value="UserName" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="JavaScriptSpecificContext">
+      <Item value="fun" priority="10" />
+      <Item value="function" priority="117" />
+      <Item value="$" priority="159" />
+      <Item value="if" priority="32" />
+      <Item value="ext" priority="21" />
+      <Item value="alert" priority="43" />
+      <Item value="return" priority="40" />
+      <Item value="false" priority="21" />
+      <Item value="true" priority="32" />
+      <Item value="document" priority="51" />
+      <Item value="var" priority="32" />
+      <Item value="searchString" priority="21" />
+      <Item value="ViewBag" priority="11" />
+      <Item value="so" priority="32" />
+      <Item value="for" priority="7" />
+      <Item value="respone" priority="10" />
+      <Item value="jQuery" priority="18" />
+      <Item value="else" priority="21" />
+      <Item value="Model" priority="11" />
+      <Item value="Ngay" priority="5" />
+      <Item value="i" priority="10" />
+      <Item value="ngay" priority="10" />
+    </ItemStatistics>
+    <ItemStatistics item="JavaScriptSpecificContextQualified">
+      <Item value="val" priority="46" />
+      <Item value="ready" priority="46" />
+      <Item value="highlight" priority="16" />
+      <Item value="trim" priority="27" />
+      <Item value="live" priority="18" />
+      <Item value="load" priority="8" />
+      <Item value="ajax" priority="8" />
+      <Item value="success" priority="8" />
+      <Item value="html" priority="8" />
+      <Item value="noConflict" priority="8" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:SimSoDepStore.tbl_SimSoDep_LoaiSim">
+      <Item value="Alias" priority="136" />
+      <Item value="MaLoaiSim" priority="163" />
+      <Item value="TenLoaiSim" priority="138" />
+      <Item value="EnumFixed" priority="83" />
+      <Item value="MoTa" priority="138" />
+      <Item value="tbl_SimSoDep_SimSo" priority="26" />
+      <Item value="Status" priority="54" />
+      <Item value="SapXep" priority="110" />
+      <Item value="MetaKeyword" priority="54" />
+      <Item value="MetaDescription" priority="54" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:SimSoDepStore.tbl_SimSoDep_SimSo">
+      <Item value="MaLoaiSim" priority="26" />
+      <Item value="SoDienThoai" priority="83" />
+      <Item value="GiaTien" priority="111" />
+      <Item value="tbl_SimSoDep_NhaMang" priority="55" />
+      <Item value="MaDauSo" priority="81" />
+      <Item value="MaNhaMang" priority="81" />
+      <Item value="MaLoaiDoDai" priority="26" />
+      <Item value="DinhDangHienThi" priority="82" />
+      <Item value="MaLoaiGia" priority="54" />
+      <Item value="tbl_SimSoDep_LoaiSim" priority="161" />
+      <Item value="MaDauSoChiTiet" priority="81" />
+      <Item value="tbl_SimSoDep_LoaiSimChiTiet" priority="54" />
+      <Item value="MaLoaiSimChiTiet" priority="81" />
+      <Item value="MaSoDienThoai" priority="82" />
+      <Item value="IdNguHanh" priority="26" />
+      <Item value="LoaiAmDuong" priority="26" />
+      <Item value="IdKinhDich" priority="26" />
+      <Item value="SoNuoc" priority="26" />
+      <Item value="GiaBanDau" priority="81" />
+      <Item value="tbl_SimSoDep_DaiLy" priority="77" />
+      <Item value="TrietKhau" priority="27" />
+      <Item value="MaDaiLy" priority="81" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Nullable`1">
+      <Item value="ToString`0" priority="55" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:SimSoDepStore.tbl_SimSoDep_NhaMang">
+      <Item value="TenNhaMang" priority="167" />
+      <Item value="MaNhaMang" priority="139" />
+      <Item value="TenMoTaDayDu" priority="79" />
+      <Item value="EnumFixed" priority="82" />
+      <Item value="MoTa" priority="27" />
+      <Item value="SapXep" priority="81" />
+      <Item value="Status" priority="108" />
+      <Item value="MetaDescription" priority="82" />
+      <Item value="MetaKeyword" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Web.Helpers.WebGrid">
+      <Item value="GetHtml`0" priority="53" />
+      <Item value="Column`0" priority="134" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.String">
+      <Item value="Length" priority="377" />
+      <Item value="Split`0" priority="107" />
+      <Item value="Trim`0" priority="134" />
+      <Item value="Replace`0" priority="80" />
+      <Item value="Substring`0" priority="353" />
+      <Item value="EndsWith`0" priority="53" />
+      <Item value="ToArray`1" priority="54" />
+      <Item value="Equals`0" priority="26" />
+      <Item value="Contains`0" priority="135" />
+      <Item value="LastIndexOf`0" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Web.Mvc.HtmlHelper`1">
+      <Item value="Partial`0" priority="243" />
+      <Item value="ActionLink`0" priority="53" />
+      <Item value="DropDownList`0" priority="188" />
+      <Item value="Display`0" priority="26" />
+      <Item value="DisplayFor`2" priority="26" />
+      <Item value="HiddenFor`2" priority="108" />
+      <Item value="TextAreaFor`2" priority="49" />
+      <Item value="RenderPartial`0" priority="27" />
+      <Item value="Action`0" priority="53" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:SimSoDep.DataBasesManager.ISimSoDepRepository">
+      <Item value="GetMenuNhaMang`0" priority="54" />
+      <Item value="GetListLoaiSimSo`0" priority="26" />
+      <Item value="GetDaiLyById`0" priority="26" />
+      <Item value="GetListDaiLy`0" priority="27" />
+      <Item value="GetBatQuaiById`0" priority="26" />
+      <Item value="DeleteBatQuai`0" priority="27" />
+      <Item value="GetListKinhDich`0" priority="26" />
+      <Item value="GetListBatQuai`0" priority="26" />
+      <Item value="SaveKinhDich`0" priority="26" />
+      <Item value="GetKinhDichById`0" priority="26" />
+      <Item value="DeleteKinhDich`0" priority="26" />
+      <Item value="GetListLoaiDauSo`0" priority="26" />
+      <Item value="GetListLoaiGia`0" priority="26" />
+      <Item value="GetTenLoaiSimChiTiet`0" priority="22" />
+      <Item value="CheckSo`0" priority="27" />
+      <Item value="GetListSimSo`0" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:SimSoDep.Models.LoaiSimModel">
+      <Item value="Id" priority="53" />
+      <Item value="Ten" priority="54" />
+      <Item value="Alias" priority="54" />
+      <Item value="EnumFixed" priority="165" />
+      <Item value="MoTa" priority="138" />
+      <Item value="Status" priority="81" />
+      <Item value="SapXep" priority="81" />
+      <Item value="TenStatus" priority="53" />
+      <Item value="MetaDescription" priority="54" />
+      <Item value="MetaKeyword" priority="54" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:SimSoDep.Models.NhaMangModel">
+      <Item value="TenDayDu" priority="54" />
+      <Item value="EnumFixed" priority="138" />
+      <Item value="Id" priority="26" />
+      <Item value="Alias" priority="27" />
+      <Item value="Ten" priority="27" />
+      <Item value="Status" priority="54" />
+      <Item value="SapXep" priority="54" />
+      <Item value="MetaKeyword" priority="54" />
+      <Item value="MetaDescription" priority="54" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:SimSoDepStore.tbl_SimSoDep_LoaiSimChiTiet">
+      <Item value="TenLoaiSimChiTiet" priority="114" />
+      <Item value="MaLoaiSimChiTiet" priority="168" />
+      <Item value="EnumFixed" priority="83" />
+      <Item value="MaLoaiSim" priority="55" />
+      <Item value="Status" priority="55" />
+      <Item value="SapXep" priority="55" />
+      <Item value="MetaDescription" priority="54" />
+      <Item value="MetaKeyword" priority="54" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:SimSoDep.Models.LoaiSimChiTietModel">
+      <Item value="EnumFixed" priority="165" />
+      <Item value="Id" priority="54" />
+      <Item value="Ten" priority="27" />
+      <Item value="MaLoaiSim" priority="109" />
+      <Item value="Alias" priority="27" />
+      <Item value="SapXep" priority="108" />
+      <Item value="Status" priority="82" />
+      <Item value="MetaKeyword" priority="54" />
+      <Item value="MetaDescription" priority="54" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:SimSoDepStore.tbl_SimSoDep_DauSo">
+      <Item value="TenDauSo" priority="114" />
+      <Item value="MaDauSo" priority="189" />
+      <Item value="MoTa" priority="81" />
+      <Item value="MaNhaMang" priority="81" />
+      <Item value="tbl_SimSoDep_NhaMang" priority="27" />
+      <Item value="Status" priority="110" />
+      <Item value="SapXep" priority="82" />
+      <Item value="MetaDescription" priority="54" />
+      <Item value="MetaKeyword" priority="54" />
+      <Item value="Alias" priority="27" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:SimSoDepStore.tbl_SimSoDep_LoaiGia">
+      <Item value="MaLoaiGia" priority="249" />
+      <Item value="TenLoaiGia" priority="113" />
+      <Item value="EnumFixed" priority="26" />
+      <Item value="Alias" priority="26" />
+      <Item value="GiaTu" priority="136" />
+      <Item value="Den" priority="163" />
+      <Item value="SapXep" priority="83" />
+      <Item value="Status" priority="109" />
+      <Item value="MetaDescription" priority="54" />
+      <Item value="MetaKeyword" priority="54" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Web.Mvc.FormMethod">
+      <Item value="Post" priority="53" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:SimSoDep.Models.DauSoModel">
+      <Item value="Id" priority="26" />
+      <Item value="EnumFixed" priority="27" />
+      <Item value="Alias" priority="27" />
+      <Item value="Ten" priority="27" />
+      <Item value="MoTa" priority="166" />
+      <Item value="MaNhaMang" priority="109" />
+      <Item value="Status" priority="138" />
+      <Item value="SapXep" priority="138" />
+      <Item value="MetaDescription" priority="82" />
+      <Item value="MetaKeyword" priority="82" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:SimSoDep.Models.LoaiGiaModel">
+      <Item value="Id" priority="76" />
+      <Item value="Ten" priority="54" />
+      <Item value="EnumFixed" priority="54" />
+      <Item value="Alias" priority="54" />
+      <Item value="GiaTu" priority="138" />
+      <Item value="Den" priority="138" />
+      <Item value="SapXep" priority="54" />
+      <Item value="Status" priority="54" />
+      <Item value="MetaDescription" priority="82" />
+      <Item value="MetaKeyword" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:SimSoDepStore.tbl_SimSoDep_DaiLy">
+      <Item value="MaDaiLy" priority="190" />
+      <Item value="TenDaiLy" priority="82" />
+      <Item value="DiDong" priority="81" />
+      <Item value="DiaChi" priority="54" />
+      <Item value="Email" priority="54" />
+      <Item value="MayBan" priority="26" />
+      <Item value="tbl_SimSoDep_TangThem" priority="107" />
+      <Item value="tbl_SimSoDep_DaiLyTrietKhau" priority="161" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:SimSoDep.Models.DaiLyModel">
+      <Item value="Ten" priority="54" />
+      <Item value="DiDong" priority="54" />
+      <Item value="DiaChi" priority="54" />
+      <Item value="Email" priority="54" />
+      <Item value="MayBan" priority="54" />
+      <Item value="Id" priority="107" />
+      <Item value="TrietKhaus" priority="26" />
+      <Item value="TangThems" priority="27" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Collections.Generic.ICollection`1">
+      <Item value="ToList`1" priority="53" />
+      <Item value="Add`0" priority="107" />
+      <Item value="Where`1" priority="26" />
+      <Item value="Count" priority="53" />
+      <Item value="ElementAt`1" priority="55" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Collections.Generic.List`1">
+      <Item value="Add`0" priority="294" />
+      <Item value="OrderBy`2" priority="26" />
+      <Item value="Where`1" priority="134" />
+      <Item value="Insert`0" priority="27" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:SimSoDepStore.tbl_SimSoDep_TangThem">
+      <Item value="MaDaiLy" priority="138" />
+      <Item value="Id" priority="166" />
+      <Item value="GiaTu" priority="137" />
+      <Item value="Den" priority="137" />
+      <Item value="TangThem" priority="137" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:SimSoDepStore.tbl_SimSoDep_DaiLyTrietKhau">
+      <Item value="TrietKhau" priority="133" />
+      <Item value="Id" priority="135" />
+      <Item value="Den" priority="162" />
+      <Item value="GiaTu" priority="108" />
+      <Item value="MaDaiLy" priority="54" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:SimSoDep.Models.TrietKhauModel">
+      <Item value="MaDaiLy" priority="163" />
+      <Item value="Id" priority="80" />
+      <Item value="Den" priority="54" />
+      <Item value="GiaTu" priority="54" />
+      <Item value="TrietKhau" priority="54" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.String">
+      <Item value="Format`0" priority="108" />
+      <Item value="IsNullOrEmpty`0" priority="111" />
+      <Item value="Empty" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:SimSoDep.Models.TangThemModel">
+      <Item value="Id" priority="80" />
+      <Item value="GiaTu" priority="54" />
+      <Item value="Den" priority="54" />
+      <Item value="TangThem" priority="54" />
+      <Item value="MaDaiLy" priority="54" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:SimSoDep.Models.ImportModel">
+      <Item value="ExcelFile" priority="26" />
+      <Item value="DaiLy" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:SimSoDep.Areas.Administrator.Models.SimSoDepBaseModels">
+      <Item value="SoDienThoai" priority="76" />
+      <Item value="GiaTien" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@SimSoDep.DataBasesManager.EnumVariable+DauSo">
+      <Item value="Dau090" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@SimSoDep.DataBasesManager.EnumVariable">
+      <Item value="NhaMang`0" priority="26" />
+      <Item value="DoDaiSo`0" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@SimSoDep.DataBasesManager.EnumVariable+NhaMang">
+      <Item value="SimSoDepMobifone" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@SimSoDep.DataBasesManager.EnumVariable+DoDaiSo">
+      <Item value="Dai10So" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@SimSoDep.DataBasesManager.DoDaiSo">
+      <Item value="Dai11So" priority="27" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Int64">
+      <Item value="Parse`0" priority="53" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@SimSoDep.DataBasesManager.LoaiSimSo">
+      <Item value="SimTuQuy" priority="49" />
+      <Item value="SimDacBiet" priority="27" />
+      <Item value="SimTamHoaDon" priority="27" />
+      <Item value="SimNguQuy" priority="27" />
+      <Item value="SimLucQuy" priority="22" />
+      <Item value="SimTienDon" priority="22" />
+      <Item value="SimTienGiua" priority="27" />
+      <Item value="SimTienDoi" priority="27" />
+      <Item value="SimTamHoaKep" priority="55" />
+      <Item value="SimKep" priority="55" />
+      <Item value="SimKepKhac" priority="27" />
+      <Item value="SimLap" priority="27" />
+      <Item value="SimLapKhac" priority="27" />
+      <Item value="SimTaxiLap2" priority="27" />
+      <Item value="SimTaxiLap3" priority="27" />
+      <Item value="SimDao" priority="55" />
+      <Item value="SimDoi" priority="27" />
+      <Item value="SimGiaRe" priority="83" />
+      <Item value="SimGanh" priority="27" />
+      <Item value="SimLocPhat" priority="27" />
+      <Item value="SimOngDia" priority="55" />
+      <Item value="SimThanTai" priority="27" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@SimSoDep.DataBasesManager.LoaiSimSoChiTiet">
+      <Item value="TuQuy0000" priority="54" />
+      <Item value="NhatNhatKhongNhi" priority="54" />
+      <Item value="BonMuaKhongThatBat" priority="55" />
+      <Item value="MotNamBonMuaLocPhat" priority="83" />
+      <Item value="MaiMaiKhongChet" priority="55" />
+      <Item value="KhongNamNaoThatBat" priority="55" />
+      <Item value="SinhTaiLocPhat" priority="55" />
+      <Item value="BanBeNeSo" priority="55" />
+      <Item value="SanBangTatCa" priority="55" />
+      <Item value="CaoHonNguoi" priority="55" />
+      <Item value="Tien4SoCuoi" priority="54" />
+      <Item value="TamHoa000" priority="55" />
+      <Item value="TamHoa111" priority="27" />
+      <Item value="TamHoa222" priority="55" />
+      <Item value="TamHoa333" priority="55" />
+      <Item value="TamHoa444" priority="55" />
+      <Item value="TamHoa555" priority="55" />
+      <Item value="TamHoa666" priority="55" />
+      <Item value="TamHoa777" priority="55" />
+      <Item value="TamHoa888" priority="55" />
+      <Item value="TamHoa999" priority="55" />
+      <Item value="Tien3SoCuoi" priority="55" />
+      <Item value="Tien5SoCuoi" priority="109" />
+      <Item value="Tien6SoCuoi" priority="83" />
+      <Item value="TienDacBiet" priority="55" />
+      <Item value="TienDoiKhac" priority="55" />
+      <Item value="TienGiuaChonLoc" priority="26" />
+      <Item value="TuQuy1111" priority="27" />
+      <Item value="TuQuy2222" priority="27" />
+      <Item value="TuQuy3333" priority="27" />
+      <Item value="TuQuy4444" priority="27" />
+      <Item value="TuQuy5555" priority="27" />
+      <Item value="TuQuy6666" priority="27" />
+      <Item value="TuQuy7777" priority="27" />
+      <Item value="TuQuy8888" priority="27" />
+      <Item value="TuQuy9999" priority="27" />
+      <Item value="TienDonKhac" priority="27" />
+      <Item value="Tieng2DuoiCuoi" priority="27" />
+      <Item value="Tien3DuoiCuoi" priority="27" />
+      <Item value="KepAABB" priority="27" />
+      <Item value="KepAABBAA" priority="27" />
+      <Item value="KepAABBAACC" priority="27" />
+      <Item value="KepAABBCC" priority="27" />
+      <Item value="KepAABBCCBB" priority="22" />
+      <Item value="KepAABBCCDD" priority="22" />
+      <Item value="KepAAXAAY" priority="27" />
+      <Item value="KepAAXBBY" priority="27" />
+      <Item value="KepAAXYAA" priority="27" />
+      <Item value="KepSaoAABBSao" priority="27" />
+      <Item value="LapABXABY" priority="27" />
+      <Item value="TaxiAABAAB" priority="27" />
+      <Item value="DaoDon" priority="27" />
+      <Item value="DaoKep" priority="27" />
+      <Item value="SimVip" priority="27" />
+      <Item value="TayTrangDiLen" priority="27" />
+      <Item value="KhongGapHan" priority="27" />
+      <Item value="MoiNamMoiLocMoiPhat" priority="55" />
+      <Item value="MotBuocLenTroi" priority="27" />
+      <Item value="MoiNamMotPhat" priority="27" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Int32">
+      <Item value="Parse`0" priority="188" />
+      <Item value="TryParse`0" priority="27" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@SimSoDep.DataBasesManager.SimSoHelper">
+      <Item value="CheckSoTien`0" priority="53" />
+      <Item value="CheckSimTuNguLucQuy`0" priority="26" />
+      <Item value="CheckSoTienDonDacBiet`0" priority="26" />
+      <Item value="CheckSoTienDonKhac`0" priority="27" />
+      <Item value="CheckSoTienGiua`0" priority="26" />
+      <Item value="CheckSoTienDoi`0" priority="53" />
+      <Item value="CheckSoTienDoiKhac`0" priority="26" />
+      <Item value="CheckTamHoaKep`0" priority="26" />
+      <Item value="CheckSoKepAABB`0" priority="53" />
+      <Item value="CheckSoKepAABBAA`0" priority="26" />
+      <Item value="CheckSoKepAABBAACC`0" priority="22" />
+      <Item value="CheckSoKepAABBCC`0" priority="22" />
+      <Item value="CheckSoKepAABBCCBB`0" priority="22" />
+      <Item value="CheckSoKepAABBCCDD`0" priority="22" />
+      <Item value="CheckSoKepAAXAAY`0" priority="22" />
+      <Item value="CheckSoKepAAXBBY`0" priority="22" />
+      <Item value="CheckSoKepAAXYAA`0" priority="22" />
+      <Item value="CheckSoKepABXABY`0" priority="22" />
+      <Item value="CheckSoKepSaoAABBSao`0" priority="26" />
+      <Item value="CheckSoLapABAB`0" priority="53" />
+      <Item value="CheckSoLapABXABY`0" priority="26" />
+      <Item value="CheckSoLapABXYAB`0" priority="22" />
+      <Item value="CheckSoLapAXBAYB`0" priority="22" />
+      <Item value="CheckSoLapSaoABABSao`0" priority="22" />
+      <Item value="CheckSoLapXABCYABC`0" priority="22" />
+      <Item value="CheckSoLapXABYAB`0" priority="22" />
+      <Item value="CheckTaxiLap2`0" priority="26" />
+      <Item value="CheckTaxi3AABAAB`0" priority="26" />
+      <Item value="CheckTaxi3ABAABA`0" priority="22" />
+      <Item value="CheckTaxi3ABCABC`0" priority="22" />
+      <Item value="CheckTaxi3BAABAA`0" priority="22" />
+      <Item value="CheckTaxi4AABBAABB`0" priority="22" />
+      <Item value="CheckTaxi4AABCAABC`0" priority="22" />
+      <Item value="CheckTaxi4ABBCABBC`0" priority="22" />
+      <Item value="CheckTaxi4ABCCABCC`0" priority="22" />
+      <Item value="CheckTaxi4ABCDABCD`0" priority="22" />
+      <Item value="CheckSimDaoABBA`0" priority="26" />
+      <Item value="CheckSimGanh`0" priority="26" />
+      <Item value="CheckNguHanh`0" priority="80" />
+      <Item value="CheckAmDuong`0" priority="80" />
+      <Item value="CheckQueDich`0" priority="80" />
+      <Item value="CheckSoSoAmSoSoDuong`0" priority="26" />
+      <Item value="CheckSoNuoc`0" priority="80" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Char">
+      <Item value="Equals`0" priority="27" />
+      <Item value="ToString`0" priority="296" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:SimSoDepStore.tbl_SimSoDep_SimSoLoaiSim">
+      <Item value="tbl_SimSoDep_SimSo" priority="56" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:SimSoDepStore.tbl_SimSoDep_LoaiSimChiTietSimSo">
+      <Item value="MaLoaiSimChiTiet" priority="27" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:SimSoDepStore.tbl_SimSoDep_BanMenh">
+      <Item value="IdBanMenh" priority="164" />
+      <Item value="IdNguHanh" priority="110" />
+      <Item value="MoTa" priority="82" />
+      <Item value="Nam" priority="109" />
+      <Item value="TenBanMenh" priority="82" />
+      <Item value="tbl_SimSoDep_NguHanh" priority="54" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:SimSoDepStore.tbl_SimSoDep_NguHanh">
+      <Item value="Ten" priority="136" />
+      <Item value="IdNguHanh" priority="81" />
+      <Item value="TuongKhac" priority="56" />
+      <Item value="MoTa" priority="27" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:SimSoDep.Models.NamSinhModel">
+      <Item value="IdNamSinh" priority="81" />
+      <Item value="IdNguHanh" priority="77" />
+      <Item value="Nam" priority="54" />
+      <Item value="TenBanMenh" priority="54" />
+      <Item value="MoTa" priority="54" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Web.Mvc.FormCollection">
+      <Item value="GetKey`0" priority="26" />
+      <Item value="GetValue`0" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Web.Mvc.ValueProviderResult">
+      <Item value="ConvertTo`0" priority="26" />
+      <Item value="RawValue" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Object">
+      <Item value="ToString`0" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:SimSoDepStore.tbl_SimSoDep_BatQuai">
+      <Item value="IdQueBatQuai" priority="136" />
+      <Item value="TenQue" priority="138" />
+      <Item value="HinhQue" priority="82" />
+      <Item value="PhienAm" priority="82" />
+      <Item value="MoTa" priority="82" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:SimSoDep.Models.BatQuaiModel">
+      <Item value="IdQueBatQuai" priority="108" />
+      <Item value="TenQue" priority="54" />
+      <Item value="HinhQue" priority="54" />
+      <Item value="PhienAm" priority="54" />
+      <Item value="MoTa" priority="54" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:SimSoDepStore.tbl_SimSoDep_KinhDich">
+      <Item value="HinhQue" priority="77" />
+      <Item value="TenQue" priority="136" />
+      <Item value="PhienAm" priority="54" />
+      <Item value="IdKinhDich" priority="189" />
+      <Item value="IdQueHa" priority="81" />
+      <Item value="IdQueThuong" priority="81" />
+      <Item value="LoiDich" priority="81" />
+      <Item value="YNghia" priority="27" />
+      <Item value="tbl_SimSoDep_BatQuai" priority="27" />
+      <Item value="tbl_SimSoDep_BatQuai1" priority="27" />
+      <Item value="LoaiQue" priority="136" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:SimSoDep.Models.KinhDichModel">
+      <Item value="IdKinhDich" priority="53" />
+      <Item value="HinhQue" priority="54" />
+      <Item value="IdQueHa" priority="81" />
+      <Item value="IdQueThuong" priority="81" />
+      <Item value="LoiDich" priority="54" />
+      <Item value="PhienAm" priority="54" />
+      <Item value="TenQue" priority="54" />
+      <Item value="YNghia" priority="27" />
+      <Item value="LoaiQue" priority="54" />
+      <Item value="IdLoaiQue" priority="109" />
+      <Item value="TenLoaiQue" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Math">
+      <Item value="Round`0" priority="53" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@SimSoDep.DataBasesManager.LoaiAmDuong">
+      <Item value="AmDuongLechThaiCuc" priority="54" />
+      <Item value="AmDuongCanBang" priority="49" />
+      <Item value="AmDuongLechNhieu" priority="82" />
+      <Item value="AmDuongGanCanBang" priority="50" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Double">
+      <Item value="Equals`0" priority="80" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Int32">
+      <Item value="ToString`0" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@SimSoDep.DataBasesManager.NguHanh">
+      <Item value="Moc" priority="137" />
+      <Item value="Tho" priority="139" />
+      <Item value="Kim" priority="110" />
+      <Item value="Hoa" priority="111" />
+      <Item value="Thuy" priority="55" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@SimSoDep.DataBasesManager.BatQuai">
+      <Item value="Can" priority="82" />
+      <Item value="Khon" priority="27" />
+      <Item value="Doai" priority="27" />
+      <Item value="Ly" priority="27" />
+      <Item value="Chan" priority="27" />
+      <Item value="Ton" priority="27" />
+      <Item value="Kham" priority="55" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Collections.Generic.IEnumerable`1">
+      <Item value="Select`2" priority="134" />
+      <Item value="First`1" priority="26" />
+      <Item value="FirstOrDefault`1" priority="220" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Web.Mvc.SelectList">
+      <Item value="ToList`1" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@SimSoDep.DataBasesManager.LoaiQue">
+      <Item value="Cat" priority="81" />
+      <Item value="Hung" priority="110" />
+      <Item value="KhongHungKhongCat" priority="111" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:SimSoDep.DataBasesManager.LoaiQue">
+      <Item value="ToString`0" priority="27" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@SimSoDep.DataBasesManager.DauSoStatus">
+      <Item value="HienThi" priority="162" />
+      <Item value="KhongHienThi" priority="53" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:SimSoDep.Models.TimKiemModel">
+      <Item value="SearchString" priority="135" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Data.Objects.ObjectResult`1">
+      <Item value="ToList`1" priority="26" />
+      <Item value="FirstOrDefault`1" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:SimSoDepStore.SearchSimSo_Result">
+      <Item value="SoDienThoai" priority="28" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.ComponentModel.DataAnnotations.DataType">
+      <Item value="PhoneNumber" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:SimSoDep.Models.KhachHangModel">
+      <Item value="SimSoModel" priority="82" />
+      <Item value="DiaChi" priority="27" />
+      <Item value="Email" priority="27" />
+      <Item value="SoDienThoai" priority="27" />
+      <Item value="GhiChu" priority="27" />
+      <Item value="TenKhachHang" priority="27" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:SimSoDep.Models.SimSoModel">
+      <Item value="SoDienThoai" priority="54" />
+      <Item value="GiaTien" priority="54" />
+      <Item value="MaSoDienThoai" priority="26" />
+      <Item value="NhaMang" priority="27" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Int64">
+      <Item value="ToString`0" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:SimSoDep.Models.PhongThuyModel">
+      <Item value="Nam" priority="26" />
+      <Item value="Thang" priority="26" />
+      <Item value="Ngay" priority="58" />
+      <Item value="SoDienThoai" priority="108" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:SimSoDep.Models.KetQuaPhongThuyModel">
+      <Item value="SoSoAm" priority="80" />
+      <Item value="SoSoDuong" priority="109" />
+      <Item value="LoaiAmDuong" priority="53" />
+      <Item value="LoaiQue" priority="81" />
+      <Item value="TenNguHanhSo" priority="81" />
+      <Item value="IdNguHanhSo" priority="107" />
+      <Item value="IdNguHanhNam" priority="107" />
+      <Item value="TenNguHanhNam" priority="54" />
+      <Item value="TenQue" priority="53" />
+      <Item value="HinhQue" priority="53" />
+      <Item value="YNghia" priority="81" />
+      <Item value="IsContainSo8" priority="53" />
+      <Item value="SoDienThoai" priority="107" />
+      <Item value="SoNuoc" priority="242" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Globalization.VietnameseCalendar">
+      <Item value="GetYearName`0" priority="26" />
+      <Item value="GetMonthName`0" priority="26" />
+      <Item value="GetDayName`0" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:SimSoDep.Areas.Administrator.Models.SimSoDaiLyModes">
+      <Item value="GiaTien" priority="26" />
+      <Item value="GiaDaiLy" priority="27" />
+      <Item value="DaiLyThuVe" priority="27" />
+      <Item value="MinhDuoc" priority="27" />
+      <Item value="DaiLyTrietKhau" priority="27" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:LinqToExcel.Cell">
+      <Item value="ToString`0" priority="27" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@SimSoDep.DataBasesManager.NhaMang">
+      <Item value="SimSoDepViettel" priority="26" />
+      <Item value="SimSoDepVinaphone" priority="26" />
+      <Item value="SimSoDepMobifone" priority="27" />
+      <Item value="SimSoDepVietnamobile" priority="27" />
+      <Item value="SimSoDepSfone" priority="26" />
+      <Item value="SimSoDepBeeline" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:SimSoDepStore.ThongKeSim_Result">
+      <Item value="Numbeeline" priority="27" />
+      <Item value="NumMobi" priority="27" />
+      <Item value="NumSfone" priority="27" />
+      <Item value="NumVietnam" priority="27" />
+      <Item value="NumViettel" priority="28" />
+      <Item value="NumVina" priority="27" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:SimSoDep.DataBasesManager.SimSoDepRepository">
+      <Item value="ThongKeSim`0" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@SimSoDep.Models.SessionManagerModel">
+      <Item value="Current" priority="26" />
+      <Item value="ThongKeSimSession" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:SimSoDep.Models.ThongKeSimModel">
+      <Item value="SimViettel" priority="26" />
+      <Item value="SimSfone" priority="53" />
+      <Item value="SimVina" priority="26" />
+      <Item value="SimVietnamMobi" priority="26" />
+      <Item value="SimBeeline" priority="26" />
+    </ItemStatistics>
+  </CompletionStatisticsManager>
+</Configuration>

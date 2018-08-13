@@ -1,0 +1,40 @@
+D:\WebExample\SimSoDep\SimSoDepDatabase\sql\debug\SimSoDepDatabase_Script.PreDeployment.sql
+D:\WebExample\SimSoDep\SimSoDepDatabase\sql\debug\SimSoDepDatabase_Script.PostDeployment.sql
+D:\WebExample\SimSoDep\SimSoDepDatabase\sql\debug\SimSoDepDatabase_Database.sqlsettings
+D:\WebExample\SimSoDep\SimSoDepDatabase\sql\debug\SimSoDepDatabase_Database.sqldeployment
+D:\WebExample\SimSoDep\SimSoDepDatabase\sql\debug\SimSoDepDatabase_Database.sqlcmdvars
+D:\WebExample\SimSoDep\SimSoDepDatabase\sql\debug\SimSoDepDatabase.deploymanifest
+D:\WebExample\SimSoDep\SimSoDepDatabase\sql\debug\SimSoDepDatabase.dbschema
+D:\WebExample\SimSoDep\SimSoDepDatabase\obj\Debug\SimSoDepDatabase.dbschema
+D:\WebExample\SimSoDep - Copy\SimSoDepDatabase\sql\debug\SimSoDepDatabase_Script.PreDeployment.sql
+D:\WebExample\SimSoDep - Copy\SimSoDepDatabase\sql\debug\SimSoDepDatabase_Script.PostDeployment.sql
+D:\WebExample\SimSoDep - Copy\SimSoDepDatabase\sql\debug\SimSoDepDatabase_Database.sqlsettings
+D:\WebExample\SimSoDep - Copy\SimSoDepDatabase\sql\debug\SimSoDepDatabase_Database.sqldeployment
+D:\WebExample\SimSoDep - Copy\SimSoDepDatabase\sql\debug\SimSoDepDatabase_Database.sqlcmdvars
+D:\WebExample\SimSoDep - Copy\SimSoDepDatabase\sql\debug\SimSoDepDatabase.deploymanifest
+D:\WebExample\SimSoDep - Copy\SimSoDepDatabase\sql\debug\SimSoDepDatabase.dbschema
+D:\WebExample\SimSoDep - Copy\SimSoDepDatabase\obj\Debug\SimSoDepDatabase.dbschema
+D:\WebExample\SimSoDepNewest\SimSoDepDatabase\sql\debug\SimSoDepDatabase_Script.PreDeployment.sql
+D:\WebExample\SimSoDepNewest\SimSoDepDatabase\sql\debug\SimSoDepDatabase_Script.PostDeployment.sql
+D:\WebExample\SimSoDepNewest\SimSoDepDatabase\sql\debug\SimSoDepDatabase_Database.sqlsettings
+D:\WebExample\SimSoDepNewest\SimSoDepDatabase\sql\debug\SimSoDepDatabase_Database.sqldeployment
+D:\WebExample\SimSoDepNewest\SimSoDepDatabase\sql\debug\SimSoDepDatabase_Database.sqlcmdvars
+D:\WebExample\SimSoDepNewest\SimSoDepDatabase\sql\debug\SimSoDepDatabase.deploymanifest
+D:\WebExample\SimSoDepNewest\SimSoDepDatabase\sql\debug\SimSoDepDatabase.dbschema
+D:\WebExample\SimSoDepNewest\SimSoDepDatabase\obj\Debug\SimSoDepDatabase.dbschema
+E:\Website\SimSoDepNewest\SimSoDepDatabase\sql\debug\SimSoDepDatabase_Script.PreDeployment.sql
+E:\Website\SimSoDepNewest\SimSoDepDatabase\sql\debug\SimSoDepDatabase_Script.PostDeployment.sql
+E:\Website\SimSoDepNewest\SimSoDepDatabase\sql\debug\SimSoDepDatabase_Database.sqlsettings
+E:\Website\SimSoDepNewest\SimSoDepDatabase\sql\debug\SimSoDepDatabase_Database.sqldeployment
+E:\Website\SimSoDepNewest\SimSoDepDatabase\sql\debug\SimSoDepDatabase_Database.sqlcmdvars
+E:\Website\SimSoDepNewest\SimSoDepDatabase\sql\debug\SimSoDepDatabase.deploymanifest
+E:\Website\SimSoDepNewest\SimSoDepDatabase\sql\debug\SimSoDepDatabase.dbschema
+E:\Website\SimSoDepNewest\SimSoDepDatabase\obj\Debug\SimSoDepDatabase.dbschema
+E:\simsodep\SimSoDepDatabase\sql\debug\SimSoDepDatabase_Script.PreDeployment.sql
+E:\simsodep\SimSoDepDatabase\sql\debug\SimSoDepDatabase_Script.PostDeployment.sql
+E:\simsodep\SimSoDepDatabase\sql\debug\SimSoDepDatabase_Database.sqlsettings
+E:\simsodep\SimSoDepDatabase\sql\debug\SimSoDepDatabase_Database.sqldeployment
+E:\simsodep\SimSoDepDatabase\sql\debug\SimSoDepDatabase_Database.sqlcmdvars
+E:\simsodep\SimSoDepDatabase\sql\debug\SimSoDepDatabase.deploymanifest
+E:\simsodep\SimSoDepDatabase\sql\debug\SimSoDepDatabase.dbschema
+E:\simsodep\SimSoDepDatabase\obj\Debug\SimSoDepDatabase.dbschema

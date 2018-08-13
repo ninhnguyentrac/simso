@@ -1,0 +1,95 @@
+﻿@model SimSoDep.Models.DaiLyModel
+@{
+    ViewBag.Title = "Edit";
+    var gridTrietKhau = new WebGrid(Model.TrietKhaus, rowsPerPage: 20);
+    var gridTangThem = new WebGrid(Model.TangThems, rowsPerPage: 20);
+}
+<h2>
+    Edit</h2>
+<script src="@Url.Content("~/Scripts/jquery.validate.min.js")" type="text/javascript"></script>
+<script src="@Url.Content("~/Scripts/jquery.validate.unobtrusive.min.js")" type="text/javascript"></script>
+@using (Html.BeginForm())
+{
+    @Html.ValidationSummary(true)
+    <fieldset>
+        <legend>DaiLyModel</legend>
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Ten)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Ten)
+            @Html.ValidationMessageFor(model => model.Ten)
+        </div>
+        <div class="editor-label">
+            @Html.LabelFor(model => model.DiDong)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.DiDong)
+            @Html.ValidationMessageFor(model => model.DiDong)
+        </div>
+        <div class="editor-label">
+            @Html.LabelFor(model => model.MayBan)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.MayBan)
+            @Html.ValidationMessageFor(model => model.MayBan)
+        </div>
+        <div class="editor-label">
+            @Html.LabelFor(model => model.DiaChi)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.DiaChi)
+            @Html.ValidationMessageFor(model => model.DiaChi)
+        </div>
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Email)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Email)
+            @Html.ValidationMessageFor(model => model.Email)
+        </div>
+        @Html.HiddenFor(model => model.Id)
+        <p>
+            <input type="submit" value="Save" />
+        </p>
+    </fieldset>
+}
+<fieldset>
+    <legend>Triết khấu</legend>
+    @Html.ActionLink("Thêm mới triết khấu", "AddTrietKhau", new { id = Model.Id })
+    @gridTrietKhau.GetHtml(columns: gridTrietKhau.Columns(
+                                    gridTrietKhau.Column("Id", "ID"),
+                                    gridTrietKhau.Column(columnName: "GiaTu", header: "Giá từ", format: @<text>@string.Format("{0:0,0}", item.GiaTu)</text>),
+                                    gridTrietKhau.Column(columnName: "Den", header: "Đến", format: @<text>@string.Format("{0:0,0}", item.Den)</text>),
+                                                                            gridTrietKhau.Column(columnName: "TrietKhau", header: "Triết khấu", format: @<text>@string.Format("{0}%", item.TrietKhau)</text>),
+                                                                                                                                                            gridTrietKhau.Column(columnName: "", header: "", format: (item) =>
+                                                                                                                                                            {
+                                                                                                                                                                var links = Html.ActionLink("Edit", "EditTrietKhau", new { controller = "DaiLyManager", id = item.Id }) + " | " +
+                                                                                                                                                                                Html.ActionLink("Delete", "DeleteTrietKhau", new { controller = "DaiLyManager", id = item.Id });
+
+                                                                                                                                                                return Html.Raw(links);
+
+                                                                                                                                                            })
+                                                                                                                                                   ))
+</fieldset>
+<fieldset>
+    <legend>Tăng Thêm</legend>
+    @Html.ActionLink("Thêm mới tăng thêm", "AddTangThem", new { id = Model.Id })
+    @gridTangThem.GetHtml(columns: gridTangThem.Columns(
+                                   gridTangThem.Column("Id", "ID"),
+                                   gridTangThem.Column(columnName: "GiaTu", header: "Giá từ", format: @<text>@string.Format("{0:0,0}", item.GiaTu)</text>),
+                                   gridTangThem.Column(columnName: "Den", header: "Đến", format: @<text>@string.Format("{0:0,0}", item.Den)</text>),
+                                   gridTangThem.Column(columnName: "TangThem", header: "Tăng Thêm", format: @<text>@string.Format("{0}%", item.TangThem)</text>),
+                                   gridTangThem.Column(columnName: "", header: "", format: (item) =>
+                                   {
+                                       var links = Html.ActionLink("Edit", "EditTangThem", new { controller = "DaiLyManager", id = item.Id }) + " | " +
+                                                       Html.ActionLink("Delete", "DeleteTangThem", new { controller = "DaiLyManager", id = item.Id });
+
+                                       return Html.Raw(links);
+
+                                   })
+                        ))
+</fieldset>
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>

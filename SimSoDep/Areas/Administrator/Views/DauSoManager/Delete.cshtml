@@ -1,0 +1,41 @@
+﻿@model SimSoDep.Models.DauSoModel
+@{
+    ViewBag.Title = "Delete";
+}
+<h2>
+    Delete</h2>
+<h3>
+    Are you sure you want to delete this?</h3>
+<fieldset>
+    <legend>DauSoModel</legend>
+    <div class="display-label">
+        Ten</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Ten)
+    </div>
+    <div class="display-label">
+        Alias</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Alias)
+    </div>
+    <div class="display-label">
+        EnumFixed</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.EnumFixed)
+    </div>
+
+    <div class="display-label">
+        Mo ta</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.MoTa)
+    </div>
+
+</fieldset>
+@using (Html.BeginForm("DeletePost", "DauSoManager", new { id = Model.Id }))
+{
+    <p>
+        <input type="submit" value="Delete" />
+        |
+        @Html.ActionLink("Back to List", "DauSo", "Catagory")
+    </p>
+}

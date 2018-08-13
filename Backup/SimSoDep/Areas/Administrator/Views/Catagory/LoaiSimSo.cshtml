@@ -1,0 +1,30 @@
+﻿@using SimSoDep.Models
+@model List<LoaiSimModel>
+@{
+    ViewBag.Title = "LoaiSimSo";
+    var grid = new WebGrid(Model, rowsPerPage: 20);
+}
+<h2>
+    Loại sim</h2>
+
+@Html.Partial("_CatagoryMenu")
+<div class="tableContent">
+@Html.ActionLink("Thêm loại sim số","Add","LoaiSimSoManager")
+    @grid.GetHtml(columns: grid.Columns(
+                             grid.Column("Id", "ID"),
+                             grid.Column("Ten", "Loại sim"),
+                                     grid.Column("SapXep", "Sắp xếp"),
+                                             grid.Column("TenStatus", "Status"),
+                             grid.Column("Alias", "Alias"),
+                             grid.Column("MoTa", "Mô tả"),
+                                             grid.Column("EnumFixed", "Enum data"),
+                                     grid.Column(columnName: "", header: "", format: (item) =>
+                                     {
+                                         var links = Html.ActionLink("Edit", "Edit", new {controller="LoaiSimSoManager", id = item.Id }) + " | " +
+                                                     Html.ActionLink("Delete", "Delete", new { controller = "LoaiSimSoManager", id = item.Id });
+
+                                         return Html.Raw(links);
+
+                                     })
+                       ))
+</div>

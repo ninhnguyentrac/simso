@@ -1,0 +1,2172 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="2.0" xmlns:edmx="http://schemas.microsoft.com/ado/2008/10/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="SimSoDepModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+        <EntityContainer Name="SimSoDepModelStoreContainer">
+          <EntitySet Name="tbl_Global_User" EntityType="SimSoDepModel.Store.tbl_Global_User" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="tbl_SimSoDep_BanMenh" EntityType="SimSoDepModel.Store.tbl_SimSoDep_BanMenh" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="tbl_SimSoDep_BatQuai" EntityType="SimSoDepModel.Store.tbl_SimSoDep_BatQuai" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="tbl_SimSoDep_ClientIp" EntityType="SimSoDepModel.Store.tbl_SimSoDep_ClientIp" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="tbl_SimSoDep_DaiLy" EntityType="SimSoDepModel.Store.tbl_SimSoDep_DaiLy" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="tbl_SimSoDep_DaiLyTrietKhau" EntityType="SimSoDepModel.Store.tbl_SimSoDep_DaiLyTrietKhau" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="tbl_SimSoDep_DatHang" EntityType="SimSoDepModel.Store.tbl_SimSoDep_DatHang" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="tbl_SimSoDep_DauSo" EntityType="SimSoDepModel.Store.tbl_SimSoDep_DauSo" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="tbl_SimSoDep_DauSoChiTiet" EntityType="SimSoDepModel.Store.tbl_SimSoDep_DauSoChiTiet" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="tbl_SimSoDep_KhachHang" EntityType="SimSoDepModel.Store.tbl_SimSoDep_KhachHang" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="tbl_SimSoDep_KinhDich" EntityType="SimSoDepModel.Store.tbl_SimSoDep_KinhDich" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="tbl_SimSoDep_LoaiDoDaiSo" EntityType="SimSoDepModel.Store.tbl_SimSoDep_LoaiDoDaiSo" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="tbl_SimSoDep_LoaiGia" EntityType="SimSoDepModel.Store.tbl_SimSoDep_LoaiGia" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="tbl_SimSoDep_LoaiSim" EntityType="SimSoDepModel.Store.tbl_SimSoDep_LoaiSim" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="tbl_SimSoDep_LoaiSimChiTiet" EntityType="SimSoDepModel.Store.tbl_SimSoDep_LoaiSimChiTiet" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="tbl_SimSoDep_LoaiSimChiTietSimSo" EntityType="SimSoDepModel.Store.tbl_SimSoDep_LoaiSimChiTietSimSo" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="tbl_SimSoDep_NguHanh" EntityType="SimSoDepModel.Store.tbl_SimSoDep_NguHanh" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="tbl_SimSoDep_NhaMang" EntityType="SimSoDepModel.Store.tbl_SimSoDep_NhaMang" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="tbl_SimSoDep_SimSo" EntityType="SimSoDepModel.Store.tbl_SimSoDep_SimSo" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="tbl_SimSoDep_SimSoLoaiSim" EntityType="SimSoDepModel.Store.tbl_SimSoDep_SimSoLoaiSim" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="tbl_SimSoDep_TangThem" EntityType="SimSoDepModel.Store.tbl_SimSoDep_TangThem" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="tbl_SimSoDep_TinhThanh" EntityType="SimSoDepModel.Store.tbl_SimSoDep_TinhThanh" store:Type="Tables" Schema="dbo" />
+          <AssociationSet Name="FK_DatHang_KhachHang" Association="SimSoDepModel.Store.FK_DatHang_KhachHang">
+            <End Role="tbl_SimSoDep_KhachHang" EntitySet="tbl_SimSoDep_KhachHang" />
+            <End Role="tbl_SimSoDep_DatHang" EntitySet="tbl_SimSoDep_DatHang" />
+          </AssociationSet>
+          <AssociationSet Name="FK_DatHang_SimSo" Association="SimSoDepModel.Store.FK_DatHang_SimSo">
+            <End Role="tbl_SimSoDep_SimSo" EntitySet="tbl_SimSoDep_SimSo" />
+            <End Role="tbl_SimSoDep_DatHang" EntitySet="tbl_SimSoDep_DatHang" />
+          </AssociationSet>
+          <AssociationSet Name="FK_DauSoChiTiet_DauSo" Association="SimSoDepModel.Store.FK_DauSoChiTiet_DauSo">
+            <End Role="tbl_SimSoDep_DauSo" EntitySet="tbl_SimSoDep_DauSo" />
+            <End Role="tbl_SimSoDep_DauSoChiTiet" EntitySet="tbl_SimSoDep_DauSoChiTiet" />
+          </AssociationSet>
+          <AssociationSet Name="FK_KhachHang_TinhThanh" Association="SimSoDepModel.Store.FK_KhachHang_TinhThanh">
+            <End Role="tbl_SimSoDep_TinhThanh" EntitySet="tbl_SimSoDep_TinhThanh" />
+            <End Role="tbl_SimSoDep_KhachHang" EntitySet="tbl_SimSoDep_KhachHang" />
+          </AssociationSet>
+          <AssociationSet Name="FK_LoaiSimChiTiet_LoaiSim" Association="SimSoDepModel.Store.FK_LoaiSimChiTiet_LoaiSim">
+            <End Role="tbl_SimSoDep_LoaiSim" EntitySet="tbl_SimSoDep_LoaiSim" />
+            <End Role="tbl_SimSoDep_LoaiSimChiTiet" EntitySet="tbl_SimSoDep_LoaiSimChiTiet" />
+          </AssociationSet>
+          <AssociationSet Name="FK_SimSo_DauSo" Association="SimSoDepModel.Store.FK_SimSo_DauSo">
+            <End Role="tbl_SimSoDep_DauSo" EntitySet="tbl_SimSoDep_DauSo" />
+            <End Role="tbl_SimSoDep_SimSo" EntitySet="tbl_SimSoDep_SimSo" />
+          </AssociationSet>
+          <AssociationSet Name="FK_SimSo_DauSoChiTiet" Association="SimSoDepModel.Store.FK_SimSo_DauSoChiTiet">
+            <End Role="tbl_SimSoDep_DauSoChiTiet" EntitySet="tbl_SimSoDep_DauSoChiTiet" />
+            <End Role="tbl_SimSoDep_SimSo" EntitySet="tbl_SimSoDep_SimSo" />
+          </AssociationSet>
+          <AssociationSet Name="FK_SimSo_LoaiDoDaiSo" Association="SimSoDepModel.Store.FK_SimSo_LoaiDoDaiSo">
+            <End Role="tbl_SimSoDep_LoaiDoDaiSo" EntitySet="tbl_SimSoDep_LoaiDoDaiSo" />
+            <End Role="tbl_SimSoDep_SimSo" EntitySet="tbl_SimSoDep_SimSo" />
+          </AssociationSet>
+          <AssociationSet Name="FK_SimSo_LoaiGia" Association="SimSoDepModel.Store.FK_SimSo_LoaiGia">
+            <End Role="tbl_SimSoDep_LoaiGia" EntitySet="tbl_SimSoDep_LoaiGia" />
+            <End Role="tbl_SimSoDep_SimSo" EntitySet="tbl_SimSoDep_SimSo" />
+          </AssociationSet>
+          <AssociationSet Name="FK_SimSo_NhaMang" Association="SimSoDepModel.Store.FK_SimSo_NhaMang">
+            <End Role="tbl_SimSoDep_NhaMang" EntitySet="tbl_SimSoDep_NhaMang" />
+            <End Role="tbl_SimSoDep_SimSo" EntitySet="tbl_SimSoDep_SimSo" />
+          </AssociationSet>
+          <AssociationSet Name="FK_SimSo_TinhThanh" Association="SimSoDepModel.Store.FK_SimSo_TinhThanh">
+            <End Role="tbl_SimSoDep_TinhThanh" EntitySet="tbl_SimSoDep_TinhThanh" />
+            <End Role="tbl_SimSoDep_SimSo" EntitySet="tbl_SimSoDep_SimSo" />
+          </AssociationSet>
+          <AssociationSet Name="FK_tbl_SimSoDep_BanMenh_tbl_SimSoDep_NguHanh" Association="SimSoDepModel.Store.FK_tbl_SimSoDep_BanMenh_tbl_SimSoDep_NguHanh">
+            <End Role="tbl_SimSoDep_NguHanh" EntitySet="tbl_SimSoDep_NguHanh" />
+            <End Role="tbl_SimSoDep_BanMenh" EntitySet="tbl_SimSoDep_BanMenh" />
+          </AssociationSet>
+          <AssociationSet Name="FK_tbl_SimSoDep_DaiLy_tbl_SimSoDep_TinhThanh" Association="SimSoDepModel.Store.FK_tbl_SimSoDep_DaiLy_tbl_SimSoDep_TinhThanh">
+            <End Role="tbl_SimSoDep_TinhThanh" EntitySet="tbl_SimSoDep_TinhThanh" />
+            <End Role="tbl_SimSoDep_DaiLy" EntitySet="tbl_SimSoDep_DaiLy" />
+          </AssociationSet>
+          <AssociationSet Name="FK_tbl_SimSoDep_DaiLyTrietKhau_tbl_SimSoDep_DaiLy" Association="SimSoDepModel.Store.FK_tbl_SimSoDep_DaiLyTrietKhau_tbl_SimSoDep_DaiLy">
+            <End Role="tbl_SimSoDep_DaiLy" EntitySet="tbl_SimSoDep_DaiLy" />
+            <End Role="tbl_SimSoDep_DaiLyTrietKhau" EntitySet="tbl_SimSoDep_DaiLyTrietKhau" />
+          </AssociationSet>
+          <AssociationSet Name="FK_tbl_SimSoDep_DauSo_tbl_SimSoDep_NhaMang" Association="SimSoDepModel.Store.FK_tbl_SimSoDep_DauSo_tbl_SimSoDep_NhaMang">
+            <End Role="tbl_SimSoDep_NhaMang" EntitySet="tbl_SimSoDep_NhaMang" />
+            <End Role="tbl_SimSoDep_DauSo" EntitySet="tbl_SimSoDep_DauSo" />
+          </AssociationSet>
+          <AssociationSet Name="FK_tbl_SimSoDep_DauSoChiTiet_tbl_SimSoDep_NhaMang" Association="SimSoDepModel.Store.FK_tbl_SimSoDep_DauSoChiTiet_tbl_SimSoDep_NhaMang">
+            <End Role="tbl_SimSoDep_NhaMang" EntitySet="tbl_SimSoDep_NhaMang" />
+            <End Role="tbl_SimSoDep_DauSoChiTiet" EntitySet="tbl_SimSoDep_DauSoChiTiet" />
+          </AssociationSet>
+          <AssociationSet Name="FK_tbl_SimSoDep_KinhDich_tbl_SimSoDep_BatQuai" Association="SimSoDepModel.Store.FK_tbl_SimSoDep_KinhDich_tbl_SimSoDep_BatQuai">
+            <End Role="tbl_SimSoDep_BatQuai" EntitySet="tbl_SimSoDep_BatQuai" />
+            <End Role="tbl_SimSoDep_KinhDich" EntitySet="tbl_SimSoDep_KinhDich" />
+          </AssociationSet>
+          <AssociationSet Name="FK_tbl_SimSoDep_KinhDich_tbl_SimSoDep_BatQuai1" Association="SimSoDepModel.Store.FK_tbl_SimSoDep_KinhDich_tbl_SimSoDep_BatQuai1">
+            <End Role="tbl_SimSoDep_BatQuai" EntitySet="tbl_SimSoDep_BatQuai" />
+            <End Role="tbl_SimSoDep_KinhDich" EntitySet="tbl_SimSoDep_KinhDich" />
+          </AssociationSet>
+          <AssociationSet Name="FK_tbl_SimSoDep_LoaiSimChiTietSimSo_tbl_SimSoDep_LoaiSimChiTiet" Association="SimSoDepModel.Store.FK_tbl_SimSoDep_LoaiSimChiTietSimSo_tbl_SimSoDep_LoaiSimChiTiet">
+            <End Role="tbl_SimSoDep_LoaiSimChiTiet" EntitySet="tbl_SimSoDep_LoaiSimChiTiet" />
+            <End Role="tbl_SimSoDep_LoaiSimChiTietSimSo" EntitySet="tbl_SimSoDep_LoaiSimChiTietSimSo" />
+          </AssociationSet>
+          <AssociationSet Name="FK_tbl_SimSoDep_LoaiSimChiTietSimSo_tbl_SimSoDep_SimSo" Association="SimSoDepModel.Store.FK_tbl_SimSoDep_LoaiSimChiTietSimSo_tbl_SimSoDep_SimSo">
+            <End Role="tbl_SimSoDep_SimSo" EntitySet="tbl_SimSoDep_SimSo" />
+            <End Role="tbl_SimSoDep_LoaiSimChiTietSimSo" EntitySet="tbl_SimSoDep_LoaiSimChiTietSimSo" />
+          </AssociationSet>
+          <AssociationSet Name="FK_tbl_SimSoDep_NguHanh_tbl_SimSoDep_NguHanh" Association="SimSoDepModel.Store.FK_tbl_SimSoDep_NguHanh_tbl_SimSoDep_NguHanh">
+            <End Role="tbl_SimSoDep_NguHanh" EntitySet="tbl_SimSoDep_NguHanh" />
+            <End Role="tbl_SimSoDep_NguHanh1" EntitySet="tbl_SimSoDep_NguHanh" />
+          </AssociationSet>
+          <AssociationSet Name="FK_tbl_SimSoDep_NguHanh_tbl_SimSoDep_NguHanh1" Association="SimSoDepModel.Store.FK_tbl_SimSoDep_NguHanh_tbl_SimSoDep_NguHanh1">
+            <End Role="tbl_SimSoDep_NguHanh" EntitySet="tbl_SimSoDep_NguHanh" />
+            <End Role="tbl_SimSoDep_NguHanh1" EntitySet="tbl_SimSoDep_NguHanh" />
+          </AssociationSet>
+          <AssociationSet Name="FK_tbl_SimSoDep_SimSo_tbl_SimSoDep_DaiLy" Association="SimSoDepModel.Store.FK_tbl_SimSoDep_SimSo_tbl_SimSoDep_DaiLy">
+            <End Role="tbl_SimSoDep_DaiLy" EntitySet="tbl_SimSoDep_DaiLy" />
+            <End Role="tbl_SimSoDep_SimSo" EntitySet="tbl_SimSoDep_SimSo" />
+          </AssociationSet>
+          <AssociationSet Name="FK_tbl_SimSoDep_SimSo_tbl_SimSoDep_KinhDich" Association="SimSoDepModel.Store.FK_tbl_SimSoDep_SimSo_tbl_SimSoDep_KinhDich">
+            <End Role="tbl_SimSoDep_KinhDich" EntitySet="tbl_SimSoDep_KinhDich" />
+            <End Role="tbl_SimSoDep_SimSo" EntitySet="tbl_SimSoDep_SimSo" />
+          </AssociationSet>
+          <AssociationSet Name="FK_tbl_SimSoDep_SimSo_tbl_SimSoDep_NguHanh" Association="SimSoDepModel.Store.FK_tbl_SimSoDep_SimSo_tbl_SimSoDep_NguHanh">
+            <End Role="tbl_SimSoDep_NguHanh" EntitySet="tbl_SimSoDep_NguHanh" />
+            <End Role="tbl_SimSoDep_SimSo" EntitySet="tbl_SimSoDep_SimSo" />
+          </AssociationSet>
+          <AssociationSet Name="FK_tbl_SimSoDep_SimSoLoaiSim_tbl_SimSoDep_LoaiSim" Association="SimSoDepModel.Store.FK_tbl_SimSoDep_SimSoLoaiSim_tbl_SimSoDep_LoaiSim">
+            <End Role="tbl_SimSoDep_LoaiSim" EntitySet="tbl_SimSoDep_LoaiSim" />
+            <End Role="tbl_SimSoDep_SimSoLoaiSim" EntitySet="tbl_SimSoDep_SimSoLoaiSim" />
+          </AssociationSet>
+          <AssociationSet Name="FK_tbl_SimSoDep_SimSoLoaiSim_tbl_SimSoDep_SimSo" Association="SimSoDepModel.Store.FK_tbl_SimSoDep_SimSoLoaiSim_tbl_SimSoDep_SimSo">
+            <End Role="tbl_SimSoDep_SimSo" EntitySet="tbl_SimSoDep_SimSo" />
+            <End Role="tbl_SimSoDep_SimSoLoaiSim" EntitySet="tbl_SimSoDep_SimSoLoaiSim" />
+          </AssociationSet>
+          <AssociationSet Name="FK_tbl_SimSoDep_TangThem_tbl_SimSoDep_DaiLy" Association="SimSoDepModel.Store.FK_tbl_SimSoDep_TangThem_tbl_SimSoDep_DaiLy">
+            <End Role="tbl_SimSoDep_DaiLy" EntitySet="tbl_SimSoDep_DaiLy" />
+            <End Role="tbl_SimSoDep_TangThem" EntitySet="tbl_SimSoDep_TangThem" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="tbl_Global_User">
+          <Key>
+            <PropertyRef Name="UserId" />
+          </Key>
+          <Property Name="UserId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="UserName" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="PassWord" Type="nvarchar" Nullable="false" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="tbl_SimSoDep_BanMenh">
+          <Key>
+            <PropertyRef Name="IdBanMenh" />
+          </Key>
+          <Property Name="IdBanMenh" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Nam" Type="int" Nullable="false" />
+          <Property Name="IdNguHanh" Type="int" Nullable="false" />
+          <Property Name="TenBanMenh" Type="nvarchar" MaxLength="100" />
+          <Property Name="MoTa" Type="nvarchar" MaxLength="200" />
+        </EntityType>
+        <EntityType Name="tbl_SimSoDep_BatQuai">
+          <Key>
+            <PropertyRef Name="IdQueBatQuai" />
+          </Key>
+          <Property Name="IdQueBatQuai" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="TenQue" Type="nvarchar" Nullable="false" MaxLength="100" />
+          <Property Name="HinhQue" Type="nvarchar" MaxLength="20" />
+          <Property Name="PhienAm" Type="nvarchar" MaxLength="50" />
+          <Property Name="MoTa" Type="nvarchar" MaxLength="500" />
+        </EntityType>
+        <EntityType Name="tbl_SimSoDep_ClientIp">
+          <Key>
+            <PropertyRef Name="IdClientIp" />
+          </Key>
+          <Property Name="IdClientIp" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="IpAddress" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="ViewTime" Type="datetime" />
+        </EntityType>
+        <EntityType Name="tbl_SimSoDep_DaiLy">
+          <Key>
+            <PropertyRef Name="MaDaiLy" />
+          </Key>
+          <Property Name="MaDaiLy" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="TenDaiLy" Type="nvarchar" MaxLength="200" />
+          <Property Name="DiDong" Type="nchar" MaxLength="15" />
+          <Property Name="MayBan" Type="nchar" MaxLength="15" />
+          <Property Name="DiaChi" Type="nvarchar" MaxLength="500" />
+          <Property Name="Email" Type="nvarchar" MaxLength="50" />
+          <Property Name="MaTinhThanh" Type="int" />
+        </EntityType>
+        <EntityType Name="tbl_SimSoDep_DaiLyTrietKhau">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="GiaTu" Type="bigint" />
+          <Property Name="Den" Type="bigint" />
+          <Property Name="TrietKhau" Type="int" />
+          <Property Name="MaDaiLy" Type="int" />
+        </EntityType>
+        <EntityType Name="tbl_SimSoDep_DatHang">
+          <Key>
+            <PropertyRef Name="MaDatHang" />
+          </Key>
+          <Property Name="MaDatHang" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="MaKhachHang" Type="int" Nullable="false" />
+          <Property Name="MaSoDienThoai" Type="bigint" Nullable="false" />
+          <Property Name="ThoiGian" Type="datetime" />
+        </EntityType>
+        <EntityType Name="tbl_SimSoDep_DauSo">
+          <Key>
+            <PropertyRef Name="MaDauSo" />
+          </Key>
+          <Property Name="MaDauSo" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="TenDauSo" Type="nvarchar" Nullable="false" MaxLength="100" />
+          <Property Name="MoTa" Type="nvarchar" MaxLength="150" />
+          <Property Name="Alias" Type="nvarchar" MaxLength="100" />
+          <Property Name="EnumFixed" Type="nvarchar" MaxLength="100" />
+          <Property Name="Status" Type="int" />
+          <Property Name="MaNhaMang" Type="int" />
+          <Property Name="SapXep" Type="int" />
+          <Property Name="MetaDescription" Type="ntext" />
+          <Property Name="MetaKeyword" Type="ntext" />
+        </EntityType>
+        <EntityType Name="tbl_SimSoDep_DauSoChiTiet">
+          <Key>
+            <PropertyRef Name="MaDauSoChiTiet" />
+          </Key>
+          <Property Name="MaDauSoChiTiet" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="MaDauSo" Type="int" />
+          <Property Name="TenDauSoChiTiet" Type="nvarchar" Nullable="false" MaxLength="200" />
+          <Property Name="MoTa" Type="nvarchar" MaxLength="300" />
+          <Property Name="EnumFixed" Type="nvarchar" MaxLength="100" />
+          <Property Name="MaNhaMang" Type="int" />
+          <Property Name="SapXep" Type="int" />
+          <Property Name="Status" Type="int" />
+          <Property Name="MetaDescription" Type="ntext" />
+          <Property Name="MetaKeyword" Type="ntext" />
+        </EntityType>
+        <EntityType Name="tbl_SimSoDep_KhachHang">
+          <Key>
+            <PropertyRef Name="MaKhachHang" />
+          </Key>
+          <Property Name="MaKhachHang" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="TenKhachHang" Type="nvarchar" MaxLength="300" />
+          <Property Name="DiaChi" Type="nvarchar" MaxLength="1000" />
+          <Property Name="SoDienThoai" Type="nchar" Nullable="false" MaxLength="15" />
+          <Property Name="Email" Type="nvarchar" MaxLength="30" />
+          <Property Name="MaTinhThanh" Type="int" />
+          <Property Name="GhiChu" Type="nvarchar(max)" />
+        </EntityType>
+        <EntityType Name="tbl_SimSoDep_KinhDich">
+          <Key>
+            <PropertyRef Name="IdKinhDich" />
+          </Key>
+          <Property Name="IdQueThuong" Type="int" Nullable="false" />
+          <Property Name="IdQueHa" Type="int" Nullable="false" />
+          <Property Name="TenQue" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="PhienAm" Type="nvarchar" MaxLength="50" />
+          <Property Name="LoiDich" Type="nvarchar" MaxLength="2000" />
+          <Property Name="YNghia" Type="nvarchar" MaxLength="3000" />
+          <Property Name="HinhQue" Type="nvarchar" MaxLength="50" />
+          <Property Name="IdKinhDich" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="LoaiQue" Type="int" />
+        </EntityType>
+        <EntityType Name="tbl_SimSoDep_LoaiDoDaiSo">
+          <Key>
+            <PropertyRef Name="MaLoaiDoDai" />
+          </Key>
+          <Property Name="MaLoaiDoDai" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="TenLoaiDoDai" Type="nvarchar" Nullable="false" MaxLength="100" />
+          <Property Name="MoTa" Type="nvarchar" MaxLength="150" />
+          <Property Name="Alias" Type="nvarchar" MaxLength="100" />
+          <Property Name="EnumFixed" Type="nvarchar" MaxLength="100" />
+          <Property Name="SapXep" Type="int" />
+          <Property Name="Status" Type="int" />
+          <Property Name="MetaDescription" Type="ntext" />
+          <Property Name="MetaKeyword" Type="ntext" />
+        </EntityType>
+        <EntityType Name="tbl_SimSoDep_LoaiGia">
+          <Key>
+            <PropertyRef Name="MaLoaiGia" />
+          </Key>
+          <Property Name="MaLoaiGia" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="TenLoaiGia" Type="nvarchar" Nullable="false" MaxLength="300" />
+          <Property Name="MoTa" Type="nvarchar" MaxLength="500" />
+          <Property Name="Alias" Type="nvarchar" MaxLength="100" />
+          <Property Name="EnumFixed" Type="nvarchar" MaxLength="100" />
+          <Property Name="GiaTu" Type="bigint" />
+          <Property Name="Den" Type="bigint" />
+          <Property Name="SapXep" Type="int" />
+          <Property Name="Status" Type="int" />
+          <Property Name="MetaDescription" Type="ntext" />
+          <Property Name="MetaKeyword" Type="ntext" />
+        </EntityType>
+        <EntityType Name="tbl_SimSoDep_LoaiSim">
+          <Key>
+            <PropertyRef Name="MaLoaiSim" />
+          </Key>
+          <Property Name="MaLoaiSim" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="TenLoaiSim" Type="nvarchar" Nullable="false" MaxLength="200" />
+          <Property Name="MoTa" Type="nvarchar" MaxLength="300" />
+          <Property Name="Alias" Type="nvarchar" MaxLength="100" />
+          <Property Name="EnumFixed" Type="nvarchar" MaxLength="100" />
+          <Property Name="Status" Type="int" />
+          <Property Name="SapXep" Type="int" />
+          <Property Name="MetaDescription" Type="ntext" />
+          <Property Name="MetaKeyword" Type="ntext" />
+        </EntityType>
+        <EntityType Name="tbl_SimSoDep_LoaiSimChiTiet">
+          <Key>
+            <PropertyRef Name="MaLoaiSimChiTiet" />
+          </Key>
+          <Property Name="MaLoaiSimChiTiet" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="MaLoaiSim" Type="int" Nullable="false" />
+          <Property Name="TenLoaiSimChiTiet" Type="nvarchar" Nullable="false" MaxLength="200" />
+          <Property Name="MoTa" Type="nvarchar" MaxLength="300" />
+          <Property Name="Alias" Type="nvarchar" MaxLength="100" />
+          <Property Name="EnumFixed" Type="nvarchar" MaxLength="100" />
+          <Property Name="SapXep" Type="int" />
+          <Property Name="Status" Type="int" />
+          <Property Name="MetaDescription" Type="ntext" />
+          <Property Name="MetaKeyword" Type="ntext" />
+        </EntityType>
+        <EntityType Name="tbl_SimSoDep_LoaiSimChiTietSimSo">
+          <Key>
+            <PropertyRef Name="MaLoaiSimChiTiet" />
+            <PropertyRef Name="MaSoDienThoai" />
+          </Key>
+          <Property Name="MaLoaiSimChiTiet" Type="int" Nullable="false" />
+          <Property Name="MaSoDienThoai" Type="bigint" Nullable="false" />
+          <Property Name="CreateDate" Type="datetime" />
+        </EntityType>
+        <EntityType Name="tbl_SimSoDep_NguHanh">
+          <Key>
+            <PropertyRef Name="IdNguHanh" />
+          </Key>
+          <Property Name="IdNguHanh" Type="int" Nullable="false" />
+          <Property Name="Ten" Type="nvarchar" MaxLength="50" />
+          <Property Name="TuongSinh" Type="int" />
+          <Property Name="TuongKhac" Type="int" />
+          <Property Name="MoTa" Type="nvarchar" MaxLength="1000" />
+        </EntityType>
+        <EntityType Name="tbl_SimSoDep_NhaMang">
+          <Key>
+            <PropertyRef Name="MaNhaMang" />
+          </Key>
+          <Property Name="MaNhaMang" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="TenNhaMang" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="TenMoTaDayDu" Type="nvarchar" MaxLength="150" />
+          <Property Name="MoTa" Type="nvarchar" MaxLength="200" />
+          <Property Name="Alias" Type="nvarchar" MaxLength="100" />
+          <Property Name="EnumFixed" Type="nvarchar" MaxLength="100" />
+          <Property Name="SapXep" Type="int" />
+          <Property Name="Status" Type="int" />
+          <Property Name="MetaDescription" Type="ntext" />
+          <Property Name="MetaKeyword" Type="ntext" />
+        </EntityType>
+        <EntityType Name="tbl_SimSoDep_SimSo">
+          <Key>
+            <PropertyRef Name="MaSoDienThoai" />
+          </Key>
+          <Property Name="MaSoDienThoai" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="SoDienThoai" Type="char" Nullable="false" MaxLength="15" />
+          <Property Name="DinhDangHienThi" Type="nvarchar" MaxLength="50" />
+          <Property Name="GiaTien" Type="bigint" />
+          <Property Name="TrangThaiBan" Type="bit" />
+          <Property Name="TrangThaiCuMoi" Type="bit" />
+          <Property Name="TrangThaiTonTai" Type="bit" />
+          <Property Name="MaNhaMang" Type="int" Nullable="false" />
+          <Property Name="MaLoaiDoDai" Type="int" />
+          <Property Name="MaDauSo" Type="int" />
+          <Property Name="MaDauSoChiTiet" Type="int" />
+          <Property Name="MaLoaiSim" Type="int" />
+          <Property Name="MaTinhThanh" Type="int" />
+          <Property Name="MaLoaiGia" Type="int" />
+          <Property Name="MaDaiLy" Type="int" />
+          <Property Name="TrietKhau" Type="int" />
+          <Property Name="IdNguHanh" Type="int" />
+          <Property Name="IdKinhDich" Type="int" />
+          <Property Name="LoaiAmDuong" Type="int" />
+          <Property Name="SoNuoc" Type="int" />
+          <Property Name="GiaBanDau" Type="bigint" />
+        </EntityType>
+        <EntityType Name="tbl_SimSoDep_SimSoLoaiSim">
+          <Key>
+            <PropertyRef Name="MaLoaiSim" />
+            <PropertyRef Name="MaSoDienThoai" />
+          </Key>
+          <Property Name="MaLoaiSim" Type="int" Nullable="false" />
+          <Property Name="MaSoDienThoai" Type="bigint" Nullable="false" />
+          <Property Name="CreateDate" Type="datetime" />
+        </EntityType>
+        <EntityType Name="tbl_SimSoDep_TangThem">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="GiaTu" Type="bigint" />
+          <Property Name="Den" Type="bigint" />
+          <Property Name="TangThem" Type="int" />
+          <Property Name="MaDaiLy" Type="int" />
+        </EntityType>
+        <EntityType Name="tbl_SimSoDep_TinhThanh">
+          <Key>
+            <PropertyRef Name="MaTinhThanh" />
+          </Key>
+          <Property Name="MaTinhThanh" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="TenTinhThanh" Type="nvarchar" MaxLength="300" />
+          <Property Name="MoTa" Type="nvarchar" MaxLength="500" />
+          <Property Name="Alias" Type="nvarchar" MaxLength="100" />
+          <Property Name="EnumFixed" Type="nvarchar" MaxLength="100" />
+          <Property Name="SapXep" Type="int" />
+          <Property Name="Status" Type="int" />
+          <Property Name="MetaDescription" Type="ntext" />
+          <Property Name="MetaKeyword" Type="ntext" />
+        </EntityType>
+        <Association Name="FK_DatHang_KhachHang">
+          <End Role="tbl_SimSoDep_KhachHang" Type="SimSoDepModel.Store.tbl_SimSoDep_KhachHang" Multiplicity="1" />
+          <End Role="tbl_SimSoDep_DatHang" Type="SimSoDepModel.Store.tbl_SimSoDep_DatHang" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tbl_SimSoDep_KhachHang">
+              <PropertyRef Name="MaKhachHang" />
+            </Principal>
+            <Dependent Role="tbl_SimSoDep_DatHang">
+              <PropertyRef Name="MaKhachHang" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_DatHang_SimSo">
+          <End Role="tbl_SimSoDep_SimSo" Type="SimSoDepModel.Store.tbl_SimSoDep_SimSo" Multiplicity="1" />
+          <End Role="tbl_SimSoDep_DatHang" Type="SimSoDepModel.Store.tbl_SimSoDep_DatHang" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tbl_SimSoDep_SimSo">
+              <PropertyRef Name="MaSoDienThoai" />
+            </Principal>
+            <Dependent Role="tbl_SimSoDep_DatHang">
+              <PropertyRef Name="MaSoDienThoai" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_DauSoChiTiet_DauSo">
+          <End Role="tbl_SimSoDep_DauSo" Type="SimSoDepModel.Store.tbl_SimSoDep_DauSo" Multiplicity="0..1" />
+          <End Role="tbl_SimSoDep_DauSoChiTiet" Type="SimSoDepModel.Store.tbl_SimSoDep_DauSoChiTiet" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tbl_SimSoDep_DauSo">
+              <PropertyRef Name="MaDauSo" />
+            </Principal>
+            <Dependent Role="tbl_SimSoDep_DauSoChiTiet">
+              <PropertyRef Name="MaDauSo" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_KhachHang_TinhThanh">
+          <End Role="tbl_SimSoDep_TinhThanh" Type="SimSoDepModel.Store.tbl_SimSoDep_TinhThanh" Multiplicity="0..1" />
+          <End Role="tbl_SimSoDep_KhachHang" Type="SimSoDepModel.Store.tbl_SimSoDep_KhachHang" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tbl_SimSoDep_TinhThanh">
+              <PropertyRef Name="MaTinhThanh" />
+            </Principal>
+            <Dependent Role="tbl_SimSoDep_KhachHang">
+              <PropertyRef Name="MaTinhThanh" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_LoaiSimChiTiet_LoaiSim">
+          <End Role="tbl_SimSoDep_LoaiSim" Type="SimSoDepModel.Store.tbl_SimSoDep_LoaiSim" Multiplicity="1" />
+          <End Role="tbl_SimSoDep_LoaiSimChiTiet" Type="SimSoDepModel.Store.tbl_SimSoDep_LoaiSimChiTiet" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tbl_SimSoDep_LoaiSim">
+              <PropertyRef Name="MaLoaiSim" />
+            </Principal>
+            <Dependent Role="tbl_SimSoDep_LoaiSimChiTiet">
+              <PropertyRef Name="MaLoaiSim" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_SimSo_DauSo">
+          <End Role="tbl_SimSoDep_DauSo" Type="SimSoDepModel.Store.tbl_SimSoDep_DauSo" Multiplicity="0..1" />
+          <End Role="tbl_SimSoDep_SimSo" Type="SimSoDepModel.Store.tbl_SimSoDep_SimSo" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tbl_SimSoDep_DauSo">
+              <PropertyRef Name="MaDauSo" />
+            </Principal>
+            <Dependent Role="tbl_SimSoDep_SimSo">
+              <PropertyRef Name="MaDauSo" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_SimSo_DauSoChiTiet">
+          <End Role="tbl_SimSoDep_DauSoChiTiet" Type="SimSoDepModel.Store.tbl_SimSoDep_DauSoChiTiet" Multiplicity="0..1" />
+          <End Role="tbl_SimSoDep_SimSo" Type="SimSoDepModel.Store.tbl_SimSoDep_SimSo" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tbl_SimSoDep_DauSoChiTiet">
+              <PropertyRef Name="MaDauSoChiTiet" />
+            </Principal>
+            <Dependent Role="tbl_SimSoDep_SimSo">
+              <PropertyRef Name="MaDauSoChiTiet" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_SimSo_LoaiDoDaiSo">
+          <End Role="tbl_SimSoDep_LoaiDoDaiSo" Type="SimSoDepModel.Store.tbl_SimSoDep_LoaiDoDaiSo" Multiplicity="0..1" />
+          <End Role="tbl_SimSoDep_SimSo" Type="SimSoDepModel.Store.tbl_SimSoDep_SimSo" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tbl_SimSoDep_LoaiDoDaiSo">
+              <PropertyRef Name="MaLoaiDoDai" />
+            </Principal>
+            <Dependent Role="tbl_SimSoDep_SimSo">
+              <PropertyRef Name="MaLoaiDoDai" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_SimSo_LoaiGia">
+          <End Role="tbl_SimSoDep_LoaiGia" Type="SimSoDepModel.Store.tbl_SimSoDep_LoaiGia" Multiplicity="0..1" />
+          <End Role="tbl_SimSoDep_SimSo" Type="SimSoDepModel.Store.tbl_SimSoDep_SimSo" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tbl_SimSoDep_LoaiGia">
+              <PropertyRef Name="MaLoaiGia" />
+            </Principal>
+            <Dependent Role="tbl_SimSoDep_SimSo">
+              <PropertyRef Name="MaLoaiGia" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_SimSo_NhaMang">
+          <End Role="tbl_SimSoDep_NhaMang" Type="SimSoDepModel.Store.tbl_SimSoDep_NhaMang" Multiplicity="1" />
+          <End Role="tbl_SimSoDep_SimSo" Type="SimSoDepModel.Store.tbl_SimSoDep_SimSo" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tbl_SimSoDep_NhaMang">
+              <PropertyRef Name="MaNhaMang" />
+            </Principal>
+            <Dependent Role="tbl_SimSoDep_SimSo">
+              <PropertyRef Name="MaNhaMang" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_SimSo_TinhThanh">
+          <End Role="tbl_SimSoDep_TinhThanh" Type="SimSoDepModel.Store.tbl_SimSoDep_TinhThanh" Multiplicity="0..1" />
+          <End Role="tbl_SimSoDep_SimSo" Type="SimSoDepModel.Store.tbl_SimSoDep_SimSo" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tbl_SimSoDep_TinhThanh">
+              <PropertyRef Name="MaTinhThanh" />
+            </Principal>
+            <Dependent Role="tbl_SimSoDep_SimSo">
+              <PropertyRef Name="MaTinhThanh" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_tbl_SimSoDep_BanMenh_tbl_SimSoDep_NguHanh">
+          <End Role="tbl_SimSoDep_NguHanh" Type="SimSoDepModel.Store.tbl_SimSoDep_NguHanh" Multiplicity="1" />
+          <End Role="tbl_SimSoDep_BanMenh" Type="SimSoDepModel.Store.tbl_SimSoDep_BanMenh" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tbl_SimSoDep_NguHanh">
+              <PropertyRef Name="IdNguHanh" />
+            </Principal>
+            <Dependent Role="tbl_SimSoDep_BanMenh">
+              <PropertyRef Name="IdNguHanh" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_tbl_SimSoDep_DaiLy_tbl_SimSoDep_TinhThanh">
+          <End Role="tbl_SimSoDep_TinhThanh" Type="SimSoDepModel.Store.tbl_SimSoDep_TinhThanh" Multiplicity="0..1" />
+          <End Role="tbl_SimSoDep_DaiLy" Type="SimSoDepModel.Store.tbl_SimSoDep_DaiLy" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tbl_SimSoDep_TinhThanh">
+              <PropertyRef Name="MaTinhThanh" />
+            </Principal>
+            <Dependent Role="tbl_SimSoDep_DaiLy">
+              <PropertyRef Name="MaTinhThanh" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_tbl_SimSoDep_DaiLyTrietKhau_tbl_SimSoDep_DaiLy">
+          <End Role="tbl_SimSoDep_DaiLy" Type="SimSoDepModel.Store.tbl_SimSoDep_DaiLy" Multiplicity="0..1" />
+          <End Role="tbl_SimSoDep_DaiLyTrietKhau" Type="SimSoDepModel.Store.tbl_SimSoDep_DaiLyTrietKhau" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tbl_SimSoDep_DaiLy">
+              <PropertyRef Name="MaDaiLy" />
+            </Principal>
+            <Dependent Role="tbl_SimSoDep_DaiLyTrietKhau">
+              <PropertyRef Name="MaDaiLy" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_tbl_SimSoDep_DauSo_tbl_SimSoDep_NhaMang">
+          <End Role="tbl_SimSoDep_NhaMang" Type="SimSoDepModel.Store.tbl_SimSoDep_NhaMang" Multiplicity="0..1" />
+          <End Role="tbl_SimSoDep_DauSo" Type="SimSoDepModel.Store.tbl_SimSoDep_DauSo" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tbl_SimSoDep_NhaMang">
+              <PropertyRef Name="MaNhaMang" />
+            </Principal>
+            <Dependent Role="tbl_SimSoDep_DauSo">
+              <PropertyRef Name="MaNhaMang" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_tbl_SimSoDep_DauSoChiTiet_tbl_SimSoDep_NhaMang">
+          <End Role="tbl_SimSoDep_NhaMang" Type="SimSoDepModel.Store.tbl_SimSoDep_NhaMang" Multiplicity="0..1" />
+          <End Role="tbl_SimSoDep_DauSoChiTiet" Type="SimSoDepModel.Store.tbl_SimSoDep_DauSoChiTiet" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tbl_SimSoDep_NhaMang">
+              <PropertyRef Name="MaNhaMang" />
+            </Principal>
+            <Dependent Role="tbl_SimSoDep_DauSoChiTiet">
+              <PropertyRef Name="MaNhaMang" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_tbl_SimSoDep_KinhDich_tbl_SimSoDep_BatQuai">
+          <End Role="tbl_SimSoDep_BatQuai" Type="SimSoDepModel.Store.tbl_SimSoDep_BatQuai" Multiplicity="1" />
+          <End Role="tbl_SimSoDep_KinhDich" Type="SimSoDepModel.Store.tbl_SimSoDep_KinhDich" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tbl_SimSoDep_BatQuai">
+              <PropertyRef Name="IdQueBatQuai" />
+            </Principal>
+            <Dependent Role="tbl_SimSoDep_KinhDich">
+              <PropertyRef Name="IdQueHa" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_tbl_SimSoDep_KinhDich_tbl_SimSoDep_BatQuai1">
+          <End Role="tbl_SimSoDep_BatQuai" Type="SimSoDepModel.Store.tbl_SimSoDep_BatQuai" Multiplicity="1" />
+          <End Role="tbl_SimSoDep_KinhDich" Type="SimSoDepModel.Store.tbl_SimSoDep_KinhDich" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tbl_SimSoDep_BatQuai">
+              <PropertyRef Name="IdQueBatQuai" />
+            </Principal>
+            <Dependent Role="tbl_SimSoDep_KinhDich">
+              <PropertyRef Name="IdQueThuong" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_tbl_SimSoDep_LoaiSimChiTietSimSo_tbl_SimSoDep_LoaiSimChiTiet">
+          <End Role="tbl_SimSoDep_LoaiSimChiTiet" Type="SimSoDepModel.Store.tbl_SimSoDep_LoaiSimChiTiet" Multiplicity="1" />
+          <End Role="tbl_SimSoDep_LoaiSimChiTietSimSo" Type="SimSoDepModel.Store.tbl_SimSoDep_LoaiSimChiTietSimSo" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tbl_SimSoDep_LoaiSimChiTiet">
+              <PropertyRef Name="MaLoaiSimChiTiet" />
+            </Principal>
+            <Dependent Role="tbl_SimSoDep_LoaiSimChiTietSimSo">
+              <PropertyRef Name="MaLoaiSimChiTiet" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_tbl_SimSoDep_LoaiSimChiTietSimSo_tbl_SimSoDep_SimSo">
+          <End Role="tbl_SimSoDep_SimSo" Type="SimSoDepModel.Store.tbl_SimSoDep_SimSo" Multiplicity="1" />
+          <End Role="tbl_SimSoDep_LoaiSimChiTietSimSo" Type="SimSoDepModel.Store.tbl_SimSoDep_LoaiSimChiTietSimSo" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tbl_SimSoDep_SimSo">
+              <PropertyRef Name="MaSoDienThoai" />
+            </Principal>
+            <Dependent Role="tbl_SimSoDep_LoaiSimChiTietSimSo">
+              <PropertyRef Name="MaSoDienThoai" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_tbl_SimSoDep_NguHanh_tbl_SimSoDep_NguHanh">
+          <End Role="tbl_SimSoDep_NguHanh" Type="SimSoDepModel.Store.tbl_SimSoDep_NguHanh" Multiplicity="0..1" />
+          <End Role="tbl_SimSoDep_NguHanh1" Type="SimSoDepModel.Store.tbl_SimSoDep_NguHanh" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tbl_SimSoDep_NguHanh">
+              <PropertyRef Name="IdNguHanh" />
+            </Principal>
+            <Dependent Role="tbl_SimSoDep_NguHanh1">
+              <PropertyRef Name="TuongSinh" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_tbl_SimSoDep_NguHanh_tbl_SimSoDep_NguHanh1">
+          <End Role="tbl_SimSoDep_NguHanh" Type="SimSoDepModel.Store.tbl_SimSoDep_NguHanh" Multiplicity="0..1" />
+          <End Role="tbl_SimSoDep_NguHanh1" Type="SimSoDepModel.Store.tbl_SimSoDep_NguHanh" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tbl_SimSoDep_NguHanh">
+              <PropertyRef Name="IdNguHanh" />
+            </Principal>
+            <Dependent Role="tbl_SimSoDep_NguHanh1">
+              <PropertyRef Name="TuongKhac" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_tbl_SimSoDep_SimSo_tbl_SimSoDep_DaiLy">
+          <End Role="tbl_SimSoDep_DaiLy" Type="SimSoDepModel.Store.tbl_SimSoDep_DaiLy" Multiplicity="0..1" />
+          <End Role="tbl_SimSoDep_SimSo" Type="SimSoDepModel.Store.tbl_SimSoDep_SimSo" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tbl_SimSoDep_DaiLy">
+              <PropertyRef Name="MaDaiLy" />
+            </Principal>
+            <Dependent Role="tbl_SimSoDep_SimSo">
+              <PropertyRef Name="MaDaiLy" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_tbl_SimSoDep_SimSo_tbl_SimSoDep_KinhDich">
+          <End Role="tbl_SimSoDep_KinhDich" Type="SimSoDepModel.Store.tbl_SimSoDep_KinhDich" Multiplicity="0..1" />
+          <End Role="tbl_SimSoDep_SimSo" Type="SimSoDepModel.Store.tbl_SimSoDep_SimSo" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tbl_SimSoDep_KinhDich">
+              <PropertyRef Name="IdKinhDich" />
+            </Principal>
+            <Dependent Role="tbl_SimSoDep_SimSo">
+              <PropertyRef Name="IdKinhDich" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_tbl_SimSoDep_SimSo_tbl_SimSoDep_NguHanh">
+          <End Role="tbl_SimSoDep_NguHanh" Type="SimSoDepModel.Store.tbl_SimSoDep_NguHanh" Multiplicity="0..1" />
+          <End Role="tbl_SimSoDep_SimSo" Type="SimSoDepModel.Store.tbl_SimSoDep_SimSo" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tbl_SimSoDep_NguHanh">
+              <PropertyRef Name="IdNguHanh" />
+            </Principal>
+            <Dependent Role="tbl_SimSoDep_SimSo">
+              <PropertyRef Name="IdNguHanh" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_tbl_SimSoDep_SimSoLoaiSim_tbl_SimSoDep_LoaiSim">
+          <End Role="tbl_SimSoDep_LoaiSim" Type="SimSoDepModel.Store.tbl_SimSoDep_LoaiSim" Multiplicity="1" />
+          <End Role="tbl_SimSoDep_SimSoLoaiSim" Type="SimSoDepModel.Store.tbl_SimSoDep_SimSoLoaiSim" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tbl_SimSoDep_LoaiSim">
+              <PropertyRef Name="MaLoaiSim" />
+            </Principal>
+            <Dependent Role="tbl_SimSoDep_SimSoLoaiSim">
+              <PropertyRef Name="MaLoaiSim" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_tbl_SimSoDep_SimSoLoaiSim_tbl_SimSoDep_SimSo">
+          <End Role="tbl_SimSoDep_SimSo" Type="SimSoDepModel.Store.tbl_SimSoDep_SimSo" Multiplicity="1" />
+          <End Role="tbl_SimSoDep_SimSoLoaiSim" Type="SimSoDepModel.Store.tbl_SimSoDep_SimSoLoaiSim" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tbl_SimSoDep_SimSo">
+              <PropertyRef Name="MaSoDienThoai" />
+            </Principal>
+            <Dependent Role="tbl_SimSoDep_SimSoLoaiSim">
+              <PropertyRef Name="MaSoDienThoai" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_tbl_SimSoDep_TangThem_tbl_SimSoDep_DaiLy">
+          <End Role="tbl_SimSoDep_DaiLy" Type="SimSoDepModel.Store.tbl_SimSoDep_DaiLy" Multiplicity="0..1" />
+          <End Role="tbl_SimSoDep_TangThem" Type="SimSoDepModel.Store.tbl_SimSoDep_TangThem" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tbl_SimSoDep_DaiLy">
+              <PropertyRef Name="MaDaiLy" />
+            </Principal>
+            <Dependent Role="tbl_SimSoDep_TangThem">
+              <PropertyRef Name="MaDaiLy" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Function Name="sp_GetListSoPhongThuy" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="LoaiQue" Type="int" Mode="In" />
+          <Parameter Name="NguHanh" Type="int" Mode="In" />
+          <Parameter Name="LoaiAmDuong" Type="int" Mode="In" />
+          <Parameter Name="LoaiAmDuong1" Type="int" Mode="In" />
+          <Parameter Name="SoNuoc" Type="int" Mode="In" />
+        </Function>
+        <Function Name="sp_SearchSimSo" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="SearchString" Type="nvarchar" Mode="In" />
+        </Function>
+        <Function Name="sp_ThongKeSim" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="SimVietttel" Type="int" Mode="In" />
+          <Parameter Name="SimVina" Type="int" Mode="In" />
+          <Parameter Name="SimMobi" Type="int" Mode="In" />
+          <Parameter Name="SimVietnam" Type="int" Mode="In" />
+          <Parameter Name="SimSfone" Type="int" Mode="In" />
+          <Parameter Name="SimBeeline" Type="int" Mode="In" />
+        </Function>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="SimSoDepModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+        <EntityContainer Name="SimSoDepEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="tbl_Global_User" EntityType="SimSoDepModel.tbl_Global_User" />
+          <EntitySet Name="tbl_SimSoDep_DaiLy" EntityType="SimSoDepModel.tbl_SimSoDep_DaiLy" />
+          <EntitySet Name="tbl_SimSoDep_DaiLyTrietKhau" EntityType="SimSoDepModel.tbl_SimSoDep_DaiLyTrietKhau" />
+          <EntitySet Name="tbl_SimSoDep_DatHang" EntityType="SimSoDepModel.tbl_SimSoDep_DatHang" />
+          <EntitySet Name="tbl_SimSoDep_DauSo" EntityType="SimSoDepModel.tbl_SimSoDep_DauSo" />
+          <EntitySet Name="tbl_SimSoDep_DauSoChiTiet" EntityType="SimSoDepModel.tbl_SimSoDep_DauSoChiTiet" />
+          <EntitySet Name="tbl_SimSoDep_KhachHang" EntityType="SimSoDepModel.tbl_SimSoDep_KhachHang" />
+          <EntitySet Name="tbl_SimSoDep_LoaiDoDaiSo" EntityType="SimSoDepModel.tbl_SimSoDep_LoaiDoDaiSo" />
+          <EntitySet Name="tbl_SimSoDep_LoaiGia" EntityType="SimSoDepModel.tbl_SimSoDep_LoaiGia" />
+          <EntitySet Name="tbl_SimSoDep_LoaiSim" EntityType="SimSoDepModel.tbl_SimSoDep_LoaiSim" />
+          <EntitySet Name="tbl_SimSoDep_LoaiSimChiTiet" EntityType="SimSoDepModel.tbl_SimSoDep_LoaiSimChiTiet" />
+          <EntitySet Name="tbl_SimSoDep_LoaiSimChiTietSimSo" EntityType="SimSoDepModel.tbl_SimSoDep_LoaiSimChiTietSimSo" />
+          <EntitySet Name="tbl_SimSoDep_NhaMang" EntityType="SimSoDepModel.tbl_SimSoDep_NhaMang" />
+          <EntitySet Name="tbl_SimSoDep_SimSo" EntityType="SimSoDepModel.tbl_SimSoDep_SimSo" />
+          <EntitySet Name="tbl_SimSoDep_SimSoLoaiSim" EntityType="SimSoDepModel.tbl_SimSoDep_SimSoLoaiSim" />
+          <EntitySet Name="tbl_SimSoDep_TangThem" EntityType="SimSoDepModel.tbl_SimSoDep_TangThem" />
+          <EntitySet Name="tbl_SimSoDep_TinhThanh" EntityType="SimSoDepModel.tbl_SimSoDep_TinhThanh" />
+          <AssociationSet Name="FK_tbl_SimSoDep_DaiLy_tbl_SimSoDep_TinhThanh" Association="SimSoDepModel.FK_tbl_SimSoDep_DaiLy_tbl_SimSoDep_TinhThanh">
+            <End Role="tbl_SimSoDep_TinhThanh" EntitySet="tbl_SimSoDep_TinhThanh" />
+            <End Role="tbl_SimSoDep_DaiLy" EntitySet="tbl_SimSoDep_DaiLy" />
+          </AssociationSet>
+          <AssociationSet Name="FK_tbl_SimSoDep_DaiLyTrietKhau_tbl_SimSoDep_DaiLy" Association="SimSoDepModel.FK_tbl_SimSoDep_DaiLyTrietKhau_tbl_SimSoDep_DaiLy">
+            <End Role="tbl_SimSoDep_DaiLy" EntitySet="tbl_SimSoDep_DaiLy" />
+            <End Role="tbl_SimSoDep_DaiLyTrietKhau" EntitySet="tbl_SimSoDep_DaiLyTrietKhau" />
+          </AssociationSet>
+          <AssociationSet Name="FK_tbl_SimSoDep_SimSo_tbl_SimSoDep_DaiLy" Association="SimSoDepModel.FK_tbl_SimSoDep_SimSo_tbl_SimSoDep_DaiLy">
+            <End Role="tbl_SimSoDep_DaiLy" EntitySet="tbl_SimSoDep_DaiLy" />
+            <End Role="tbl_SimSoDep_SimSo" EntitySet="tbl_SimSoDep_SimSo" />
+          </AssociationSet>
+          <AssociationSet Name="FK_tbl_SimSoDep_TangThem_tbl_SimSoDep_DaiLy" Association="SimSoDepModel.FK_tbl_SimSoDep_TangThem_tbl_SimSoDep_DaiLy">
+            <End Role="tbl_SimSoDep_DaiLy" EntitySet="tbl_SimSoDep_DaiLy" />
+            <End Role="tbl_SimSoDep_TangThem" EntitySet="tbl_SimSoDep_TangThem" />
+          </AssociationSet>
+          <AssociationSet Name="FK_DatHang_KhachHang" Association="SimSoDepModel.FK_DatHang_KhachHang">
+            <End Role="tbl_SimSoDep_KhachHang" EntitySet="tbl_SimSoDep_KhachHang" />
+            <End Role="tbl_SimSoDep_DatHang" EntitySet="tbl_SimSoDep_DatHang" />
+          </AssociationSet>
+          <AssociationSet Name="FK_DatHang_SimSo" Association="SimSoDepModel.FK_DatHang_SimSo">
+            <End Role="tbl_SimSoDep_SimSo" EntitySet="tbl_SimSoDep_SimSo" />
+            <End Role="tbl_SimSoDep_DatHang" EntitySet="tbl_SimSoDep_DatHang" />
+          </AssociationSet>
+          <AssociationSet Name="FK_DauSoChiTiet_DauSo" Association="SimSoDepModel.FK_DauSoChiTiet_DauSo">
+            <End Role="tbl_SimSoDep_DauSo" EntitySet="tbl_SimSoDep_DauSo" />
+            <End Role="tbl_SimSoDep_DauSoChiTiet" EntitySet="tbl_SimSoDep_DauSoChiTiet" />
+          </AssociationSet>
+          <AssociationSet Name="FK_SimSo_DauSo" Association="SimSoDepModel.FK_SimSo_DauSo">
+            <End Role="tbl_SimSoDep_DauSo" EntitySet="tbl_SimSoDep_DauSo" />
+            <End Role="tbl_SimSoDep_SimSo" EntitySet="tbl_SimSoDep_SimSo" />
+          </AssociationSet>
+          <AssociationSet Name="FK_tbl_SimSoDep_DauSo_tbl_SimSoDep_NhaMang" Association="SimSoDepModel.FK_tbl_SimSoDep_DauSo_tbl_SimSoDep_NhaMang">
+            <End Role="tbl_SimSoDep_NhaMang" EntitySet="tbl_SimSoDep_NhaMang" />
+            <End Role="tbl_SimSoDep_DauSo" EntitySet="tbl_SimSoDep_DauSo" />
+          </AssociationSet>
+          <AssociationSet Name="FK_SimSo_DauSoChiTiet" Association="SimSoDepModel.FK_SimSo_DauSoChiTiet">
+            <End Role="tbl_SimSoDep_DauSoChiTiet" EntitySet="tbl_SimSoDep_DauSoChiTiet" />
+            <End Role="tbl_SimSoDep_SimSo" EntitySet="tbl_SimSoDep_SimSo" />
+          </AssociationSet>
+          <AssociationSet Name="FK_tbl_SimSoDep_DauSoChiTiet_tbl_SimSoDep_NhaMang" Association="SimSoDepModel.FK_tbl_SimSoDep_DauSoChiTiet_tbl_SimSoDep_NhaMang">
+            <End Role="tbl_SimSoDep_NhaMang" EntitySet="tbl_SimSoDep_NhaMang" />
+            <End Role="tbl_SimSoDep_DauSoChiTiet" EntitySet="tbl_SimSoDep_DauSoChiTiet" />
+          </AssociationSet>
+          <AssociationSet Name="FK_KhachHang_TinhThanh" Association="SimSoDepModel.FK_KhachHang_TinhThanh">
+            <End Role="tbl_SimSoDep_TinhThanh" EntitySet="tbl_SimSoDep_TinhThanh" />
+            <End Role="tbl_SimSoDep_KhachHang" EntitySet="tbl_SimSoDep_KhachHang" />
+          </AssociationSet>
+          <AssociationSet Name="FK_SimSo_LoaiDoDaiSo" Association="SimSoDepModel.FK_SimSo_LoaiDoDaiSo">
+            <End Role="tbl_SimSoDep_LoaiDoDaiSo" EntitySet="tbl_SimSoDep_LoaiDoDaiSo" />
+            <End Role="tbl_SimSoDep_SimSo" EntitySet="tbl_SimSoDep_SimSo" />
+          </AssociationSet>
+          <AssociationSet Name="FK_SimSo_LoaiGia" Association="SimSoDepModel.FK_SimSo_LoaiGia">
+            <End Role="tbl_SimSoDep_LoaiGia" EntitySet="tbl_SimSoDep_LoaiGia" />
+            <End Role="tbl_SimSoDep_SimSo" EntitySet="tbl_SimSoDep_SimSo" />
+          </AssociationSet>
+          <AssociationSet Name="FK_LoaiSimChiTiet_LoaiSim" Association="SimSoDepModel.FK_LoaiSimChiTiet_LoaiSim">
+            <End Role="tbl_SimSoDep_LoaiSim" EntitySet="tbl_SimSoDep_LoaiSim" />
+            <End Role="tbl_SimSoDep_LoaiSimChiTiet" EntitySet="tbl_SimSoDep_LoaiSimChiTiet" />
+          </AssociationSet>
+          <AssociationSet Name="FK_tbl_SimSoDep_SimSoLoaiSim_tbl_SimSoDep_LoaiSim" Association="SimSoDepModel.FK_tbl_SimSoDep_SimSoLoaiSim_tbl_SimSoDep_LoaiSim">
+            <End Role="tbl_SimSoDep_LoaiSim" EntitySet="tbl_SimSoDep_LoaiSim" />
+            <End Role="tbl_SimSoDep_SimSoLoaiSim" EntitySet="tbl_SimSoDep_SimSoLoaiSim" />
+          </AssociationSet>
+          <AssociationSet Name="FK_tbl_SimSoDep_LoaiSimChiTietSimSo_tbl_SimSoDep_LoaiSimChiTiet" Association="SimSoDepModel.FK_tbl_SimSoDep_LoaiSimChiTietSimSo_tbl_SimSoDep_LoaiSimChiTiet">
+            <End Role="tbl_SimSoDep_LoaiSimChiTiet" EntitySet="tbl_SimSoDep_LoaiSimChiTiet" />
+            <End Role="tbl_SimSoDep_LoaiSimChiTietSimSo" EntitySet="tbl_SimSoDep_LoaiSimChiTietSimSo" />
+          </AssociationSet>
+          <AssociationSet Name="FK_tbl_SimSoDep_LoaiSimChiTietSimSo_tbl_SimSoDep_SimSo" Association="SimSoDepModel.FK_tbl_SimSoDep_LoaiSimChiTietSimSo_tbl_SimSoDep_SimSo">
+            <End Role="tbl_SimSoDep_SimSo" EntitySet="tbl_SimSoDep_SimSo" />
+            <End Role="tbl_SimSoDep_LoaiSimChiTietSimSo" EntitySet="tbl_SimSoDep_LoaiSimChiTietSimSo" />
+          </AssociationSet>
+          <AssociationSet Name="FK_SimSo_NhaMang" Association="SimSoDepModel.FK_SimSo_NhaMang">
+            <End Role="tbl_SimSoDep_NhaMang" EntitySet="tbl_SimSoDep_NhaMang" />
+            <End Role="tbl_SimSoDep_SimSo" EntitySet="tbl_SimSoDep_SimSo" />
+          </AssociationSet>
+          <AssociationSet Name="FK_SimSo_TinhThanh" Association="SimSoDepModel.FK_SimSo_TinhThanh">
+            <End Role="tbl_SimSoDep_TinhThanh" EntitySet="tbl_SimSoDep_TinhThanh" />
+            <End Role="tbl_SimSoDep_SimSo" EntitySet="tbl_SimSoDep_SimSo" />
+          </AssociationSet>
+          <AssociationSet Name="FK_tbl_SimSoDep_SimSoLoaiSim_tbl_SimSoDep_SimSo" Association="SimSoDepModel.FK_tbl_SimSoDep_SimSoLoaiSim_tbl_SimSoDep_SimSo">
+            <End Role="tbl_SimSoDep_SimSo" EntitySet="tbl_SimSoDep_SimSo" />
+            <End Role="tbl_SimSoDep_SimSoLoaiSim" EntitySet="tbl_SimSoDep_SimSoLoaiSim" />
+          </AssociationSet>
+          <EntitySet Name="tbl_SimSoDep_NguHanh" EntityType="SimSoDepModel.tbl_SimSoDep_NguHanh" />
+          <AssociationSet Name="FK_tbl_SimSoDep_NguHanh_tbl_SimSoDep_NguHanh" Association="SimSoDepModel.FK_tbl_SimSoDep_NguHanh_tbl_SimSoDep_NguHanh">
+            <End Role="tbl_SimSoDep_NguHanh" EntitySet="tbl_SimSoDep_NguHanh" />
+            <End Role="tbl_SimSoDep_NguHanh1" EntitySet="tbl_SimSoDep_NguHanh" />
+          </AssociationSet>
+          <AssociationSet Name="FK_tbl_SimSoDep_NguHanh_tbl_SimSoDep_NguHanh1" Association="SimSoDepModel.FK_tbl_SimSoDep_NguHanh_tbl_SimSoDep_NguHanh1">
+            <End Role="tbl_SimSoDep_NguHanh" EntitySet="tbl_SimSoDep_NguHanh" />
+            <End Role="tbl_SimSoDep_NguHanh1" EntitySet="tbl_SimSoDep_NguHanh" />
+          </AssociationSet>
+          <EntitySet Name="tbl_SimSoDep_BanMenh" EntityType="SimSoDepModel.tbl_SimSoDep_BanMenh" />
+          <AssociationSet Name="FK_tbl_SimSoDep_BanMenh_tbl_SimSoDep_NguHanh" Association="SimSoDepModel.FK_tbl_SimSoDep_BanMenh_tbl_SimSoDep_NguHanh">
+            <End Role="tbl_SimSoDep_NguHanh" EntitySet="tbl_SimSoDep_NguHanh" />
+            <End Role="tbl_SimSoDep_BanMenh" EntitySet="tbl_SimSoDep_BanMenh" />
+          </AssociationSet>
+          <EntitySet Name="tbl_SimSoDep_BatQuai" EntityType="SimSoDepModel.tbl_SimSoDep_BatQuai" />
+          <EntitySet Name="tbl_SimSoDep_KinhDich" EntityType="SimSoDepModel.tbl_SimSoDep_KinhDich" />
+          <AssociationSet Name="FK_tbl_SimSoDep_KinhDich_tbl_SimSoDep_BatQuai" Association="SimSoDepModel.FK_tbl_SimSoDep_KinhDich_tbl_SimSoDep_BatQuai">
+            <End Role="tbl_SimSoDep_BatQuai" EntitySet="tbl_SimSoDep_BatQuai" />
+            <End Role="tbl_SimSoDep_KinhDich" EntitySet="tbl_SimSoDep_KinhDich" />
+          </AssociationSet>
+          <AssociationSet Name="FK_tbl_SimSoDep_KinhDich_tbl_SimSoDep_BatQuai1" Association="SimSoDepModel.FK_tbl_SimSoDep_KinhDich_tbl_SimSoDep_BatQuai1">
+            <End Role="tbl_SimSoDep_BatQuai" EntitySet="tbl_SimSoDep_BatQuai" />
+            <End Role="tbl_SimSoDep_KinhDich" EntitySet="tbl_SimSoDep_KinhDich" />
+          </AssociationSet>
+          <AssociationSet Name="FK_tbl_SimSoDep_SimSo_tbl_SimSoDep_KinhDich" Association="SimSoDepModel.FK_tbl_SimSoDep_SimSo_tbl_SimSoDep_KinhDich">
+            <End Role="tbl_SimSoDep_KinhDich" EntitySet="tbl_SimSoDep_KinhDich" />
+            <End Role="tbl_SimSoDep_SimSo" EntitySet="tbl_SimSoDep_SimSo" />
+          </AssociationSet>
+          <AssociationSet Name="FK_tbl_SimSoDep_SimSo_tbl_SimSoDep_NguHanh" Association="SimSoDepModel.FK_tbl_SimSoDep_SimSo_tbl_SimSoDep_NguHanh">
+            <End Role="tbl_SimSoDep_NguHanh" EntitySet="tbl_SimSoDep_NguHanh" />
+            <End Role="tbl_SimSoDep_SimSo" EntitySet="tbl_SimSoDep_SimSo" />
+          </AssociationSet>
+          <FunctionImport Name="SearchSimSo" ReturnType="Collection(SimSoDepModel.SearchSimSo_Result)">
+          <Parameter Name="SearchString" Mode="In" Type="String" />
+          </FunctionImport>
+          <EntitySet Name="tbl_SimSoDep_ClientIp" EntityType="SimSoDepModel.tbl_SimSoDep_ClientIp" />
+          <FunctionImport Name="ThongKeSim" ReturnType="Collection(SimSoDepModel.ThongKeSim_Result)">
+            <Parameter Name="SimVietttel" Mode="In" Type="Int32" />
+            <Parameter Name="SimVina" Mode="In" Type="Int32" />
+            <Parameter Name="SimMobi" Mode="In" Type="Int32" />
+            <Parameter Name="SimVietnam" Mode="In" Type="Int32" />
+            <Parameter Name="SimSfone" Mode="In" Type="Int32" />
+            <Parameter Name="SimBeeline" Mode="In" Type="Int32" />
+          </FunctionImport>
+          </EntityContainer>
+        <EntityType Name="tbl_Global_User">
+          <Key>
+            <PropertyRef Name="UserId" />
+          </Key>
+          <Property Type="Int32" Name="UserId" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="String" Name="UserName" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="PassWord" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="tbl_SimSoDep_DaiLy">
+          <Key>
+            <PropertyRef Name="MaDaiLy" />
+          </Key>
+          <Property Type="Int32" Name="MaDaiLy" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="String" Name="TenDaiLy" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="DiDong" MaxLength="15" FixedLength="true" Unicode="true" />
+          <Property Type="String" Name="MayBan" MaxLength="15" FixedLength="true" Unicode="true" />
+          <Property Type="String" Name="DiaChi" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Email" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="Int32" Name="MaTinhThanh" />
+          <NavigationProperty Name="tbl_SimSoDep_TinhThanh" Relationship="SimSoDepModel.FK_tbl_SimSoDep_DaiLy_tbl_SimSoDep_TinhThanh" FromRole="tbl_SimSoDep_DaiLy" ToRole="tbl_SimSoDep_TinhThanh" />
+          <NavigationProperty Name="tbl_SimSoDep_DaiLyTrietKhau" Relationship="SimSoDepModel.FK_tbl_SimSoDep_DaiLyTrietKhau_tbl_SimSoDep_DaiLy" FromRole="tbl_SimSoDep_DaiLy" ToRole="tbl_SimSoDep_DaiLyTrietKhau" />
+          <NavigationProperty Name="tbl_SimSoDep_SimSo" Relationship="SimSoDepModel.FK_tbl_SimSoDep_SimSo_tbl_SimSoDep_DaiLy" FromRole="tbl_SimSoDep_DaiLy" ToRole="tbl_SimSoDep_SimSo" />
+          <NavigationProperty Name="tbl_SimSoDep_TangThem" Relationship="SimSoDepModel.FK_tbl_SimSoDep_TangThem_tbl_SimSoDep_DaiLy" FromRole="tbl_SimSoDep_DaiLy" ToRole="tbl_SimSoDep_TangThem" />
+        </EntityType>
+        <EntityType Name="tbl_SimSoDep_DaiLyTrietKhau">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Type="Int32" Name="Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="Int64" Name="GiaTu" />
+          <Property Type="Int64" Name="Den" />
+          <Property Type="Int32" Name="TrietKhau" />
+          <Property Type="Int32" Name="MaDaiLy" />
+          <NavigationProperty Name="tbl_SimSoDep_DaiLy" Relationship="SimSoDepModel.FK_tbl_SimSoDep_DaiLyTrietKhau_tbl_SimSoDep_DaiLy" FromRole="tbl_SimSoDep_DaiLyTrietKhau" ToRole="tbl_SimSoDep_DaiLy" />
+        </EntityType>
+        <EntityType Name="tbl_SimSoDep_DatHang">
+          <Key>
+            <PropertyRef Name="MaDatHang" />
+          </Key>
+          <Property Type="Int32" Name="MaDatHang" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="Int32" Name="MaKhachHang" Nullable="false" />
+          <Property Type="Int64" Name="MaSoDienThoai" Nullable="false" />
+          <NavigationProperty Name="tbl_SimSoDep_KhachHang" Relationship="SimSoDepModel.FK_DatHang_KhachHang" FromRole="tbl_SimSoDep_DatHang" ToRole="tbl_SimSoDep_KhachHang" />
+          <NavigationProperty Name="tbl_SimSoDep_SimSo" Relationship="SimSoDepModel.FK_DatHang_SimSo" FromRole="tbl_SimSoDep_DatHang" ToRole="tbl_SimSoDep_SimSo" />
+          <Property Type="DateTime" Name="ThoiGian" />
+        </EntityType>
+        <EntityType Name="tbl_SimSoDep_DauSo">
+          <Key>
+            <PropertyRef Name="MaDauSo" />
+          </Key>
+          <Property Type="Int32" Name="MaDauSo" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="String" Name="TenDauSo" Nullable="false" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="MoTa" MaxLength="150" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Alias" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="EnumFixed" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Type="Int32" Name="Status" />
+          <Property Type="Int32" Name="MaNhaMang" />
+          <NavigationProperty Name="tbl_SimSoDep_DauSoChiTiet" Relationship="SimSoDepModel.FK_DauSoChiTiet_DauSo" FromRole="tbl_SimSoDep_DauSo" ToRole="tbl_SimSoDep_DauSoChiTiet" />
+          <NavigationProperty Name="tbl_SimSoDep_SimSo" Relationship="SimSoDepModel.FK_SimSo_DauSo" FromRole="tbl_SimSoDep_DauSo" ToRole="tbl_SimSoDep_SimSo" />
+          <NavigationProperty Name="tbl_SimSoDep_NhaMang" Relationship="SimSoDepModel.FK_tbl_SimSoDep_DauSo_tbl_SimSoDep_NhaMang" FromRole="tbl_SimSoDep_DauSo" ToRole="tbl_SimSoDep_NhaMang" />
+          <Property Type="Int32" Name="SapXep" />
+          <Property Type="String" Name="MetaDescription" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="MetaKeyword" MaxLength="Max" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="tbl_SimSoDep_DauSoChiTiet">
+          <Key>
+            <PropertyRef Name="MaDauSoChiTiet" />
+          </Key>
+          <Property Type="Int32" Name="MaDauSoChiTiet" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="Int32" Name="MaDauSo" />
+          <Property Type="String" Name="TenDauSoChiTiet" Nullable="false" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="MoTa" MaxLength="300" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="EnumFixed" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Type="Int32" Name="MaNhaMang" />
+          <NavigationProperty Name="tbl_SimSoDep_DauSo" Relationship="SimSoDepModel.FK_DauSoChiTiet_DauSo" FromRole="tbl_SimSoDep_DauSoChiTiet" ToRole="tbl_SimSoDep_DauSo" />
+          <NavigationProperty Name="tbl_SimSoDep_SimSo" Relationship="SimSoDepModel.FK_SimSo_DauSoChiTiet" FromRole="tbl_SimSoDep_DauSoChiTiet" ToRole="tbl_SimSoDep_SimSo" />
+          <NavigationProperty Name="tbl_SimSoDep_NhaMang" Relationship="SimSoDepModel.FK_tbl_SimSoDep_DauSoChiTiet_tbl_SimSoDep_NhaMang" FromRole="tbl_SimSoDep_DauSoChiTiet" ToRole="tbl_SimSoDep_NhaMang" />
+          <Property Type="Int32" Name="SapXep" />
+          <Property Type="Int32" Name="Status" />
+          <Property Type="String" Name="MetaDescription" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="MetaKeyword" MaxLength="Max" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="tbl_SimSoDep_KhachHang">
+          <Key>
+            <PropertyRef Name="MaKhachHang" />
+          </Key>
+          <Property Type="Int32" Name="MaKhachHang" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="String" Name="TenKhachHang" MaxLength="300" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="DiaChi" MaxLength="1000" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="SoDienThoai" Nullable="false" MaxLength="15" FixedLength="true" Unicode="true" />
+          <Property Type="String" Name="Email" MaxLength="30" FixedLength="false" Unicode="true" />
+          <Property Type="Int32" Name="MaTinhThanh" />
+          <NavigationProperty Name="tbl_SimSoDep_DatHang" Relationship="SimSoDepModel.FK_DatHang_KhachHang" FromRole="tbl_SimSoDep_KhachHang" ToRole="tbl_SimSoDep_DatHang" />
+          <NavigationProperty Name="tbl_SimSoDep_TinhThanh" Relationship="SimSoDepModel.FK_KhachHang_TinhThanh" FromRole="tbl_SimSoDep_KhachHang" ToRole="tbl_SimSoDep_TinhThanh" />
+          <Property Type="String" Name="GhiChu" MaxLength="Max" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="tbl_SimSoDep_LoaiDoDaiSo">
+          <Key>
+            <PropertyRef Name="MaLoaiDoDai" />
+          </Key>
+          <Property Type="Int32" Name="MaLoaiDoDai" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="String" Name="TenLoaiDoDai" Nullable="false" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="MoTa" MaxLength="150" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Alias" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="EnumFixed" MaxLength="100" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="tbl_SimSoDep_SimSo" Relationship="SimSoDepModel.FK_SimSo_LoaiDoDaiSo" FromRole="tbl_SimSoDep_LoaiDoDaiSo" ToRole="tbl_SimSoDep_SimSo" />
+          <Property Type="Int32" Name="SapXep" />
+          <Property Type="Int32" Name="Status" />
+          <Property Type="String" Name="MetaDescription" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="MetaKeyword" MaxLength="Max" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="tbl_SimSoDep_LoaiGia">
+          <Key>
+            <PropertyRef Name="MaLoaiGia" />
+          </Key>
+          <Property Type="Int32" Name="MaLoaiGia" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="String" Name="TenLoaiGia" Nullable="false" MaxLength="300" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="MoTa" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Alias" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="EnumFixed" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Type="Int64" Name="GiaTu" />
+          <Property Type="Int64" Name="Den" />
+          <NavigationProperty Name="tbl_SimSoDep_SimSo" Relationship="SimSoDepModel.FK_SimSo_LoaiGia" FromRole="tbl_SimSoDep_LoaiGia" ToRole="tbl_SimSoDep_SimSo" />
+          <Property Type="Int32" Name="SapXep" />
+          <Property Type="Int32" Name="Status" />
+          <Property Type="String" Name="MetaDescription" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="MetaKeyword" MaxLength="Max" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="tbl_SimSoDep_LoaiSim">
+          <Key>
+            <PropertyRef Name="MaLoaiSim" />
+          </Key>
+          <Property Type="Int32" Name="MaLoaiSim" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="String" Name="TenLoaiSim" Nullable="false" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="MoTa" MaxLength="300" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Alias" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="EnumFixed" MaxLength="100" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="tbl_SimSoDep_LoaiSimChiTiet" Relationship="SimSoDepModel.FK_LoaiSimChiTiet_LoaiSim" FromRole="tbl_SimSoDep_LoaiSim" ToRole="tbl_SimSoDep_LoaiSimChiTiet" />
+          <NavigationProperty Name="tbl_SimSoDep_SimSoLoaiSim" Relationship="SimSoDepModel.FK_tbl_SimSoDep_SimSoLoaiSim_tbl_SimSoDep_LoaiSim" FromRole="tbl_SimSoDep_LoaiSim" ToRole="tbl_SimSoDep_SimSoLoaiSim" />
+          <Property Type="Int32" Name="Status" />
+          <Property Type="Int32" Name="SapXep" />
+          <Property Type="String" Name="MetaDescription" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="MetaKeyword" MaxLength="Max" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="tbl_SimSoDep_LoaiSimChiTiet">
+          <Key>
+            <PropertyRef Name="MaLoaiSimChiTiet" />
+          </Key>
+          <Property Type="Int32" Name="MaLoaiSimChiTiet" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="Int32" Name="MaLoaiSim" Nullable="false" />
+          <Property Type="String" Name="TenLoaiSimChiTiet" Nullable="false" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="MoTa" MaxLength="300" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Alias" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="EnumFixed" MaxLength="100" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="tbl_SimSoDep_LoaiSim" Relationship="SimSoDepModel.FK_LoaiSimChiTiet_LoaiSim" FromRole="tbl_SimSoDep_LoaiSimChiTiet" ToRole="tbl_SimSoDep_LoaiSim" />
+          <NavigationProperty Name="tbl_SimSoDep_LoaiSimChiTietSimSo" Relationship="SimSoDepModel.FK_tbl_SimSoDep_LoaiSimChiTietSimSo_tbl_SimSoDep_LoaiSimChiTiet" FromRole="tbl_SimSoDep_LoaiSimChiTiet" ToRole="tbl_SimSoDep_LoaiSimChiTietSimSo" />
+          <Property Type="Int32" Name="SapXep" />
+          <Property Type="Int32" Name="Status" />
+          <Property Type="String" Name="MetaDescription" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="MetaKeyword" MaxLength="Max" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="tbl_SimSoDep_LoaiSimChiTietSimSo">
+          <Key>
+            <PropertyRef Name="MaLoaiSimChiTiet" />
+            <PropertyRef Name="MaSoDienThoai" />
+          </Key>
+          <Property Type="Int32" Name="MaLoaiSimChiTiet" Nullable="false" />
+          <Property Type="Int64" Name="MaSoDienThoai" Nullable="false" />
+          <Property Type="DateTime" Name="CreateDate" />
+          <NavigationProperty Name="tbl_SimSoDep_LoaiSimChiTiet" Relationship="SimSoDepModel.FK_tbl_SimSoDep_LoaiSimChiTietSimSo_tbl_SimSoDep_LoaiSimChiTiet" FromRole="tbl_SimSoDep_LoaiSimChiTietSimSo" ToRole="tbl_SimSoDep_LoaiSimChiTiet" />
+          <NavigationProperty Name="tbl_SimSoDep_SimSo" Relationship="SimSoDepModel.FK_tbl_SimSoDep_LoaiSimChiTietSimSo_tbl_SimSoDep_SimSo" FromRole="tbl_SimSoDep_LoaiSimChiTietSimSo" ToRole="tbl_SimSoDep_SimSo" />
+        </EntityType>
+        <EntityType Name="tbl_SimSoDep_NhaMang">
+          <Key>
+            <PropertyRef Name="MaNhaMang" />
+          </Key>
+          <Property Type="Int32" Name="MaNhaMang" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="String" Name="TenNhaMang" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="TenMoTaDayDu" MaxLength="150" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="MoTa" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Alias" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="EnumFixed" MaxLength="100" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="tbl_SimSoDep_DauSo" Relationship="SimSoDepModel.FK_tbl_SimSoDep_DauSo_tbl_SimSoDep_NhaMang" FromRole="tbl_SimSoDep_NhaMang" ToRole="tbl_SimSoDep_DauSo" />
+          <NavigationProperty Name="tbl_SimSoDep_DauSoChiTiet" Relationship="SimSoDepModel.FK_tbl_SimSoDep_DauSoChiTiet_tbl_SimSoDep_NhaMang" FromRole="tbl_SimSoDep_NhaMang" ToRole="tbl_SimSoDep_DauSoChiTiet" />
+          <NavigationProperty Name="tbl_SimSoDep_SimSo" Relationship="SimSoDepModel.FK_SimSo_NhaMang" FromRole="tbl_SimSoDep_NhaMang" ToRole="tbl_SimSoDep_SimSo" />
+          <Property Type="Int32" Name="SapXep" />
+          <Property Type="Int32" Name="Status" />
+          <Property Type="String" Name="MetaDescription" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="MetaKeyword" MaxLength="Max" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="tbl_SimSoDep_SimSo">
+          <Key>
+            <PropertyRef Name="MaSoDienThoai" />
+          </Key>
+          <Property Type="Int64" Name="MaSoDienThoai" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="String" Name="SoDienThoai" Nullable="false" MaxLength="15" FixedLength="true" Unicode="false" />
+          <Property Type="String" Name="DinhDangHienThi" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="Int64" Name="GiaTien" />
+          <Property Type="Boolean" Name="TrangThaiBan" />
+          <Property Type="Boolean" Name="TrangThaiCuMoi" />
+          <Property Type="Boolean" Name="TrangThaiTonTai" />
+          <Property Type="Int32" Name="MaNhaMang" Nullable="false" />
+          <Property Type="Int32" Name="MaLoaiDoDai" />
+          <Property Type="Int32" Name="MaDauSo" />
+          <Property Type="Int32" Name="MaDauSoChiTiet" />
+          <Property Type="Int32" Name="MaLoaiSim" />
+          <Property Type="Int32" Name="MaTinhThanh" />
+          <Property Type="Int32" Name="MaLoaiGia" />
+          <Property Type="Int32" Name="MaDaiLy" />
+          <Property Type="Int32" Name="TrietKhau" />
+          <NavigationProperty Name="tbl_SimSoDep_DaiLy" Relationship="SimSoDepModel.FK_tbl_SimSoDep_SimSo_tbl_SimSoDep_DaiLy" FromRole="tbl_SimSoDep_SimSo" ToRole="tbl_SimSoDep_DaiLy" />
+          <NavigationProperty Name="tbl_SimSoDep_DatHang" Relationship="SimSoDepModel.FK_DatHang_SimSo" FromRole="tbl_SimSoDep_SimSo" ToRole="tbl_SimSoDep_DatHang" />
+          <NavigationProperty Name="tbl_SimSoDep_DauSo" Relationship="SimSoDepModel.FK_SimSo_DauSo" FromRole="tbl_SimSoDep_SimSo" ToRole="tbl_SimSoDep_DauSo" />
+          <NavigationProperty Name="tbl_SimSoDep_DauSoChiTiet" Relationship="SimSoDepModel.FK_SimSo_DauSoChiTiet" FromRole="tbl_SimSoDep_SimSo" ToRole="tbl_SimSoDep_DauSoChiTiet" />
+          <NavigationProperty Name="tbl_SimSoDep_LoaiDoDaiSo" Relationship="SimSoDepModel.FK_SimSo_LoaiDoDaiSo" FromRole="tbl_SimSoDep_SimSo" ToRole="tbl_SimSoDep_LoaiDoDaiSo" />
+          <NavigationProperty Name="tbl_SimSoDep_LoaiGia" Relationship="SimSoDepModel.FK_SimSo_LoaiGia" FromRole="tbl_SimSoDep_SimSo" ToRole="tbl_SimSoDep_LoaiGia" />
+          <NavigationProperty Name="tbl_SimSoDep_LoaiSimChiTietSimSo" Relationship="SimSoDepModel.FK_tbl_SimSoDep_LoaiSimChiTietSimSo_tbl_SimSoDep_SimSo" FromRole="tbl_SimSoDep_SimSo" ToRole="tbl_SimSoDep_LoaiSimChiTietSimSo" />
+          <NavigationProperty Name="tbl_SimSoDep_NhaMang" Relationship="SimSoDepModel.FK_SimSo_NhaMang" FromRole="tbl_SimSoDep_SimSo" ToRole="tbl_SimSoDep_NhaMang" />
+          <NavigationProperty Name="tbl_SimSoDep_TinhThanh" Relationship="SimSoDepModel.FK_SimSo_TinhThanh" FromRole="tbl_SimSoDep_SimSo" ToRole="tbl_SimSoDep_TinhThanh" />
+          <NavigationProperty Name="tbl_SimSoDep_SimSoLoaiSim" Relationship="SimSoDepModel.FK_tbl_SimSoDep_SimSoLoaiSim_tbl_SimSoDep_SimSo" FromRole="tbl_SimSoDep_SimSo" ToRole="tbl_SimSoDep_SimSoLoaiSim" />
+          <Property Type="Int32" Name="IdNguHanh" />
+          <Property Type="Int32" Name="IdKinhDich" />
+          <Property Type="Int32" Name="LoaiAmDuong" />
+          <NavigationProperty Name="tbl_SimSoDep_KinhDich" Relationship="SimSoDepModel.FK_tbl_SimSoDep_SimSo_tbl_SimSoDep_KinhDich" FromRole="tbl_SimSoDep_SimSo" ToRole="tbl_SimSoDep_KinhDich" />
+          <NavigationProperty Name="tbl_SimSoDep_NguHanh" Relationship="SimSoDepModel.FK_tbl_SimSoDep_SimSo_tbl_SimSoDep_NguHanh" FromRole="tbl_SimSoDep_SimSo" ToRole="tbl_SimSoDep_NguHanh" />
+          <Property Type="Int32" Name="SoNuoc" />
+          <Property Type="Int64" Name="GiaBanDau" />
+        </EntityType>
+        <EntityType Name="tbl_SimSoDep_SimSoLoaiSim">
+          <Key>
+            <PropertyRef Name="MaLoaiSim" />
+            <PropertyRef Name="MaSoDienThoai" />
+          </Key>
+          <Property Type="Int32" Name="MaLoaiSim" Nullable="false" />
+          <Property Type="Int64" Name="MaSoDienThoai" Nullable="false" />
+          <Property Type="DateTime" Name="CreateDate" />
+          <NavigationProperty Name="tbl_SimSoDep_LoaiSim" Relationship="SimSoDepModel.FK_tbl_SimSoDep_SimSoLoaiSim_tbl_SimSoDep_LoaiSim" FromRole="tbl_SimSoDep_SimSoLoaiSim" ToRole="tbl_SimSoDep_LoaiSim" />
+          <NavigationProperty Name="tbl_SimSoDep_SimSo" Relationship="SimSoDepModel.FK_tbl_SimSoDep_SimSoLoaiSim_tbl_SimSoDep_SimSo" FromRole="tbl_SimSoDep_SimSoLoaiSim" ToRole="tbl_SimSoDep_SimSo" />
+        </EntityType>
+        <EntityType Name="tbl_SimSoDep_TangThem">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Type="Int32" Name="Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="Int64" Name="GiaTu" />
+          <Property Type="Int64" Name="Den" />
+          <Property Type="Int32" Name="TangThem" />
+          <Property Type="Int32" Name="MaDaiLy" />
+          <NavigationProperty Name="tbl_SimSoDep_DaiLy" Relationship="SimSoDepModel.FK_tbl_SimSoDep_TangThem_tbl_SimSoDep_DaiLy" FromRole="tbl_SimSoDep_TangThem" ToRole="tbl_SimSoDep_DaiLy" />
+        </EntityType>
+        <EntityType Name="tbl_SimSoDep_TinhThanh">
+          <Key>
+            <PropertyRef Name="MaTinhThanh" />
+          </Key>
+          <Property Type="Int32" Name="MaTinhThanh" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="String" Name="TenTinhThanh" MaxLength="300" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="MoTa" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Alias" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="EnumFixed" MaxLength="100" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="tbl_SimSoDep_DaiLy" Relationship="SimSoDepModel.FK_tbl_SimSoDep_DaiLy_tbl_SimSoDep_TinhThanh" FromRole="tbl_SimSoDep_TinhThanh" ToRole="tbl_SimSoDep_DaiLy" />
+          <NavigationProperty Name="tbl_SimSoDep_KhachHang" Relationship="SimSoDepModel.FK_KhachHang_TinhThanh" FromRole="tbl_SimSoDep_TinhThanh" ToRole="tbl_SimSoDep_KhachHang" />
+          <NavigationProperty Name="tbl_SimSoDep_SimSo" Relationship="SimSoDepModel.FK_SimSo_TinhThanh" FromRole="tbl_SimSoDep_TinhThanh" ToRole="tbl_SimSoDep_SimSo" />
+          <Property Type="Int32" Name="SapXep" />
+          <Property Type="Int32" Name="Status" />
+          <Property Type="String" Name="MetaDescription" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="MetaKeyword" MaxLength="Max" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <Association Name="FK_tbl_SimSoDep_DaiLy_tbl_SimSoDep_TinhThanh">
+          <End Type="SimSoDepModel.tbl_SimSoDep_TinhThanh" Role="tbl_SimSoDep_TinhThanh" Multiplicity="0..1" />
+          <End Type="SimSoDepModel.tbl_SimSoDep_DaiLy" Role="tbl_SimSoDep_DaiLy" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tbl_SimSoDep_TinhThanh">
+              <PropertyRef Name="MaTinhThanh" />
+            </Principal>
+            <Dependent Role="tbl_SimSoDep_DaiLy">
+              <PropertyRef Name="MaTinhThanh" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_tbl_SimSoDep_DaiLyTrietKhau_tbl_SimSoDep_DaiLy">
+          <End Type="SimSoDepModel.tbl_SimSoDep_DaiLy" Role="tbl_SimSoDep_DaiLy" Multiplicity="0..1" />
+          <End Type="SimSoDepModel.tbl_SimSoDep_DaiLyTrietKhau" Role="tbl_SimSoDep_DaiLyTrietKhau" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tbl_SimSoDep_DaiLy">
+              <PropertyRef Name="MaDaiLy" />
+            </Principal>
+            <Dependent Role="tbl_SimSoDep_DaiLyTrietKhau">
+              <PropertyRef Name="MaDaiLy" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_tbl_SimSoDep_SimSo_tbl_SimSoDep_DaiLy">
+          <End Type="SimSoDepModel.tbl_SimSoDep_DaiLy" Role="tbl_SimSoDep_DaiLy" Multiplicity="0..1" />
+          <End Type="SimSoDepModel.tbl_SimSoDep_SimSo" Role="tbl_SimSoDep_SimSo" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tbl_SimSoDep_DaiLy">
+              <PropertyRef Name="MaDaiLy" />
+            </Principal>
+            <Dependent Role="tbl_SimSoDep_SimSo">
+              <PropertyRef Name="MaDaiLy" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_tbl_SimSoDep_TangThem_tbl_SimSoDep_DaiLy">
+          <End Type="SimSoDepModel.tbl_SimSoDep_DaiLy" Role="tbl_SimSoDep_DaiLy" Multiplicity="0..1" />
+          <End Type="SimSoDepModel.tbl_SimSoDep_TangThem" Role="tbl_SimSoDep_TangThem" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tbl_SimSoDep_DaiLy">
+              <PropertyRef Name="MaDaiLy" />
+            </Principal>
+            <Dependent Role="tbl_SimSoDep_TangThem">
+              <PropertyRef Name="MaDaiLy" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_DatHang_KhachHang">
+          <End Type="SimSoDepModel.tbl_SimSoDep_KhachHang" Role="tbl_SimSoDep_KhachHang" Multiplicity="1" />
+          <End Type="SimSoDepModel.tbl_SimSoDep_DatHang" Role="tbl_SimSoDep_DatHang" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tbl_SimSoDep_KhachHang">
+              <PropertyRef Name="MaKhachHang" />
+            </Principal>
+            <Dependent Role="tbl_SimSoDep_DatHang">
+              <PropertyRef Name="MaKhachHang" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_DatHang_SimSo">
+          <End Type="SimSoDepModel.tbl_SimSoDep_SimSo" Role="tbl_SimSoDep_SimSo" Multiplicity="1" />
+          <End Type="SimSoDepModel.tbl_SimSoDep_DatHang" Role="tbl_SimSoDep_DatHang" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tbl_SimSoDep_SimSo">
+              <PropertyRef Name="MaSoDienThoai" />
+            </Principal>
+            <Dependent Role="tbl_SimSoDep_DatHang">
+              <PropertyRef Name="MaSoDienThoai" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_DauSoChiTiet_DauSo">
+          <End Type="SimSoDepModel.tbl_SimSoDep_DauSo" Role="tbl_SimSoDep_DauSo" Multiplicity="0..1" />
+          <End Type="SimSoDepModel.tbl_SimSoDep_DauSoChiTiet" Role="tbl_SimSoDep_DauSoChiTiet" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tbl_SimSoDep_DauSo">
+              <PropertyRef Name="MaDauSo" />
+            </Principal>
+            <Dependent Role="tbl_SimSoDep_DauSoChiTiet">
+              <PropertyRef Name="MaDauSo" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_SimSo_DauSo">
+          <End Type="SimSoDepModel.tbl_SimSoDep_DauSo" Role="tbl_SimSoDep_DauSo" Multiplicity="0..1" />
+          <End Type="SimSoDepModel.tbl_SimSoDep_SimSo" Role="tbl_SimSoDep_SimSo" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tbl_SimSoDep_DauSo">
+              <PropertyRef Name="MaDauSo" />
+            </Principal>
+            <Dependent Role="tbl_SimSoDep_SimSo">
+              <PropertyRef Name="MaDauSo" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_tbl_SimSoDep_DauSo_tbl_SimSoDep_NhaMang">
+          <End Type="SimSoDepModel.tbl_SimSoDep_NhaMang" Role="tbl_SimSoDep_NhaMang" Multiplicity="0..1" />
+          <End Type="SimSoDepModel.tbl_SimSoDep_DauSo" Role="tbl_SimSoDep_DauSo" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tbl_SimSoDep_NhaMang">
+              <PropertyRef Name="MaNhaMang" />
+            </Principal>
+            <Dependent Role="tbl_SimSoDep_DauSo">
+              <PropertyRef Name="MaNhaMang" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_SimSo_DauSoChiTiet">
+          <End Type="SimSoDepModel.tbl_SimSoDep_DauSoChiTiet" Role="tbl_SimSoDep_DauSoChiTiet" Multiplicity="0..1" />
+          <End Type="SimSoDepModel.tbl_SimSoDep_SimSo" Role="tbl_SimSoDep_SimSo" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tbl_SimSoDep_DauSoChiTiet">
+              <PropertyRef Name="MaDauSoChiTiet" />
+            </Principal>
+            <Dependent Role="tbl_SimSoDep_SimSo">
+              <PropertyRef Name="MaDauSoChiTiet" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_tbl_SimSoDep_DauSoChiTiet_tbl_SimSoDep_NhaMang">
+          <End Type="SimSoDepModel.tbl_SimSoDep_NhaMang" Role="tbl_SimSoDep_NhaMang" Multiplicity="0..1" />
+          <End Type="SimSoDepModel.tbl_SimSoDep_DauSoChiTiet" Role="tbl_SimSoDep_DauSoChiTiet" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tbl_SimSoDep_NhaMang">
+              <PropertyRef Name="MaNhaMang" />
+            </Principal>
+            <Dependent Role="tbl_SimSoDep_DauSoChiTiet">
+              <PropertyRef Name="MaNhaMang" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_KhachHang_TinhThanh">
+          <End Type="SimSoDepModel.tbl_SimSoDep_TinhThanh" Role="tbl_SimSoDep_TinhThanh" Multiplicity="0..1" />
+          <End Type="SimSoDepModel.tbl_SimSoDep_KhachHang" Role="tbl_SimSoDep_KhachHang" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tbl_SimSoDep_TinhThanh">
+              <PropertyRef Name="MaTinhThanh" />
+            </Principal>
+            <Dependent Role="tbl_SimSoDep_KhachHang">
+              <PropertyRef Name="MaTinhThanh" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_SimSo_LoaiDoDaiSo">
+          <End Type="SimSoDepModel.tbl_SimSoDep_LoaiDoDaiSo" Role="tbl_SimSoDep_LoaiDoDaiSo" Multiplicity="0..1" />
+          <End Type="SimSoDepModel.tbl_SimSoDep_SimSo" Role="tbl_SimSoDep_SimSo" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tbl_SimSoDep_LoaiDoDaiSo">
+              <PropertyRef Name="MaLoaiDoDai" />
+            </Principal>
+            <Dependent Role="tbl_SimSoDep_SimSo">
+              <PropertyRef Name="MaLoaiDoDai" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_SimSo_LoaiGia">
+          <End Type="SimSoDepModel.tbl_SimSoDep_LoaiGia" Role="tbl_SimSoDep_LoaiGia" Multiplicity="0..1" />
+          <End Type="SimSoDepModel.tbl_SimSoDep_SimSo" Role="tbl_SimSoDep_SimSo" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tbl_SimSoDep_LoaiGia">
+              <PropertyRef Name="MaLoaiGia" />
+            </Principal>
+            <Dependent Role="tbl_SimSoDep_SimSo">
+              <PropertyRef Name="MaLoaiGia" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_LoaiSimChiTiet_LoaiSim">
+          <End Type="SimSoDepModel.tbl_SimSoDep_LoaiSim" Role="tbl_SimSoDep_LoaiSim" Multiplicity="1" />
+          <End Type="SimSoDepModel.tbl_SimSoDep_LoaiSimChiTiet" Role="tbl_SimSoDep_LoaiSimChiTiet" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tbl_SimSoDep_LoaiSim">
+              <PropertyRef Name="MaLoaiSim" />
+            </Principal>
+            <Dependent Role="tbl_SimSoDep_LoaiSimChiTiet">
+              <PropertyRef Name="MaLoaiSim" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_tbl_SimSoDep_SimSoLoaiSim_tbl_SimSoDep_LoaiSim">
+          <End Type="SimSoDepModel.tbl_SimSoDep_LoaiSim" Role="tbl_SimSoDep_LoaiSim" Multiplicity="1" />
+          <End Type="SimSoDepModel.tbl_SimSoDep_SimSoLoaiSim" Role="tbl_SimSoDep_SimSoLoaiSim" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tbl_SimSoDep_LoaiSim">
+              <PropertyRef Name="MaLoaiSim" />
+            </Principal>
+            <Dependent Role="tbl_SimSoDep_SimSoLoaiSim">
+              <PropertyRef Name="MaLoaiSim" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_tbl_SimSoDep_LoaiSimChiTietSimSo_tbl_SimSoDep_LoaiSimChiTiet">
+          <End Type="SimSoDepModel.tbl_SimSoDep_LoaiSimChiTiet" Role="tbl_SimSoDep_LoaiSimChiTiet" Multiplicity="1" />
+          <End Type="SimSoDepModel.tbl_SimSoDep_LoaiSimChiTietSimSo" Role="tbl_SimSoDep_LoaiSimChiTietSimSo" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tbl_SimSoDep_LoaiSimChiTiet">
+              <PropertyRef Name="MaLoaiSimChiTiet" />
+            </Principal>
+            <Dependent Role="tbl_SimSoDep_LoaiSimChiTietSimSo">
+              <PropertyRef Name="MaLoaiSimChiTiet" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_tbl_SimSoDep_LoaiSimChiTietSimSo_tbl_SimSoDep_SimSo">
+          <End Type="SimSoDepModel.tbl_SimSoDep_SimSo" Role="tbl_SimSoDep_SimSo" Multiplicity="1" />
+          <End Type="SimSoDepModel.tbl_SimSoDep_LoaiSimChiTietSimSo" Role="tbl_SimSoDep_LoaiSimChiTietSimSo" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tbl_SimSoDep_SimSo">
+              <PropertyRef Name="MaSoDienThoai" />
+            </Principal>
+            <Dependent Role="tbl_SimSoDep_LoaiSimChiTietSimSo">
+              <PropertyRef Name="MaSoDienThoai" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_SimSo_NhaMang">
+          <End Type="SimSoDepModel.tbl_SimSoDep_NhaMang" Role="tbl_SimSoDep_NhaMang" Multiplicity="1" />
+          <End Type="SimSoDepModel.tbl_SimSoDep_SimSo" Role="tbl_SimSoDep_SimSo" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tbl_SimSoDep_NhaMang">
+              <PropertyRef Name="MaNhaMang" />
+            </Principal>
+            <Dependent Role="tbl_SimSoDep_SimSo">
+              <PropertyRef Name="MaNhaMang" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_SimSo_TinhThanh">
+          <End Type="SimSoDepModel.tbl_SimSoDep_TinhThanh" Role="tbl_SimSoDep_TinhThanh" Multiplicity="0..1" />
+          <End Type="SimSoDepModel.tbl_SimSoDep_SimSo" Role="tbl_SimSoDep_SimSo" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tbl_SimSoDep_TinhThanh">
+              <PropertyRef Name="MaTinhThanh" />
+            </Principal>
+            <Dependent Role="tbl_SimSoDep_SimSo">
+              <PropertyRef Name="MaTinhThanh" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_tbl_SimSoDep_SimSoLoaiSim_tbl_SimSoDep_SimSo">
+          <End Type="SimSoDepModel.tbl_SimSoDep_SimSo" Role="tbl_SimSoDep_SimSo" Multiplicity="1" />
+          <End Type="SimSoDepModel.tbl_SimSoDep_SimSoLoaiSim" Role="tbl_SimSoDep_SimSoLoaiSim" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tbl_SimSoDep_SimSo">
+              <PropertyRef Name="MaSoDienThoai" />
+            </Principal>
+            <Dependent Role="tbl_SimSoDep_SimSoLoaiSim">
+              <PropertyRef Name="MaSoDienThoai" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityType Name="tbl_SimSoDep_NguHanh">
+          <Key>
+            <PropertyRef Name="IdNguHanh" />
+          </Key>
+          <Property Type="Int32" Name="IdNguHanh" Nullable="false" />
+          <Property Type="String" Name="Ten" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="Int32" Name="TuongSinh" />
+          <Property Type="Int32" Name="TuongKhac" />
+          <Property Type="String" Name="MoTa" MaxLength="1000" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="tbl_SimSoDep_NguHanh1" Relationship="SimSoDepModel.FK_tbl_SimSoDep_NguHanh_tbl_SimSoDep_NguHanh" FromRole="tbl_SimSoDep_NguHanh" ToRole="tbl_SimSoDep_NguHanh1" />
+          <NavigationProperty Name="tbl_SimSoDep_NguHanh2" Relationship="SimSoDepModel.FK_tbl_SimSoDep_NguHanh_tbl_SimSoDep_NguHanh" FromRole="tbl_SimSoDep_NguHanh1" ToRole="tbl_SimSoDep_NguHanh" />
+          <NavigationProperty Name="tbl_SimSoDep_NguHanh11" Relationship="SimSoDepModel.FK_tbl_SimSoDep_NguHanh_tbl_SimSoDep_NguHanh1" FromRole="tbl_SimSoDep_NguHanh" ToRole="tbl_SimSoDep_NguHanh1" />
+          <NavigationProperty Name="tbl_SimSoDep_NguHanh3" Relationship="SimSoDepModel.FK_tbl_SimSoDep_NguHanh_tbl_SimSoDep_NguHanh1" FromRole="tbl_SimSoDep_NguHanh1" ToRole="tbl_SimSoDep_NguHanh" />
+          <NavigationProperty Name="tbl_SimSoDep_BanMenh" Relationship="SimSoDepModel.FK_tbl_SimSoDep_BanMenh_tbl_SimSoDep_NguHanh" FromRole="tbl_SimSoDep_NguHanh" ToRole="tbl_SimSoDep_BanMenh" />
+          <NavigationProperty Name="tbl_SimSoDep_SimSo" Relationship="SimSoDepModel.FK_tbl_SimSoDep_SimSo_tbl_SimSoDep_NguHanh" FromRole="tbl_SimSoDep_NguHanh" ToRole="tbl_SimSoDep_SimSo" />
+        </EntityType>
+        <Association Name="FK_tbl_SimSoDep_NguHanh_tbl_SimSoDep_NguHanh">
+          <End Type="SimSoDepModel.tbl_SimSoDep_NguHanh" Role="tbl_SimSoDep_NguHanh" Multiplicity="0..1" />
+          <End Type="SimSoDepModel.tbl_SimSoDep_NguHanh" Role="tbl_SimSoDep_NguHanh1" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tbl_SimSoDep_NguHanh">
+              <PropertyRef Name="IdNguHanh" />
+            </Principal>
+            <Dependent Role="tbl_SimSoDep_NguHanh1">
+              <PropertyRef Name="TuongSinh" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_tbl_SimSoDep_NguHanh_tbl_SimSoDep_NguHanh1">
+          <End Type="SimSoDepModel.tbl_SimSoDep_NguHanh" Role="tbl_SimSoDep_NguHanh" Multiplicity="0..1" />
+          <End Type="SimSoDepModel.tbl_SimSoDep_NguHanh" Role="tbl_SimSoDep_NguHanh1" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tbl_SimSoDep_NguHanh">
+              <PropertyRef Name="IdNguHanh" />
+            </Principal>
+            <Dependent Role="tbl_SimSoDep_NguHanh1">
+              <PropertyRef Name="TuongKhac" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityType Name="tbl_SimSoDep_BanMenh">
+          <Key>
+            <PropertyRef Name="IdBanMenh" />
+          </Key>
+          <Property Type="Int32" Name="IdBanMenh" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="Int32" Name="Nam" Nullable="false" />
+          <Property Type="Int32" Name="IdNguHanh" Nullable="false" />
+          <Property Type="String" Name="TenBanMenh" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="MoTa" MaxLength="200" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="tbl_SimSoDep_NguHanh" Relationship="SimSoDepModel.FK_tbl_SimSoDep_BanMenh_tbl_SimSoDep_NguHanh" FromRole="tbl_SimSoDep_BanMenh" ToRole="tbl_SimSoDep_NguHanh" />
+        </EntityType>
+        <Association Name="FK_tbl_SimSoDep_BanMenh_tbl_SimSoDep_NguHanh">
+          <End Type="SimSoDepModel.tbl_SimSoDep_NguHanh" Role="tbl_SimSoDep_NguHanh" Multiplicity="1" />
+          <End Type="SimSoDepModel.tbl_SimSoDep_BanMenh" Role="tbl_SimSoDep_BanMenh" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tbl_SimSoDep_NguHanh">
+              <PropertyRef Name="IdNguHanh" />
+            </Principal>
+            <Dependent Role="tbl_SimSoDep_BanMenh">
+              <PropertyRef Name="IdNguHanh" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityType Name="tbl_SimSoDep_BatQuai">
+          <Key>
+            <PropertyRef Name="IdQueBatQuai" />
+          </Key>
+          <Property Type="Int32" Name="IdQueBatQuai" Nullable="false" />
+          <Property Type="String" Name="TenQue" Nullable="false" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="HinhQue" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="PhienAm" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="MoTa" MaxLength="500" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="tbl_SimSoDep_KinhDich" Relationship="SimSoDepModel.FK_tbl_SimSoDep_KinhDich_tbl_SimSoDep_BatQuai" FromRole="tbl_SimSoDep_BatQuai" ToRole="tbl_SimSoDep_KinhDich" />
+          <NavigationProperty Name="tbl_SimSoDep_KinhDich1" Relationship="SimSoDepModel.FK_tbl_SimSoDep_KinhDich_tbl_SimSoDep_BatQuai1" FromRole="tbl_SimSoDep_BatQuai" ToRole="tbl_SimSoDep_KinhDich" />
+          </EntityType>
+        <EntityType Name="tbl_SimSoDep_KinhDich">
+          <Key>
+            <PropertyRef Name="IdKinhDich" />
+          </Key>
+          <Property Type="Int32" Name="IdQueThuong" Nullable="false" />
+          <Property Type="Int32" Name="IdQueHa" Nullable="false" />
+          <Property Type="String" Name="TenQue" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="PhienAm" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="LoiDich" MaxLength="2000" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="YNghia" MaxLength="3000" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="HinhQue" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="Int32" Name="IdKinhDich" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <NavigationProperty Name="tbl_SimSoDep_BatQuai" Relationship="SimSoDepModel.FK_tbl_SimSoDep_KinhDich_tbl_SimSoDep_BatQuai" FromRole="tbl_SimSoDep_KinhDich" ToRole="tbl_SimSoDep_BatQuai" />
+          <NavigationProperty Name="tbl_SimSoDep_BatQuai1" Relationship="SimSoDepModel.FK_tbl_SimSoDep_KinhDich_tbl_SimSoDep_BatQuai1" FromRole="tbl_SimSoDep_KinhDich" ToRole="tbl_SimSoDep_BatQuai" />
+          <Property Type="Int32" Name="LoaiQue" />
+          <NavigationProperty Name="tbl_SimSoDep_SimSo" Relationship="SimSoDepModel.FK_tbl_SimSoDep_SimSo_tbl_SimSoDep_KinhDich" FromRole="tbl_SimSoDep_KinhDich" ToRole="tbl_SimSoDep_SimSo" />
+        </EntityType>
+        <Association Name="FK_tbl_SimSoDep_KinhDich_tbl_SimSoDep_BatQuai">
+          <End Type="SimSoDepModel.tbl_SimSoDep_BatQuai" Role="tbl_SimSoDep_BatQuai" Multiplicity="1" />
+          <End Type="SimSoDepModel.tbl_SimSoDep_KinhDich" Role="tbl_SimSoDep_KinhDich" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tbl_SimSoDep_BatQuai">
+              <PropertyRef Name="IdQueBatQuai" />
+            </Principal>
+            <Dependent Role="tbl_SimSoDep_KinhDich">
+              <PropertyRef Name="IdQueHa" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_tbl_SimSoDep_KinhDich_tbl_SimSoDep_BatQuai1">
+          <End Type="SimSoDepModel.tbl_SimSoDep_BatQuai" Role="tbl_SimSoDep_BatQuai" Multiplicity="1" />
+          <End Type="SimSoDepModel.tbl_SimSoDep_KinhDich" Role="tbl_SimSoDep_KinhDich" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tbl_SimSoDep_BatQuai">
+              <PropertyRef Name="IdQueBatQuai" />
+            </Principal>
+            <Dependent Role="tbl_SimSoDep_KinhDich">
+              <PropertyRef Name="IdQueThuong" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_tbl_SimSoDep_SimSo_tbl_SimSoDep_KinhDich">
+          <End Type="SimSoDepModel.tbl_SimSoDep_KinhDich" Role="tbl_SimSoDep_KinhDich" Multiplicity="0..1" />
+          <End Type="SimSoDepModel.tbl_SimSoDep_SimSo" Role="tbl_SimSoDep_SimSo" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tbl_SimSoDep_KinhDich">
+              <PropertyRef Name="IdKinhDich" />
+            </Principal>
+            <Dependent Role="tbl_SimSoDep_SimSo">
+              <PropertyRef Name="IdKinhDich" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_tbl_SimSoDep_SimSo_tbl_SimSoDep_NguHanh">
+          <End Type="SimSoDepModel.tbl_SimSoDep_NguHanh" Role="tbl_SimSoDep_NguHanh" Multiplicity="0..1" />
+          <End Type="SimSoDepModel.tbl_SimSoDep_SimSo" Role="tbl_SimSoDep_SimSo" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tbl_SimSoDep_NguHanh">
+              <PropertyRef Name="IdNguHanh" />
+            </Principal>
+            <Dependent Role="tbl_SimSoDep_SimSo">
+              <PropertyRef Name="IdNguHanh" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <ComplexType Name="SearchSimSo_Result">
+          <Property Type="Int64" Name="MaSoDienThoai" Nullable="false" />
+          <Property Type="String" Name="SoDienThoai" Nullable="false" MaxLength="15" />
+          <Property Type="Int64" Name="GiaTien" Nullable="true" />
+          <Property Type="String" Name="TenNhaMang" Nullable="false" MaxLength="50" />
+        </ComplexType>
+        <EntityType Name="tbl_SimSoDep_ClientIp">
+          <Key>
+            <PropertyRef Name="IdClientIp" />
+          </Key>
+          <Property Type="Int64" Name="IdClientIp" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="String" Name="IpAddress" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="ViewTime" />
+        </EntityType>
+        <ComplexType Name="ThongKeSim_Result">
+          <Property Type="Int64" Name="NumViettel" Nullable="true" />
+          <Property Type="Int64" Name="NumMobi" Nullable="true" />
+          <Property Type="Int64" Name="NumVina" Nullable="true" />
+          <Property Type="Int64" Name="Numbeeline" Nullable="true" />
+          <Property Type="Int64" Name="NumSfone" Nullable="true" />
+          <Property Type="Int64" Name="NumVietnam" Nullable="true" />
+        </ComplexType>
+        </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="SimSoDepModelStoreContainer" CdmEntityContainer="SimSoDepEntities">
+          <EntitySetMapping Name="tbl_Global_User">
+            <EntityTypeMapping TypeName="SimSoDepModel.tbl_Global_User">
+              <MappingFragment StoreEntitySet="tbl_Global_User">
+                <ScalarProperty Name="PassWord" ColumnName="PassWord" />
+                <ScalarProperty Name="UserName" ColumnName="UserName" />
+                <ScalarProperty Name="UserId" ColumnName="UserId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tbl_SimSoDep_DaiLy">
+            <EntityTypeMapping TypeName="SimSoDepModel.tbl_SimSoDep_DaiLy">
+              <MappingFragment StoreEntitySet="tbl_SimSoDep_DaiLy">
+                <ScalarProperty Name="MaTinhThanh" ColumnName="MaTinhThanh" />
+                <ScalarProperty Name="Email" ColumnName="Email" />
+                <ScalarProperty Name="DiaChi" ColumnName="DiaChi" />
+                <ScalarProperty Name="MayBan" ColumnName="MayBan" />
+                <ScalarProperty Name="DiDong" ColumnName="DiDong" />
+                <ScalarProperty Name="TenDaiLy" ColumnName="TenDaiLy" />
+                <ScalarProperty Name="MaDaiLy" ColumnName="MaDaiLy" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tbl_SimSoDep_DaiLyTrietKhau">
+            <EntityTypeMapping TypeName="SimSoDepModel.tbl_SimSoDep_DaiLyTrietKhau">
+              <MappingFragment StoreEntitySet="tbl_SimSoDep_DaiLyTrietKhau">
+                <ScalarProperty Name="MaDaiLy" ColumnName="MaDaiLy" />
+                <ScalarProperty Name="TrietKhau" ColumnName="TrietKhau" />
+                <ScalarProperty Name="Den" ColumnName="Den" />
+                <ScalarProperty Name="GiaTu" ColumnName="GiaTu" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tbl_SimSoDep_DatHang">
+            <EntityTypeMapping TypeName="SimSoDepModel.tbl_SimSoDep_DatHang">
+              <MappingFragment StoreEntitySet="tbl_SimSoDep_DatHang">
+                <ScalarProperty Name="ThoiGian" ColumnName="ThoiGian" />
+                <ScalarProperty Name="MaSoDienThoai" ColumnName="MaSoDienThoai" />
+                <ScalarProperty Name="MaKhachHang" ColumnName="MaKhachHang" />
+                <ScalarProperty Name="MaDatHang" ColumnName="MaDatHang" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tbl_SimSoDep_DauSo">
+            <EntityTypeMapping TypeName="SimSoDepModel.tbl_SimSoDep_DauSo">
+              <MappingFragment StoreEntitySet="tbl_SimSoDep_DauSo">
+                <ScalarProperty Name="MetaKeyword" ColumnName="MetaKeyword" />
+                <ScalarProperty Name="MetaDescription" ColumnName="MetaDescription" />
+                <ScalarProperty Name="SapXep" ColumnName="SapXep" />
+                <ScalarProperty Name="MaNhaMang" ColumnName="MaNhaMang" />
+                <ScalarProperty Name="Status" ColumnName="Status" />
+                <ScalarProperty Name="EnumFixed" ColumnName="EnumFixed" />
+                <ScalarProperty Name="Alias" ColumnName="Alias" />
+                <ScalarProperty Name="MoTa" ColumnName="MoTa" />
+                <ScalarProperty Name="TenDauSo" ColumnName="TenDauSo" />
+                <ScalarProperty Name="MaDauSo" ColumnName="MaDauSo" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tbl_SimSoDep_DauSoChiTiet">
+            <EntityTypeMapping TypeName="SimSoDepModel.tbl_SimSoDep_DauSoChiTiet">
+              <MappingFragment StoreEntitySet="tbl_SimSoDep_DauSoChiTiet">
+                <ScalarProperty Name="MetaKeyword" ColumnName="MetaKeyword" />
+                <ScalarProperty Name="MetaDescription" ColumnName="MetaDescription" />
+                <ScalarProperty Name="Status" ColumnName="Status" />
+                <ScalarProperty Name="SapXep" ColumnName="SapXep" />
+                <ScalarProperty Name="MaNhaMang" ColumnName="MaNhaMang" />
+                <ScalarProperty Name="EnumFixed" ColumnName="EnumFixed" />
+                <ScalarProperty Name="MoTa" ColumnName="MoTa" />
+                <ScalarProperty Name="TenDauSoChiTiet" ColumnName="TenDauSoChiTiet" />
+                <ScalarProperty Name="MaDauSo" ColumnName="MaDauSo" />
+                <ScalarProperty Name="MaDauSoChiTiet" ColumnName="MaDauSoChiTiet" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tbl_SimSoDep_KhachHang">
+            <EntityTypeMapping TypeName="SimSoDepModel.tbl_SimSoDep_KhachHang">
+              <MappingFragment StoreEntitySet="tbl_SimSoDep_KhachHang">
+                <ScalarProperty Name="GhiChu" ColumnName="GhiChu" />
+                <ScalarProperty Name="MaTinhThanh" ColumnName="MaTinhThanh" />
+                <ScalarProperty Name="Email" ColumnName="Email" />
+                <ScalarProperty Name="SoDienThoai" ColumnName="SoDienThoai" />
+                <ScalarProperty Name="DiaChi" ColumnName="DiaChi" />
+                <ScalarProperty Name="TenKhachHang" ColumnName="TenKhachHang" />
+                <ScalarProperty Name="MaKhachHang" ColumnName="MaKhachHang" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tbl_SimSoDep_LoaiDoDaiSo">
+            <EntityTypeMapping TypeName="SimSoDepModel.tbl_SimSoDep_LoaiDoDaiSo">
+              <MappingFragment StoreEntitySet="tbl_SimSoDep_LoaiDoDaiSo">
+                <ScalarProperty Name="MetaKeyword" ColumnName="MetaKeyword" />
+                <ScalarProperty Name="MetaDescription" ColumnName="MetaDescription" />
+                <ScalarProperty Name="Status" ColumnName="Status" />
+                <ScalarProperty Name="SapXep" ColumnName="SapXep" />
+                <ScalarProperty Name="EnumFixed" ColumnName="EnumFixed" />
+                <ScalarProperty Name="Alias" ColumnName="Alias" />
+                <ScalarProperty Name="MoTa" ColumnName="MoTa" />
+                <ScalarProperty Name="TenLoaiDoDai" ColumnName="TenLoaiDoDai" />
+                <ScalarProperty Name="MaLoaiDoDai" ColumnName="MaLoaiDoDai" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tbl_SimSoDep_LoaiGia">
+            <EntityTypeMapping TypeName="SimSoDepModel.tbl_SimSoDep_LoaiGia">
+              <MappingFragment StoreEntitySet="tbl_SimSoDep_LoaiGia">
+                <ScalarProperty Name="MetaKeyword" ColumnName="MetaKeyword" />
+                <ScalarProperty Name="MetaDescription" ColumnName="MetaDescription" />
+                <ScalarProperty Name="Status" ColumnName="Status" />
+                <ScalarProperty Name="SapXep" ColumnName="SapXep" />
+                <ScalarProperty Name="Den" ColumnName="Den" />
+                <ScalarProperty Name="GiaTu" ColumnName="GiaTu" />
+                <ScalarProperty Name="EnumFixed" ColumnName="EnumFixed" />
+                <ScalarProperty Name="Alias" ColumnName="Alias" />
+                <ScalarProperty Name="MoTa" ColumnName="MoTa" />
+                <ScalarProperty Name="TenLoaiGia" ColumnName="TenLoaiGia" />
+                <ScalarProperty Name="MaLoaiGia" ColumnName="MaLoaiGia" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tbl_SimSoDep_LoaiSim">
+            <EntityTypeMapping TypeName="SimSoDepModel.tbl_SimSoDep_LoaiSim">
+              <MappingFragment StoreEntitySet="tbl_SimSoDep_LoaiSim">
+                <ScalarProperty Name="MetaKeyword" ColumnName="MetaKeyword" />
+                <ScalarProperty Name="MetaDescription" ColumnName="MetaDescription" />
+                <ScalarProperty Name="SapXep" ColumnName="SapXep" />
+                <ScalarProperty Name="Status" ColumnName="Status" />
+                <ScalarProperty Name="EnumFixed" ColumnName="EnumFixed" />
+                <ScalarProperty Name="Alias" ColumnName="Alias" />
+                <ScalarProperty Name="MoTa" ColumnName="MoTa" />
+                <ScalarProperty Name="TenLoaiSim" ColumnName="TenLoaiSim" />
+                <ScalarProperty Name="MaLoaiSim" ColumnName="MaLoaiSim" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tbl_SimSoDep_LoaiSimChiTiet">
+            <EntityTypeMapping TypeName="SimSoDepModel.tbl_SimSoDep_LoaiSimChiTiet">
+              <MappingFragment StoreEntitySet="tbl_SimSoDep_LoaiSimChiTiet">
+                <ScalarProperty Name="MetaKeyword" ColumnName="MetaKeyword" />
+                <ScalarProperty Name="MetaDescription" ColumnName="MetaDescription" />
+                <ScalarProperty Name="Status" ColumnName="Status" />
+                <ScalarProperty Name="SapXep" ColumnName="SapXep" />
+                <ScalarProperty Name="EnumFixed" ColumnName="EnumFixed" />
+                <ScalarProperty Name="Alias" ColumnName="Alias" />
+                <ScalarProperty Name="MoTa" ColumnName="MoTa" />
+                <ScalarProperty Name="TenLoaiSimChiTiet" ColumnName="TenLoaiSimChiTiet" />
+                <ScalarProperty Name="MaLoaiSim" ColumnName="MaLoaiSim" />
+                <ScalarProperty Name="MaLoaiSimChiTiet" ColumnName="MaLoaiSimChiTiet" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tbl_SimSoDep_LoaiSimChiTietSimSo">
+            <EntityTypeMapping TypeName="SimSoDepModel.tbl_SimSoDep_LoaiSimChiTietSimSo">
+              <MappingFragment StoreEntitySet="tbl_SimSoDep_LoaiSimChiTietSimSo">
+                <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+                <ScalarProperty Name="MaSoDienThoai" ColumnName="MaSoDienThoai" />
+                <ScalarProperty Name="MaLoaiSimChiTiet" ColumnName="MaLoaiSimChiTiet" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tbl_SimSoDep_NhaMang">
+            <EntityTypeMapping TypeName="SimSoDepModel.tbl_SimSoDep_NhaMang">
+              <MappingFragment StoreEntitySet="tbl_SimSoDep_NhaMang">
+                <ScalarProperty Name="MetaKeyword" ColumnName="MetaKeyword" />
+                <ScalarProperty Name="MetaDescription" ColumnName="MetaDescription" />
+                <ScalarProperty Name="Status" ColumnName="Status" />
+                <ScalarProperty Name="SapXep" ColumnName="SapXep" />
+                <ScalarProperty Name="EnumFixed" ColumnName="EnumFixed" />
+                <ScalarProperty Name="Alias" ColumnName="Alias" />
+                <ScalarProperty Name="MoTa" ColumnName="MoTa" />
+                <ScalarProperty Name="TenMoTaDayDu" ColumnName="TenMoTaDayDu" />
+                <ScalarProperty Name="TenNhaMang" ColumnName="TenNhaMang" />
+                <ScalarProperty Name="MaNhaMang" ColumnName="MaNhaMang" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tbl_SimSoDep_SimSo">
+            <EntityTypeMapping TypeName="SimSoDepModel.tbl_SimSoDep_SimSo">
+              <MappingFragment StoreEntitySet="tbl_SimSoDep_SimSo">
+                <ScalarProperty Name="GiaBanDau" ColumnName="GiaBanDau" />
+                <ScalarProperty Name="SoNuoc" ColumnName="SoNuoc" />
+                <ScalarProperty Name="LoaiAmDuong" ColumnName="LoaiAmDuong" />
+                <ScalarProperty Name="IdKinhDich" ColumnName="IdKinhDich" />
+                <ScalarProperty Name="IdNguHanh" ColumnName="IdNguHanh" />
+                <ScalarProperty Name="TrietKhau" ColumnName="TrietKhau" />
+                <ScalarProperty Name="MaDaiLy" ColumnName="MaDaiLy" />
+                <ScalarProperty Name="MaLoaiGia" ColumnName="MaLoaiGia" />
+                <ScalarProperty Name="MaTinhThanh" ColumnName="MaTinhThanh" />
+                <ScalarProperty Name="MaLoaiSim" ColumnName="MaLoaiSim" />
+                <ScalarProperty Name="MaDauSoChiTiet" ColumnName="MaDauSoChiTiet" />
+                <ScalarProperty Name="MaDauSo" ColumnName="MaDauSo" />
+                <ScalarProperty Name="MaLoaiDoDai" ColumnName="MaLoaiDoDai" />
+                <ScalarProperty Name="MaNhaMang" ColumnName="MaNhaMang" />
+                <ScalarProperty Name="TrangThaiTonTai" ColumnName="TrangThaiTonTai" />
+                <ScalarProperty Name="TrangThaiCuMoi" ColumnName="TrangThaiCuMoi" />
+                <ScalarProperty Name="TrangThaiBan" ColumnName="TrangThaiBan" />
+                <ScalarProperty Name="GiaTien" ColumnName="GiaTien" />
+                <ScalarProperty Name="DinhDangHienThi" ColumnName="DinhDangHienThi" />
+                <ScalarProperty Name="SoDienThoai" ColumnName="SoDienThoai" />
+                <ScalarProperty Name="MaSoDienThoai" ColumnName="MaSoDienThoai" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tbl_SimSoDep_SimSoLoaiSim">
+            <EntityTypeMapping TypeName="SimSoDepModel.tbl_SimSoDep_SimSoLoaiSim">
+              <MappingFragment StoreEntitySet="tbl_SimSoDep_SimSoLoaiSim">
+                <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+                <ScalarProperty Name="MaSoDienThoai" ColumnName="MaSoDienThoai" />
+                <ScalarProperty Name="MaLoaiSim" ColumnName="MaLoaiSim" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tbl_SimSoDep_TangThem">
+            <EntityTypeMapping TypeName="SimSoDepModel.tbl_SimSoDep_TangThem">
+              <MappingFragment StoreEntitySet="tbl_SimSoDep_TangThem">
+                <ScalarProperty Name="MaDaiLy" ColumnName="MaDaiLy" />
+                <ScalarProperty Name="TangThem" ColumnName="TangThem" />
+                <ScalarProperty Name="Den" ColumnName="Den" />
+                <ScalarProperty Name="GiaTu" ColumnName="GiaTu" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tbl_SimSoDep_TinhThanh">
+            <EntityTypeMapping TypeName="SimSoDepModel.tbl_SimSoDep_TinhThanh">
+              <MappingFragment StoreEntitySet="tbl_SimSoDep_TinhThanh">
+                <ScalarProperty Name="MetaKeyword" ColumnName="MetaKeyword" />
+                <ScalarProperty Name="MetaDescription" ColumnName="MetaDescription" />
+                <ScalarProperty Name="Status" ColumnName="Status" />
+                <ScalarProperty Name="SapXep" ColumnName="SapXep" />
+                <ScalarProperty Name="EnumFixed" ColumnName="EnumFixed" />
+                <ScalarProperty Name="Alias" ColumnName="Alias" />
+                <ScalarProperty Name="MoTa" ColumnName="MoTa" />
+                <ScalarProperty Name="TenTinhThanh" ColumnName="TenTinhThanh" />
+                <ScalarProperty Name="MaTinhThanh" ColumnName="MaTinhThanh" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tbl_SimSoDep_NguHanh">
+            <EntityTypeMapping TypeName="SimSoDepModel.tbl_SimSoDep_NguHanh">
+              <MappingFragment StoreEntitySet="tbl_SimSoDep_NguHanh">
+                <ScalarProperty Name="MoTa" ColumnName="MoTa" />
+                <ScalarProperty Name="TuongKhac" ColumnName="TuongKhac" />
+                <ScalarProperty Name="TuongSinh" ColumnName="TuongSinh" />
+                <ScalarProperty Name="Ten" ColumnName="Ten" />
+                <ScalarProperty Name="IdNguHanh" ColumnName="IdNguHanh" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tbl_SimSoDep_BanMenh">
+            <EntityTypeMapping TypeName="SimSoDepModel.tbl_SimSoDep_BanMenh">
+              <MappingFragment StoreEntitySet="tbl_SimSoDep_BanMenh">
+                <ScalarProperty Name="MoTa" ColumnName="MoTa" />
+                <ScalarProperty Name="TenBanMenh" ColumnName="TenBanMenh" />
+                <ScalarProperty Name="IdNguHanh" ColumnName="IdNguHanh" />
+                <ScalarProperty Name="Nam" ColumnName="Nam" />
+                <ScalarProperty Name="IdBanMenh" ColumnName="IdBanMenh" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tbl_SimSoDep_BatQuai">
+            <EntityTypeMapping TypeName="SimSoDepModel.tbl_SimSoDep_BatQuai">
+              <MappingFragment StoreEntitySet="tbl_SimSoDep_BatQuai">
+                <ScalarProperty Name="MoTa" ColumnName="MoTa" />
+                <ScalarProperty Name="PhienAm" ColumnName="PhienAm" />
+                <ScalarProperty Name="HinhQue" ColumnName="HinhQue" />
+                <ScalarProperty Name="TenQue" ColumnName="TenQue" />
+                <ScalarProperty Name="IdQueBatQuai" ColumnName="IdQueBatQuai" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tbl_SimSoDep_KinhDich">
+            <EntityTypeMapping TypeName="SimSoDepModel.tbl_SimSoDep_KinhDich">
+              <MappingFragment StoreEntitySet="tbl_SimSoDep_KinhDich">
+                <ScalarProperty Name="LoaiQue" ColumnName="LoaiQue" />
+                <ScalarProperty Name="IdKinhDich" ColumnName="IdKinhDich" />
+                <ScalarProperty Name="HinhQue" ColumnName="HinhQue" />
+                <ScalarProperty Name="YNghia" ColumnName="YNghia" />
+                <ScalarProperty Name="LoiDich" ColumnName="LoiDich" />
+                <ScalarProperty Name="PhienAm" ColumnName="PhienAm" />
+                <ScalarProperty Name="TenQue" ColumnName="TenQue" />
+                <ScalarProperty Name="IdQueHa" ColumnName="IdQueHa" />
+                <ScalarProperty Name="IdQueThuong" ColumnName="IdQueThuong" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <FunctionImportMapping FunctionImportName="SearchSimSo" FunctionName="SimSoDepModel.Store.sp_SearchSimSo">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="SimSoDepModel.SearchSimSo_Result">
+                <ScalarProperty Name="MaSoDienThoai" ColumnName="MaSoDienThoai" />
+                <ScalarProperty Name="SoDienThoai" ColumnName="SoDienThoai" />
+                <ScalarProperty Name="GiaTien" ColumnName="GiaTien" />
+                <ScalarProperty Name="TenNhaMang" ColumnName="TenNhaMang" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <EntitySetMapping Name="tbl_SimSoDep_ClientIp">
+            <EntityTypeMapping TypeName="SimSoDepModel.tbl_SimSoDep_ClientIp">
+              <MappingFragment StoreEntitySet="tbl_SimSoDep_ClientIp">
+                <ScalarProperty Name="ViewTime" ColumnName="ViewTime" />
+                <ScalarProperty Name="IpAddress" ColumnName="IpAddress" />
+                <ScalarProperty Name="IdClientIp" ColumnName="IdClientIp" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <FunctionImportMapping FunctionImportName="ThongKeSim" FunctionName="SimSoDepModel.Store.sp_ThongKeSim">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="SimSoDepModel.ThongKeSim_Result">
+                <ScalarProperty Name="NumViettel" ColumnName="NumViettel" />
+                <ScalarProperty Name="NumMobi" ColumnName="NumMobi" />
+                <ScalarProperty Name="NumVina" ColumnName="NumVina" />
+                <ScalarProperty Name="Numbeeline" ColumnName="Numbeeline" />
+                <ScalarProperty Name="NumSfone" ColumnName="NumSfone" />
+                <ScalarProperty Name="NumVietnam" ColumnName="NumVietnam" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2008/10/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="True" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="True" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams>
+      <Diagram Name="ModelSimSoDep" ZoomLevel="72">
+        <EntityTypeShape EntityType="SimSoDepModel.tbl_Global_User" Width="1.5" PointX="0.75" PointY="0.75" Height="1.5956835937500031" />
+        <EntityTypeShape EntityType="SimSoDepModel.tbl_SimSoDep_DaiLy" Width="1.5" PointX="3" PointY="6.75" Height="3.1340950520833388" />
+        <EntityTypeShape EntityType="SimSoDepModel.tbl_SimSoDep_DaiLyTrietKhau" Width="1.5" PointX="5.25" PointY="5.75" Height="2.1725878906250031" />
+        <EntityTypeShape EntityType="SimSoDepModel.tbl_SimSoDep_DatHang" Width="1.5" PointX="10.5" PointY="9.125" Height="1.9802864583333388" />
+        <EntityTypeShape EntityType="SimSoDepModel.tbl_SimSoDep_DauSo" Width="1.5" PointX="6" PointY="1.625" Height="2.9417936197916674" />
+        <EntityTypeShape EntityType="SimSoDepModel.tbl_SimSoDep_DauSoChiTiet" Width="1.5" PointX="6" PointY="9.375" Height="2.7494921875000031" />
+        <EntityTypeShape EntityType="SimSoDepModel.tbl_SimSoDep_KhachHang" Width="1.5" PointX="3" PointY="11.625" Height="2.5571907552083388" />
+        <EntityTypeShape EntityType="SimSoDepModel.tbl_SimSoDep_LoaiDoDaiSo" Width="1.5" PointX="6" PointY="18.875" Height="2.172587890624996" />
+        <EntityTypeShape EntityType="SimSoDepModel.tbl_SimSoDep_LoaiGia" Width="1.5" PointX="6" PointY="21.75" Height="2.5571907552083246" />
+        <EntityTypeShape EntityType="SimSoDepModel.tbl_SimSoDep_LoaiSim" Width="1.5" PointX="6" PointY="25.75" Height="2.3648893229166674" />
+        <EntityTypeShape EntityType="SimSoDepModel.tbl_SimSoDep_LoaiSimChiTiet" Width="1.5" PointX="8.25" PointY="25.75" Height="2.5571907552083388" />
+        <EntityTypeShape EntityType="SimSoDepModel.tbl_SimSoDep_LoaiSimChiTietSimSo" Width="1.5" PointX="10.5" PointY="6" Height="1.9802864583333388" />
+        <EntityTypeShape EntityType="SimSoDepModel.tbl_SimSoDep_NhaMang" Width="1.5" PointX="3.75" PointY="1.75" Height="2.7494921875000102" />
+        <EntityTypeShape EntityType="SimSoDepModel.tbl_SimSoDep_SimSo" Width="1.5" PointX="8.25" PointY="6" Height="6.0186165364583246" />
+        <EntityTypeShape EntityType="SimSoDepModel.tbl_SimSoDep_SimSoLoaiSim" Width="1.5" PointX="13.5" PointY="8" Height="1.9802864583333388" />
+        <EntityTypeShape EntityType="SimSoDepModel.tbl_SimSoDep_TangThem" Width="1.5" PointX="5.25" PointY="15.5" Height="2.172587890624996" />
+        <EntityTypeShape EntityType="SimSoDepModel.tbl_SimSoDep_TinhThanh" Width="1.5" PointX="0.75" PointY="8.625" Height="2.5571907552083246" />
+        <AssociationConnector Association="SimSoDepModel.FK_tbl_SimSoDep_DaiLy_tbl_SimSoDep_TinhThanh" >
+          <ConnectorPoint PointX="2.25" PointY="9.25454752604167" />
+          <ConnectorPoint PointX="2.6666666666666665" PointY="9.25454752604167" />
+          <ConnectorPoint PointX="2.8333333333333335" PointY="9.25454752604167" />
+          <ConnectorPoint PointX="3" PointY="9.25454752604167" />
+        </AssociationConnector>
+        <AssociationConnector Association="SimSoDepModel.FK_tbl_SimSoDep_DaiLyTrietKhau_tbl_SimSoDep_DaiLy" >
+          <ConnectorPoint PointX="4.5" PointY="7.3362939453125016" />
+          <ConnectorPoint PointX="4.947916666666667" PointY="7.3362939453125007" />
+          <ConnectorPoint PointX="5.114583333333333" PointY="7.3362939453125016" />
+          <ConnectorPoint PointX="5.25" PointY="7.3362939453125016" />
+        </AssociationConnector>
+        <AssociationConnector Association="SimSoDepModel.FK_tbl_SimSoDep_SimSo_tbl_SimSoDep_DaiLy" >
+          <ConnectorPoint PointX="4.5" PointY="8.4346980794270827" />
+          <ConnectorPoint PointX="4.947916666666667" PointY="8.4346980794270827" />
+          <ConnectorPoint PointX="5.114583333333333" PointY="8.4346980794270827" />
+          <ConnectorPoint PointX="7.072916666666667" PointY="8.4346980794270827" />
+          <ConnectorPoint PointX="7.239583333333333" PointY="8.4346980794270827" />
+          <ConnectorPoint PointX="8.25" PointY="8.4346980794270827" />
+        </AssociationConnector>
+        <AssociationConnector Association="SimSoDepModel.FK_tbl_SimSoDep_TangThem_tbl_SimSoDep_DaiLy" >
+          <ConnectorPoint PointX="4.5" PointY="9.8840950520833388" />
+          <ConnectorPoint PointX="4.875" PointY="10.259095052083339" />
+          <ConnectorPoint PointX="4.875" PointY="16.586293945312498" />
+          <ConnectorPoint PointX="5.25" PointY="16.586293945312498" />
+        </AssociationConnector>
+        <AssociationConnector Association="SimSoDepModel.FK_DatHang_KhachHang" >
+          <ConnectorPoint PointX="4.5" PointY="13.115061848958334" />
+          <ConnectorPoint PointX="4.791666666666667" PointY="13.115061848958334" />
+          <ConnectorPoint PointX="4.958333333333333" PointY="13.115061848958334" />
+          <ConnectorPoint PointX="8.5380655914713532" PointY="13.115061848958334" />
+          <ConnectorPoint PointX="8.7047322581380211" PointY="13.115061848958334" />
+          <ConnectorPoint PointX="9.1777890726725264" PointY="13.115061848958334" />
+          <ConnectorPoint PointX="9.3444557393391943" PointY="13.115061848958334" />
+          <ConnectorPoint PointX="9.453480369669597" PointY="13.115061848958334" />
+          <ConnectorPoint PointX="9.6201470363362649" PointY="13.115061848958334" />
+          <ConnectorPoint PointX="9.9166666666666661" PointY="13.115061848958334" />
+          <ConnectorPoint PointX="10.083333333333334" PointY="13.115061848958334" />
+          <ConnectorPoint PointX="11.96875" PointY="13.115061848958334" />
+          <ConnectorPoint PointX="11.96875" PointY="11.297587890625" />
+        </AssociationConnector>
+        <AssociationConnector Association="SimSoDepModel.FK_DatHang_SimSo" >
+          <ConnectorPoint PointX="9.75" PointY="10.2112939453125" />
+          <ConnectorPoint PointX="9.9166666666666661" PointY="10.2112939453125" />
+          <ConnectorPoint PointX="10.083333333333334" PointY="10.2112939453125" />
+          <ConnectorPoint PointX="10.5" PointY="10.2112939453125" />
+        </AssociationConnector>
+        <AssociationConnector Association="SimSoDepModel.FK_DauSoChiTiet_DauSo" >
+          <ConnectorPoint PointX="7.15625" PointY="4.7590950520833326" />
+          <ConnectorPoint PointX="7.15625" PointY="9.375" />
+        </AssociationConnector>
+        <AssociationConnector Association="SimSoDepModel.FK_SimSo_DauSo" >
+          <ConnectorPoint PointX="7.5" PointY="3.1920475260416667" />
+          <ConnectorPoint PointX="9.20312625" PointY="3.1920475260416667" />
+          <ConnectorPoint PointX="9.20312625" PointY="6" />
+        </AssociationConnector>
+        <AssociationConnector Association="SimSoDepModel.FK_tbl_SimSoDep_DauSo_tbl_SimSoDep_NhaMang" >
+          <ConnectorPoint PointX="5.25" PointY="3.1247460937500051" />
+          <ConnectorPoint PointX="6" PointY="3.1247460937500051" />
+        </AssociationConnector>
+        <AssociationConnector Association="SimSoDepModel.FK_SimSo_DauSoChiTiet" >
+          <ConnectorPoint PointX="7.5" PointY="10.942047526041666" />
+          <ConnectorPoint PointX="8.25" PointY="10.942047526041666" />
+        </AssociationConnector>
+        <AssociationConnector Association="SimSoDepModel.FK_tbl_SimSoDep_DauSoChiTiet_tbl_SimSoDep_NhaMang" >
+          <ConnectorPoint PointX="5.03125" PointY="4.8840950520833326" />
+          <ConnectorPoint PointX="5.03125" PointY="10.754547526041669" />
+          <ConnectorPoint PointX="6" PointY="10.754547526041669" />
+        </AssociationConnector>
+        <AssociationConnector Association="SimSoDepModel.FK_KhachHang_TinhThanh" >
+          <ConnectorPoint PointX="1.5" PointY="11.182190755208325" />
+          <ConnectorPoint PointX="1.5" PointY="12.903595377604169" />
+          <ConnectorPoint PointX="3" PointY="12.903595377604169" />
+        </AssociationConnector>
+        <AssociationConnector Association="SimSoDepModel.FK_SimSo_LoaiDoDaiSo" >
+          <ConnectorPoint PointX="7.5" PointY="20.153595377604169" />
+          <ConnectorPoint PointX="7.916666666666667" PointY="20.153595377604169" />
+          <ConnectorPoint PointX="8.0833333333333339" PointY="20.153595377604169" />
+          <ConnectorPoint PointX="8.5380655914713532" PointY="20.153595377604169" />
+          <ConnectorPoint PointX="8.7047322581380211" PointY="20.153595377604169" />
+          <ConnectorPoint PointX="8.85792733207194" PointY="20.153595377604169" />
+          <ConnectorPoint PointX="9.0245939987386077" PointY="20.153595377604169" />
+          <ConnectorPoint PointX="9.26112240600586" PointY="20.153595377604169" />
+          <ConnectorPoint PointX="9.26112240600586" PointY="12.980123697916666" />
+        </AssociationConnector>
+        <AssociationConnector Association="SimSoDepModel.FK_SimSo_LoaiGia" >
+          <ConnectorPoint PointX="7.5" PointY="23.220896809895834" />
+          <ConnectorPoint PointX="7.916666666666667" PointY="23.220896809895834" />
+          <ConnectorPoint PointX="8.0833333333333339" PointY="23.220896809895834" />
+          <ConnectorPoint PointX="8.6213989248046872" PointY="23.220896809895834" />
+          <ConnectorPoint PointX="8.6213989248046872" PointY="12.980123697916666" />
+        </AssociationConnector>
+        <AssociationConnector Association="SimSoDepModel.FK_LoaiSimChiTiet_LoaiSim" >
+          <ConnectorPoint PointX="7.5" PointY="26.932444661458334" />
+          <ConnectorPoint PointX="8.25" PointY="26.932444661458334" />
+        </AssociationConnector>
+        <AssociationConnector Association="SimSoDepModel.FK_tbl_SimSoDep_SimSoLoaiSim_tbl_SimSoDep_LoaiSim" >
+          <ConnectorPoint PointX="7.5" PointY="26.6276331764548" />
+          <ConnectorPoint PointX="8" PointY="26.6276331764548" />
+          <ConnectorPoint PointX="8" PointY="16.191793619791667" />
+          <ConnectorPoint PointX="8.5380655914713532" PointY="16.191793619791667" />
+          <ConnectorPoint PointX="8.7047322581380211" PointY="16.191793619791667" />
+          <ConnectorPoint PointX="8.90946451627604" PointY="16.191793619791667" />
+          <ConnectorPoint PointX="9.0761311829427083" PointY="16.191793619791667" />
+          <ConnectorPoint PointX="9.2880655914713532" PointY="16.191793619791667" />
+          <ConnectorPoint PointX="9.4547322581380211" PointY="16.191793619791667" />
+          <ConnectorPoint PointX="14.375" PointY="16.191793619791667" />
+          <ConnectorPoint PointX="14.375" PointY="10.355286458333339" />
+          <ConnectorPoint PointX="14.25" PointY="10.355286458333339" />
+          <ConnectorPoint PointX="14.25" PointY="9.9802864583333388" />
+        </AssociationConnector>
+        <AssociationConnector Association="SimSoDepModel.FK_tbl_SimSoDep_LoaiSimChiTietSimSo_tbl_SimSoDep_LoaiSimChiTiet" >
+          <ConnectorPoint PointX="8.9412606654052738" PointY="25.75" />
+          <ConnectorPoint PointX="8.9412606654052738" PointY="13.230123697916667" />
+          <ConnectorPoint PointX="9.1777890726725264" PointY="13.230123697916667" />
+          <ConnectorPoint PointX="9.3444557393391943" PointY="13.230123697916667" />
+          <ConnectorPoint PointX="9.453480369669597" PointY="13.230123697916667" />
+          <ConnectorPoint PointX="9.6201470363362649" PointY="13.230123697916667" />
+          <ConnectorPoint PointX="10" PointY="13.230123697916667" />
+          <ConnectorPoint PointX="10" PointY="7.237681036458337" />
+          <ConnectorPoint PointX="10.5" PointY="7.237681036458337" />
+        </AssociationConnector>
+        <AssociationConnector Association="SimSoDepModel.FK_tbl_SimSoDep_LoaiSimChiTietSimSo_tbl_SimSoDep_SimSo" >
+          <ConnectorPoint PointX="9.75" PointY="6.4325716145833347" />
+          <ConnectorPoint PointX="10.5" PointY="6.4325716145833347" />
+        </AssociationConnector>
+        <AssociationConnector Association="SimSoDepModel.FK_SimSo_NhaMang" >
+          <ConnectorPoint PointX="5.25" PointY="4.8528450520833326" />
+          <ConnectorPoint PointX="7.072916666666667" PointY="4.8528450520833317" />
+          <ConnectorPoint PointX="7.239583333333333" PointY="4.8528450520833326" />
+          <ConnectorPoint PointX="8.6953106250000012" PointY="4.8528450520833326" />
+          <ConnectorPoint PointX="8.6953106250000012" PointY="6" />
+        </AssociationConnector>
+        <AssociationConnector Association="SimSoDepModel.FK_SimSo_TinhThanh" >
+          <ConnectorPoint PointX="1.5" PointY="8.625" />
+          <ConnectorPoint PointX="1.5" PointY="8.375" />
+          <ConnectorPoint PointX="2.75" PointY="8.375" />
+          <ConnectorPoint PointX="2.75" PointY="10.134095052083339" />
+          <ConnectorPoint PointX="4.666666666666667" PointY="10.134095052083339" />
+          <ConnectorPoint PointX="4.833333333333333" PointY="10.134095052083339" />
+          <ConnectorPoint PointX="4.947916666666667" PointY="10.134095052083339" />
+          <ConnectorPoint PointX="5.114583333333333" PointY="10.134095052083339" />
+          <ConnectorPoint PointX="5.75" PointY="10.134095052083339" />
+          <ConnectorPoint PointX="5.75" PointY="9.125" />
+          <ConnectorPoint PointX="7.072916666666667" PointY="9.125" />
+          <ConnectorPoint PointX="7.239583333333333" PointY="9.125" />
+          <ConnectorPoint PointX="7.875" PointY="9.125" />
+          <ConnectorPoint PointX="7.875" PointY="9.6883728027343743" />
+          <ConnectorPoint PointX="8.25" PointY="9.6883728027343743" />
+        </AssociationConnector>
+        <AssociationConnector Association="SimSoDepModel.FK_tbl_SimSoDep_SimSoLoaiSim_tbl_SimSoDep_SimSo" >
+          <ConnectorPoint PointX="9.75" PointY="8.53125" />
+          <ConnectorPoint PointX="9.9166666666666661" PointY="8.53125" />
+          <ConnectorPoint PointX="10.083333333333334" PointY="8.53125" />
+          <ConnectorPoint PointX="13.5" PointY="8.53125" />
+        </AssociationConnector>
+        <EntityTypeShape EntityType="SimSoDepModel.tbl_SimSoDep_NguHanh" Width="4" PointX="14" PointY="4" Height="2.9417936197916674" />
+        <AssociationConnector Association="SimSoDepModel.FK_tbl_SimSoDep_NguHanh_tbl_SimSoDep_NguHanh" >
+          <ConnectorPoint PointX="15.404473843149038" PointY="7.1340950520833326" />
+          <ConnectorPoint PointX="15.404473843149038" PointY="7.3840950520833317" />
+          <ConnectorPoint PointX="16.623884545272436" PointY="7.3840950520833317" />
+          <ConnectorPoint PointX="16.623884545272436" PointY="7.1340950520833326" />
+        </AssociationConnector>
+        <AssociationConnector Association="SimSoDepModel.FK_tbl_SimSoDep_NguHanh_tbl_SimSoDep_NguHanh1" >
+          <ConnectorPoint PointX="15.404473843149038" PointY="4" />
+          <ConnectorPoint PointX="15.404473843149038" PointY="3.75" />
+          <ConnectorPoint PointX="16.623884545272436" PointY="3.75" />
+          <ConnectorPoint PointX="16.623884545272436" PointY="4" />
+        </AssociationConnector>
+        <EntityTypeShape EntityType="SimSoDepModel.tbl_SimSoDep_BanMenh" Width="1.5" PointX="11.125" PointY="1.75" Height="2.172587890624996" />
+        <AssociationConnector Association="SimSoDepModel.FK_tbl_SimSoDep_BanMenh_tbl_SimSoDep_NguHanh" >
+          <ConnectorPoint PointX="14" PointY="4.96875" />
+          <ConnectorPoint PointX="12.34375" PointY="4.96875" />
+          <ConnectorPoint PointX="12.34375" PointY="3.922587890624996" />
+        </AssociationConnector>
+        <EntityTypeShape EntityType="SimSoDepModel.tbl_SimSoDep_BatQuai" Width="1.5" PointX="10.375" PointY="13.25" Height="2.3648893229166674" />
+        <EntityTypeShape EntityType="SimSoDepModel.tbl_SimSoDep_KinhDich" Width="1.5" PointX="12.625" PointY="13" Height="2.9417936197916674" />
+        <AssociationConnector Association="SimSoDepModel.FK_tbl_SimSoDep_KinhDich_tbl_SimSoDep_BatQuai" >
+          <ConnectorPoint PointX="11.875" PointY="14.759305826822917" />
+          <ConnectorPoint PointX="12.625" PointY="14.759305826822917" />
+        </AssociationConnector>
+        <AssociationConnector Association="SimSoDepModel.FK_tbl_SimSoDep_KinhDich_tbl_SimSoDep_BatQuai1" >
+          <ConnectorPoint PointX="11.875" PointY="13.942152913411459" />
+          <ConnectorPoint PointX="12.625" PointY="13.942152913411459" />
+        </AssociationConnector>
+        <AssociationConnector Association="SimSoDepModel.FK_tbl_SimSoDep_SimSo_tbl_SimSoDep_KinhDich" >
+          <ConnectorPoint PointX="12.625" PointY="16.001892903645835" />
+          <ConnectorPoint PointX="9.536813703002931" PointY="16.001892903645835" />
+          <ConnectorPoint PointX="9.536813703002931" PointY="12.980123697916666" />
+        </AssociationConnector>
+        <AssociationConnector Association="SimSoDepModel.FK_tbl_SimSoDep_SimSo_tbl_SimSoDep_NguHanh" >
+          <ConnectorPoint PointX="16.53125" PointY="7.1340950520833326" />
+          <ConnectorPoint PointX="16.53125" PointY="12.073955078125003" />
+          <ConnectorPoint PointX="14.458333333333334" PointY="12.073955078125003" />
+          <ConnectorPoint PointX="14.291666666666666" PointY="12.073955078125003" />
+          <ConnectorPoint PointX="12.052083333333334" PointY="12.073955078125003" />
+          <ConnectorPoint PointX="11.885416666666666" PointY="12.073955078125003" />
+          <ConnectorPoint PointX="10.083333333333334" PointY="12.073955078125003" />
+          <ConnectorPoint PointX="9.9166666666666661" PointY="12.073955078125003" />
+          <ConnectorPoint PointX="9.75" PointY="12.073955078125003" />
+        </AssociationConnector>
+        <EntityTypeShape EntityType="SimSoDepModel.tbl_SimSoDep_ClientIp" Width="1.5" PointX="0.75" PointY="3.75" Height="1.5956835937500102" />
+        </Diagram>
+    </Diagrams>
+  </Designer>
+</edmx:Edmx>

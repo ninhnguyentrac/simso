@@ -1,0 +1,30 @@
+﻿@using SimSoDep.Models
+@model List<DauSoModel>
+@{
+    ViewBag.Title = "Dau so";
+    var grid = new WebGrid(Model, rowsPerPage: 20);
+}
+<h2>
+    Đầu số</h2>
+@Html.Partial("_CatagoryMenu")
+<div class="tableContent">
+@Html.ActionLink("Thêm đầu số","Add","DauSoManager")
+    @grid.GetHtml(columns: grid.Columns(
+                             grid.Column("Id", "ID"),
+                             grid.Column("Ten", "Đầu số"),
+                             grid.Column("TenNhaMang","Mạng"),
+                             grid.Column("SapXep","Sắp xếp"),
+                                     grid.Column("TenStatus", "Status"),
+                             grid.Column("Alias", "Alias"),
+                             grid.Column("EnumFixed", "Enum data"),
+                             grid.Column("MoTa","Mô tả"),
+                             grid.Column(columnName: "", header: "", format: (item) =>
+                             {
+                                var links = Html.ActionLink("Edit", "Edit", new { controller = "DauSoManager", id = item.Id }) + " | " +
+                                            Html.ActionLink("Delete", "Delete", new { controller = "DauSoManager", id = item.Id });
+
+                                return Html.Raw(links);
+
+                            })
+                       ))
+</div>

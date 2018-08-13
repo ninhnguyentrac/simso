@@ -1,0 +1,9 @@
+﻿@model List<SimSoDep.Models.DauSoModel> 
+<ul class="accordion">
+    @foreach (var dauso in Model)
+    { 
+        <li>
+        @Html.ActionLink(dauso.Ten, "ChiTiet", new { id = dauso.Alias }, new { @class="trigger"})
+        </li>
+    }
+</ul>

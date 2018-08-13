@@ -1,0 +1,12 @@
+﻿@model List<SimSoDep.Models.NhaMangModel> 
+<ul class="accordion">
+    @foreach (var nhamang in Model)
+    { 
+        <li>
+        @Html.ActionLink(nhamang.Ten, "ChiTiet", new { id = nhamang.Alias }, new { @class="trigger"})
+       @* <ul class="subdanhmuc">
+            @Html.Partial("~/Views/LoaiSimSo/GetMenuLoaiSim.cshtml", (List<SimSoDep.Models.LoaiSimModel>)ViewBag.ListLoaiSim)
+        </ul>*@
+        </li>
+    }
+</ul>

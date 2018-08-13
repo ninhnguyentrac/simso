@@ -1,0 +1,37 @@
+﻿@model IEnumerable<SimSoDep.Areas.Administrator.Models.SimSoDaiLyModes>
+@{
+    ViewBag.Title = "Tìm kiếm";
+}
+@*<script type="text/javascript">
+    $(document).ready(function () {
+        $("#btnTim").live('click', function () {
+            var so = $.trim($("#searchStringManager").val());
+            if (so.length < 10 || so.length > 11) {
+                alert("Nhập số không đúng. Nhập lại");
+                return;
+            }
+            $("#timKiemResult").load("Administrator/TimKiemManager/TimSo", { "so": so }, function (response, status, xhr) {
+                if (status == "error") {
+                    var msg = "Sorry but there was an error: ";
+                    alert(msg + xhr.status + " " + xhr.statusText);
+                }
+            });
+        });
+    });
+</script>*@
+<h2>
+    Tìm kiếm số điện thoại</h2>
+<label>
+    Nhập số cần tìm:
+</label>
+<form action="TimSo" method="GET">
+<input type="text" placeholder="nhập số cần tìm" id="searchStringManager" name="so"/>
+@Html.DropDownList("madaily",ViewBag.DaiLy as SelectList,"Tất cả")
+<input type="submit" value="Tìm kiếm" id="btnTim" />
+</form>
+<div id="timKiemResult">
+    @if (Model != null)
+    {
+        @Html.Partial("TimSo", Model)    
+    }
+</div>

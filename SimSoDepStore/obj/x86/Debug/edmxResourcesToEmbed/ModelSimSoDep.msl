@@ -1,0 +1,322 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="SimSoDepModelStoreContainer" CdmEntityContainer="SimSoDepEntities">
+    <EntitySetMapping Name="tbl_Global_User">
+      <EntityTypeMapping TypeName="SimSoDepModel.tbl_Global_User">
+        <MappingFragment StoreEntitySet="tbl_Global_User">
+          <ScalarProperty Name="PassWord" ColumnName="PassWord" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_SimSoDep_DaiLy">
+      <EntityTypeMapping TypeName="SimSoDepModel.tbl_SimSoDep_DaiLy">
+        <MappingFragment StoreEntitySet="tbl_SimSoDep_DaiLy">
+          <ScalarProperty Name="MaTinhThanh" ColumnName="MaTinhThanh" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="DiaChi" ColumnName="DiaChi" />
+          <ScalarProperty Name="MayBan" ColumnName="MayBan" />
+          <ScalarProperty Name="DiDong" ColumnName="DiDong" />
+          <ScalarProperty Name="TenDaiLy" ColumnName="TenDaiLy" />
+          <ScalarProperty Name="MaDaiLy" ColumnName="MaDaiLy" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_SimSoDep_DaiLyTrietKhau">
+      <EntityTypeMapping TypeName="SimSoDepModel.tbl_SimSoDep_DaiLyTrietKhau">
+        <MappingFragment StoreEntitySet="tbl_SimSoDep_DaiLyTrietKhau">
+          <ScalarProperty Name="MaDaiLy" ColumnName="MaDaiLy" />
+          <ScalarProperty Name="TrietKhau" ColumnName="TrietKhau" />
+          <ScalarProperty Name="Den" ColumnName="Den" />
+          <ScalarProperty Name="GiaTu" ColumnName="GiaTu" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_SimSoDep_DatHang">
+      <EntityTypeMapping TypeName="SimSoDepModel.tbl_SimSoDep_DatHang">
+        <MappingFragment StoreEntitySet="tbl_SimSoDep_DatHang">
+          <ScalarProperty Name="ThoiGian" ColumnName="ThoiGian" />
+          <ScalarProperty Name="MaSoDienThoai" ColumnName="MaSoDienThoai" />
+          <ScalarProperty Name="MaKhachHang" ColumnName="MaKhachHang" />
+          <ScalarProperty Name="MaDatHang" ColumnName="MaDatHang" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_SimSoDep_DauSo">
+      <EntityTypeMapping TypeName="SimSoDepModel.tbl_SimSoDep_DauSo">
+        <MappingFragment StoreEntitySet="tbl_SimSoDep_DauSo">
+          <ScalarProperty Name="MetaKeyword" ColumnName="MetaKeyword" />
+          <ScalarProperty Name="MetaDescription" ColumnName="MetaDescription" />
+          <ScalarProperty Name="SapXep" ColumnName="SapXep" />
+          <ScalarProperty Name="MaNhaMang" ColumnName="MaNhaMang" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="EnumFixed" ColumnName="EnumFixed" />
+          <ScalarProperty Name="Alias" ColumnName="Alias" />
+          <ScalarProperty Name="MoTa" ColumnName="MoTa" />
+          <ScalarProperty Name="TenDauSo" ColumnName="TenDauSo" />
+          <ScalarProperty Name="MaDauSo" ColumnName="MaDauSo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_SimSoDep_DauSoChiTiet">
+      <EntityTypeMapping TypeName="SimSoDepModel.tbl_SimSoDep_DauSoChiTiet">
+        <MappingFragment StoreEntitySet="tbl_SimSoDep_DauSoChiTiet">
+          <ScalarProperty Name="MetaKeyword" ColumnName="MetaKeyword" />
+          <ScalarProperty Name="MetaDescription" ColumnName="MetaDescription" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="SapXep" ColumnName="SapXep" />
+          <ScalarProperty Name="MaNhaMang" ColumnName="MaNhaMang" />
+          <ScalarProperty Name="EnumFixed" ColumnName="EnumFixed" />
+          <ScalarProperty Name="MoTa" ColumnName="MoTa" />
+          <ScalarProperty Name="TenDauSoChiTiet" ColumnName="TenDauSoChiTiet" />
+          <ScalarProperty Name="MaDauSo" ColumnName="MaDauSo" />
+          <ScalarProperty Name="MaDauSoChiTiet" ColumnName="MaDauSoChiTiet" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_SimSoDep_KhachHang">
+      <EntityTypeMapping TypeName="SimSoDepModel.tbl_SimSoDep_KhachHang">
+        <MappingFragment StoreEntitySet="tbl_SimSoDep_KhachHang">
+          <ScalarProperty Name="GhiChu" ColumnName="GhiChu" />
+          <ScalarProperty Name="MaTinhThanh" ColumnName="MaTinhThanh" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="SoDienThoai" ColumnName="SoDienThoai" />
+          <ScalarProperty Name="DiaChi" ColumnName="DiaChi" />
+          <ScalarProperty Name="TenKhachHang" ColumnName="TenKhachHang" />
+          <ScalarProperty Name="MaKhachHang" ColumnName="MaKhachHang" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_SimSoDep_LoaiDoDaiSo">
+      <EntityTypeMapping TypeName="SimSoDepModel.tbl_SimSoDep_LoaiDoDaiSo">
+        <MappingFragment StoreEntitySet="tbl_SimSoDep_LoaiDoDaiSo">
+          <ScalarProperty Name="MetaKeyword" ColumnName="MetaKeyword" />
+          <ScalarProperty Name="MetaDescription" ColumnName="MetaDescription" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="SapXep" ColumnName="SapXep" />
+          <ScalarProperty Name="EnumFixed" ColumnName="EnumFixed" />
+          <ScalarProperty Name="Alias" ColumnName="Alias" />
+          <ScalarProperty Name="MoTa" ColumnName="MoTa" />
+          <ScalarProperty Name="TenLoaiDoDai" ColumnName="TenLoaiDoDai" />
+          <ScalarProperty Name="MaLoaiDoDai" ColumnName="MaLoaiDoDai" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_SimSoDep_LoaiGia">
+      <EntityTypeMapping TypeName="SimSoDepModel.tbl_SimSoDep_LoaiGia">
+        <MappingFragment StoreEntitySet="tbl_SimSoDep_LoaiGia">
+          <ScalarProperty Name="MetaKeyword" ColumnName="MetaKeyword" />
+          <ScalarProperty Name="MetaDescription" ColumnName="MetaDescription" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="SapXep" ColumnName="SapXep" />
+          <ScalarProperty Name="Den" ColumnName="Den" />
+          <ScalarProperty Name="GiaTu" ColumnName="GiaTu" />
+          <ScalarProperty Name="EnumFixed" ColumnName="EnumFixed" />
+          <ScalarProperty Name="Alias" ColumnName="Alias" />
+          <ScalarProperty Name="MoTa" ColumnName="MoTa" />
+          <ScalarProperty Name="TenLoaiGia" ColumnName="TenLoaiGia" />
+          <ScalarProperty Name="MaLoaiGia" ColumnName="MaLoaiGia" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_SimSoDep_LoaiSim">
+      <EntityTypeMapping TypeName="SimSoDepModel.tbl_SimSoDep_LoaiSim">
+        <MappingFragment StoreEntitySet="tbl_SimSoDep_LoaiSim">
+          <ScalarProperty Name="MetaKeyword" ColumnName="MetaKeyword" />
+          <ScalarProperty Name="MetaDescription" ColumnName="MetaDescription" />
+          <ScalarProperty Name="SapXep" ColumnName="SapXep" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="EnumFixed" ColumnName="EnumFixed" />
+          <ScalarProperty Name="Alias" ColumnName="Alias" />
+          <ScalarProperty Name="MoTa" ColumnName="MoTa" />
+          <ScalarProperty Name="TenLoaiSim" ColumnName="TenLoaiSim" />
+          <ScalarProperty Name="MaLoaiSim" ColumnName="MaLoaiSim" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_SimSoDep_LoaiSimChiTiet">
+      <EntityTypeMapping TypeName="SimSoDepModel.tbl_SimSoDep_LoaiSimChiTiet">
+        <MappingFragment StoreEntitySet="tbl_SimSoDep_LoaiSimChiTiet">
+          <ScalarProperty Name="MetaKeyword" ColumnName="MetaKeyword" />
+          <ScalarProperty Name="MetaDescription" ColumnName="MetaDescription" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="SapXep" ColumnName="SapXep" />
+          <ScalarProperty Name="EnumFixed" ColumnName="EnumFixed" />
+          <ScalarProperty Name="Alias" ColumnName="Alias" />
+          <ScalarProperty Name="MoTa" ColumnName="MoTa" />
+          <ScalarProperty Name="TenLoaiSimChiTiet" ColumnName="TenLoaiSimChiTiet" />
+          <ScalarProperty Name="MaLoaiSim" ColumnName="MaLoaiSim" />
+          <ScalarProperty Name="MaLoaiSimChiTiet" ColumnName="MaLoaiSimChiTiet" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_SimSoDep_LoaiSimChiTietSimSo">
+      <EntityTypeMapping TypeName="SimSoDepModel.tbl_SimSoDep_LoaiSimChiTietSimSo">
+        <MappingFragment StoreEntitySet="tbl_SimSoDep_LoaiSimChiTietSimSo">
+          <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+          <ScalarProperty Name="MaSoDienThoai" ColumnName="MaSoDienThoai" />
+          <ScalarProperty Name="MaLoaiSimChiTiet" ColumnName="MaLoaiSimChiTiet" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_SimSoDep_NhaMang">
+      <EntityTypeMapping TypeName="SimSoDepModel.tbl_SimSoDep_NhaMang">
+        <MappingFragment StoreEntitySet="tbl_SimSoDep_NhaMang">
+          <ScalarProperty Name="MetaKeyword" ColumnName="MetaKeyword" />
+          <ScalarProperty Name="MetaDescription" ColumnName="MetaDescription" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="SapXep" ColumnName="SapXep" />
+          <ScalarProperty Name="EnumFixed" ColumnName="EnumFixed" />
+          <ScalarProperty Name="Alias" ColumnName="Alias" />
+          <ScalarProperty Name="MoTa" ColumnName="MoTa" />
+          <ScalarProperty Name="TenMoTaDayDu" ColumnName="TenMoTaDayDu" />
+          <ScalarProperty Name="TenNhaMang" ColumnName="TenNhaMang" />
+          <ScalarProperty Name="MaNhaMang" ColumnName="MaNhaMang" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_SimSoDep_SimSo">
+      <EntityTypeMapping TypeName="SimSoDepModel.tbl_SimSoDep_SimSo">
+        <MappingFragment StoreEntitySet="tbl_SimSoDep_SimSo">
+          <ScalarProperty Name="GiaBanDau" ColumnName="GiaBanDau" />
+          <ScalarProperty Name="SoNuoc" ColumnName="SoNuoc" />
+          <ScalarProperty Name="LoaiAmDuong" ColumnName="LoaiAmDuong" />
+          <ScalarProperty Name="IdKinhDich" ColumnName="IdKinhDich" />
+          <ScalarProperty Name="IdNguHanh" ColumnName="IdNguHanh" />
+          <ScalarProperty Name="TrietKhau" ColumnName="TrietKhau" />
+          <ScalarProperty Name="MaDaiLy" ColumnName="MaDaiLy" />
+          <ScalarProperty Name="MaLoaiGia" ColumnName="MaLoaiGia" />
+          <ScalarProperty Name="MaTinhThanh" ColumnName="MaTinhThanh" />
+          <ScalarProperty Name="MaLoaiSim" ColumnName="MaLoaiSim" />
+          <ScalarProperty Name="MaDauSoChiTiet" ColumnName="MaDauSoChiTiet" />
+          <ScalarProperty Name="MaDauSo" ColumnName="MaDauSo" />
+          <ScalarProperty Name="MaLoaiDoDai" ColumnName="MaLoaiDoDai" />
+          <ScalarProperty Name="MaNhaMang" ColumnName="MaNhaMang" />
+          <ScalarProperty Name="TrangThaiTonTai" ColumnName="TrangThaiTonTai" />
+          <ScalarProperty Name="TrangThaiCuMoi" ColumnName="TrangThaiCuMoi" />
+          <ScalarProperty Name="TrangThaiBan" ColumnName="TrangThaiBan" />
+          <ScalarProperty Name="GiaTien" ColumnName="GiaTien" />
+          <ScalarProperty Name="DinhDangHienThi" ColumnName="DinhDangHienThi" />
+          <ScalarProperty Name="SoDienThoai" ColumnName="SoDienThoai" />
+          <ScalarProperty Name="MaSoDienThoai" ColumnName="MaSoDienThoai" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_SimSoDep_SimSoLoaiSim">
+      <EntityTypeMapping TypeName="SimSoDepModel.tbl_SimSoDep_SimSoLoaiSim">
+        <MappingFragment StoreEntitySet="tbl_SimSoDep_SimSoLoaiSim">
+          <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+          <ScalarProperty Name="MaSoDienThoai" ColumnName="MaSoDienThoai" />
+          <ScalarProperty Name="MaLoaiSim" ColumnName="MaLoaiSim" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_SimSoDep_TangThem">
+      <EntityTypeMapping TypeName="SimSoDepModel.tbl_SimSoDep_TangThem">
+        <MappingFragment StoreEntitySet="tbl_SimSoDep_TangThem">
+          <ScalarProperty Name="MaDaiLy" ColumnName="MaDaiLy" />
+          <ScalarProperty Name="TangThem" ColumnName="TangThem" />
+          <ScalarProperty Name="Den" ColumnName="Den" />
+          <ScalarProperty Name="GiaTu" ColumnName="GiaTu" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_SimSoDep_TinhThanh">
+      <EntityTypeMapping TypeName="SimSoDepModel.tbl_SimSoDep_TinhThanh">
+        <MappingFragment StoreEntitySet="tbl_SimSoDep_TinhThanh">
+          <ScalarProperty Name="MetaKeyword" ColumnName="MetaKeyword" />
+          <ScalarProperty Name="MetaDescription" ColumnName="MetaDescription" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="SapXep" ColumnName="SapXep" />
+          <ScalarProperty Name="EnumFixed" ColumnName="EnumFixed" />
+          <ScalarProperty Name="Alias" ColumnName="Alias" />
+          <ScalarProperty Name="MoTa" ColumnName="MoTa" />
+          <ScalarProperty Name="TenTinhThanh" ColumnName="TenTinhThanh" />
+          <ScalarProperty Name="MaTinhThanh" ColumnName="MaTinhThanh" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_SimSoDep_NguHanh">
+      <EntityTypeMapping TypeName="SimSoDepModel.tbl_SimSoDep_NguHanh">
+        <MappingFragment StoreEntitySet="tbl_SimSoDep_NguHanh">
+          <ScalarProperty Name="MoTa" ColumnName="MoTa" />
+          <ScalarProperty Name="TuongKhac" ColumnName="TuongKhac" />
+          <ScalarProperty Name="TuongSinh" ColumnName="TuongSinh" />
+          <ScalarProperty Name="Ten" ColumnName="Ten" />
+          <ScalarProperty Name="IdNguHanh" ColumnName="IdNguHanh" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_SimSoDep_BanMenh">
+      <EntityTypeMapping TypeName="SimSoDepModel.tbl_SimSoDep_BanMenh">
+        <MappingFragment StoreEntitySet="tbl_SimSoDep_BanMenh">
+          <ScalarProperty Name="MoTa" ColumnName="MoTa" />
+          <ScalarProperty Name="TenBanMenh" ColumnName="TenBanMenh" />
+          <ScalarProperty Name="IdNguHanh" ColumnName="IdNguHanh" />
+          <ScalarProperty Name="Nam" ColumnName="Nam" />
+          <ScalarProperty Name="IdBanMenh" ColumnName="IdBanMenh" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_SimSoDep_BatQuai">
+      <EntityTypeMapping TypeName="SimSoDepModel.tbl_SimSoDep_BatQuai">
+        <MappingFragment StoreEntitySet="tbl_SimSoDep_BatQuai">
+          <ScalarProperty Name="MoTa" ColumnName="MoTa" />
+          <ScalarProperty Name="PhienAm" ColumnName="PhienAm" />
+          <ScalarProperty Name="HinhQue" ColumnName="HinhQue" />
+          <ScalarProperty Name="TenQue" ColumnName="TenQue" />
+          <ScalarProperty Name="IdQueBatQuai" ColumnName="IdQueBatQuai" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_SimSoDep_KinhDich">
+      <EntityTypeMapping TypeName="SimSoDepModel.tbl_SimSoDep_KinhDich">
+        <MappingFragment StoreEntitySet="tbl_SimSoDep_KinhDich">
+          <ScalarProperty Name="LoaiQue" ColumnName="LoaiQue" />
+          <ScalarProperty Name="IdKinhDich" ColumnName="IdKinhDich" />
+          <ScalarProperty Name="HinhQue" ColumnName="HinhQue" />
+          <ScalarProperty Name="YNghia" ColumnName="YNghia" />
+          <ScalarProperty Name="LoiDich" ColumnName="LoiDich" />
+          <ScalarProperty Name="PhienAm" ColumnName="PhienAm" />
+          <ScalarProperty Name="TenQue" ColumnName="TenQue" />
+          <ScalarProperty Name="IdQueHa" ColumnName="IdQueHa" />
+          <ScalarProperty Name="IdQueThuong" ColumnName="IdQueThuong" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="SearchSimSo" FunctionName="SimSoDepModel.Store.sp_SearchSimSo">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="SimSoDepModel.SearchSimSo_Result">
+          <ScalarProperty Name="MaSoDienThoai" ColumnName="MaSoDienThoai" />
+          <ScalarProperty Name="SoDienThoai" ColumnName="SoDienThoai" />
+          <ScalarProperty Name="GiaTien" ColumnName="GiaTien" />
+          <ScalarProperty Name="TenNhaMang" ColumnName="TenNhaMang" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <EntitySetMapping Name="tbl_SimSoDep_ClientIp">
+      <EntityTypeMapping TypeName="SimSoDepModel.tbl_SimSoDep_ClientIp">
+        <MappingFragment StoreEntitySet="tbl_SimSoDep_ClientIp">
+          <ScalarProperty Name="ViewTime" ColumnName="ViewTime" />
+          <ScalarProperty Name="IpAddress" ColumnName="IpAddress" />
+          <ScalarProperty Name="IdClientIp" ColumnName="IdClientIp" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="ThongKeSim" FunctionName="SimSoDepModel.Store.sp_ThongKeSim">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="SimSoDepModel.ThongKeSim_Result">
+          <ScalarProperty Name="NumViettel" ColumnName="NumViettel" />
+          <ScalarProperty Name="NumMobi" ColumnName="NumMobi" />
+          <ScalarProperty Name="NumVina" ColumnName="NumVina" />
+          <ScalarProperty Name="Numbeeline" ColumnName="Numbeeline" />
+          <ScalarProperty Name="NumSfone" ColumnName="NumSfone" />
+          <ScalarProperty Name="NumVietnam" ColumnName="NumVietnam" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+  </EntityContainerMapping>
+</Mapping>

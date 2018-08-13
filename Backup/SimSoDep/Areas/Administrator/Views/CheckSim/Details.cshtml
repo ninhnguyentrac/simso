@@ -1,0 +1,46 @@
+﻿@model IEnumerable<SimSoDep.Areas.Administrator.Models.CheckSoModel>
+@{
+    ViewBag.Title = "Details";
+}
+<h2>
+    Kết quả</h2>
+<table>
+    <tr>
+        <th>
+            SoDienThoai
+        </th>
+        <th>
+            TenQue
+        </th>
+        <th>
+            NguHanh
+        </th>
+        <th>
+            SoNuoc
+        </th>
+        <th>
+            LoaiAmDuong
+        </th>
+    </tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+         <td>
+                @Html.DisplayFor(modelItem => item.SoDienThoai)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TenQue)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.NguHanh)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.SoNuoc)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.LoaiAmDuong)
+            </td>
+           
+        </tr>
+    }
+</table>

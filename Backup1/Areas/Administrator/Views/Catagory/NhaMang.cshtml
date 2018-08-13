@@ -1,0 +1,28 @@
+﻿@using SimSoDep.Models
+@model List<NhaMangModel>
+@{
+    ViewBag.Title = "Nha mang";
+    var grid = new WebGrid(Model, rowsPerPage: 20);
+}
+<h2>
+    Nhà mạng</h2>
+@Html.Partial("_CatagoryMenu")
+<div class="tableContent">
+    @Html.ActionLink("Thêm nhà mạng", "Add", "NhaMangManager")
+    @grid.GetHtml(columns: grid.Columns(
+                             grid.Column("Id", "ID"),
+                             grid.Column("Ten", "Nhà mạng"),
+                                     grid.Column("SapXep", "Sắp xếp"),
+                                             grid.Column("TenStatus", "Status"),
+                             grid.Column("Alias", "Alias"),
+                                             grid.Column("EnumFixed", "Enum data"),
+                                     grid.Column(columnName: "", header: "", format: (item) =>
+                                     {
+                                         var links = Html.ActionLink("Edit", "Edit", new { controller = "NhaMangManager", id = item.Id }) + " | " +
+                                                     Html.ActionLink("Delete", "Delete", new { controller = "NhaMangManager", id = item.Id });
+
+                                         return Html.Raw(links);
+
+                                     })
+                       ))
+</div>

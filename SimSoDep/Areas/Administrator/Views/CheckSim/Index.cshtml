@@ -1,0 +1,13 @@
+﻿@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Nhập file excel để tìm số đẹp phong thủy</h2>
+<h4>@ViewBag.Message</h4>
+@using (Html.BeginForm("Details", "CheckSim", FormMethod.Post, new { enctype = "multipart/form-data" }))
+{
+    @*<label>Chọn tệp:</label>
+    <input type="file" name="ExcelFile" id="fileUpload"/>*@
+    <textarea name="txtString" style="width: 200px;height: 300px"></textarea>
+    <input type="submit" value="Submit"/>
+}

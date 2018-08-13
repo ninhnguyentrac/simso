@@ -1,0 +1,31 @@
+﻿@using SimSoDep.Models
+@model List<KinhDichModel>
+@{
+    ViewBag.Title = "Kinh dịch";
+    var grid = new WebGrid(Model, rowsPerPage: 100);
+}
+<h2>
+    Loại giá</h2>
+@Html.Partial("_BoiSimSoMenu")
+<div class="tableContent">
+    @Html.ActionLink("Thêm quẻ dịch", "Create", "KinhDichManager")
+    @grid.GetHtml(columns: grid.Columns(
+                                     grid.Column("IdKinhDich", "ID"),
+                                     grid.Column("TenLoaiQue", "Loại quẻ"),
+                                     grid.Column("QueThuong", "Quẻ thượng"),
+                                     grid.Column("QueHa", "Quẻ hạ"),
+                                     grid.Column("TenQue", "Tên quẻ"),
+                                     grid.Column("PhienAm", "Phiên âm"),
+                                     grid.Column("LoiDich", "Lời dịch"),
+                                     grid.Column("YNghia", "Ý nghĩa"),
+                                     grid.Column("HinhQue", "Hình quẻ"),
+                                     grid.Column(columnName: "", header: "", format: (item) =>
+                                     {
+                                         var links = Html.ActionLink("Edit", "Edit", new { controller = "KinhDichManager", id = item.IdKinhDich }) + " | " +
+                                                     Html.ActionLink("Delete", "Delete", new { controller = "KinhDichManager", id = item.IdKinhDich });
+
+                                         return Html.Raw(links);
+
+                                     })
+                    ))
+</div>

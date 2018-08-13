@@ -1,0 +1,167 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{01A331DA-7806-442A-B6B1-609B2B3CA6A4}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SimSoDepStore</RootNamespace>
+    <AssemblyName>SimSoDepStore</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ModelSimSoDep.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ModelSimSoDep.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelSimSoDep.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ModelSimSoDep.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelSimSoDep.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ModelSimSoDep.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SearchSimSo_Result.cs">
+      <DependentUpon>ModelSimSoDep.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_Global_User.cs">
+      <DependentUpon>ModelSimSoDep.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_SimSoDep_BanMenh.cs">
+      <DependentUpon>ModelSimSoDep.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_SimSoDep_BatQuai.cs">
+      <DependentUpon>ModelSimSoDep.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_SimSoDep_ClientIp.cs">
+      <DependentUpon>ModelSimSoDep.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_SimSoDep_DaiLy.cs">
+      <DependentUpon>ModelSimSoDep.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_SimSoDep_DaiLyTrietKhau.cs">
+      <DependentUpon>ModelSimSoDep.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_SimSoDep_DatHang.cs">
+      <DependentUpon>ModelSimSoDep.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_SimSoDep_DauSo.cs">
+      <DependentUpon>ModelSimSoDep.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_SimSoDep_DauSoChiTiet.cs">
+      <DependentUpon>ModelSimSoDep.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_SimSoDep_KhachHang.cs">
+      <DependentUpon>ModelSimSoDep.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_SimSoDep_KinhDich.cs">
+      <DependentUpon>ModelSimSoDep.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_SimSoDep_LoaiDoDaiSo.cs">
+      <DependentUpon>ModelSimSoDep.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_SimSoDep_LoaiGia.cs">
+      <DependentUpon>ModelSimSoDep.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_SimSoDep_LoaiSim.cs">
+      <DependentUpon>ModelSimSoDep.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_SimSoDep_LoaiSimChiTiet.cs">
+      <DependentUpon>ModelSimSoDep.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_SimSoDep_LoaiSimChiTietSimSo.cs">
+      <DependentUpon>ModelSimSoDep.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_SimSoDep_NguHanh.cs">
+      <DependentUpon>ModelSimSoDep.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_SimSoDep_NhaMang.cs">
+      <DependentUpon>ModelSimSoDep.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_SimSoDep_SimSo.cs">
+      <DependentUpon>ModelSimSoDep.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_SimSoDep_SimSoLoaiSim.cs">
+      <DependentUpon>ModelSimSoDep.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_SimSoDep_TangThem.cs">
+      <DependentUpon>ModelSimSoDep.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_SimSoDep_TinhThanh.cs">
+      <DependentUpon>ModelSimSoDep.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ThongKeSim_Result.cs">
+      <DependentUpon>ModelSimSoDep.tt</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EntityDeploy Include="ModelSimSoDep.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>ModelSimSoDep.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.Config" />
+    <None Include="ModelSimSoDep.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>ModelSimSoDep.Context.cs</LastGenOutput>
+    </None>
+    <None Include="ModelSimSoDep.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>ModelSimSoDep.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,540 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{B4A0D470-95CB-4FFA-8F44-730C14AF59D3}</ProjectGuid>
+    <ProjectTypeGuids>{E53F8FEA-EAE0-44A6-8774-FFD645390401};{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SimSoDep</RootNamespace>
+    <AssemblyName>SimSoDep</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <MvcBuildViews>false</MvcBuildViews>
+    <UseIISExpress>false</UseIISExpress>
+    <MvcProjectUpgradeChecked>true</MvcProjectUpgradeChecked>
+    <FileUpgradeFlags>40</FileUpgradeFlags>
+    <UpgradeBackupLocation>E:\simsodep\Backup1\</UpgradeBackupLocation>
+    <OldToolsVersion>4.0</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>3</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework">
+      <HintPath>..\packages\EntityFramework.4.1.10331.0\lib\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="LinqToExcel">
+      <HintPath>C:\Users\ninhnguyentrac\Desktop\LinqToExcel_1.7.0\LinqToExcel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Remotion.Data.Linq">
+      <HintPath>C:\Users\ninhnguyentrac\Desktop\LinqToExcel_1.7.0\Remotion.Data.Linq.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Web.Mvc, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.Web.WebPages, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.Web.Helpers, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Abstractions" />
+    <Reference Include="System.Web.Routing" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="VietnameseCalendar, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\VietnameseCalendar.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Areas\Administrator\AdministratorAreaRegistration.cs" />
+    <Compile Include="Areas\Administrator\Controllers\AdminHomeController.cs" />
+    <Compile Include="Areas\Administrator\Controllers\BatQuaiManagerController.cs" />
+    <Compile Include="Areas\Administrator\Controllers\BoiSimSoController.cs" />
+    <Compile Include="Areas\Administrator\Controllers\CatagoryController.cs" />
+    <Compile Include="Areas\Administrator\Controllers\CheckSimController.cs" />
+    <Compile Include="Areas\Administrator\Controllers\DaiLyManagerController.cs" />
+    <Compile Include="Areas\Administrator\Controllers\DauSoManagerController.cs" />
+    <Compile Include="Areas\Administrator\Controllers\ImportExcelController.cs" />
+    <Compile Include="Areas\Administrator\Controllers\AccountController.cs" />
+    <Compile Include="Areas\Administrator\Controllers\KinhDichManagerController.cs" />
+    <Compile Include="Areas\Administrator\Controllers\LoaiGiaManagerController.cs" />
+    <Compile Include="Areas\Administrator\Controllers\LoaiSimSoChiTietManagerController.cs" />
+    <Compile Include="Areas\Administrator\Controllers\LoaiSimSoManagerController.cs" />
+    <Compile Include="Areas\Administrator\Controllers\NamSinhManagerController.cs" />
+    <Compile Include="Areas\Administrator\Controllers\NhaMangManagerController.cs" />
+    <Compile Include="Areas\Administrator\Controllers\TimKiemManagerController.cs" />
+    <Compile Include="Areas\Administrator\Models\SimSoDepModels.cs" />
+    <Compile Include="Controllers\BaseController.cs" />
+    <Compile Include="Controllers\DatMuaController.cs" />
+    <Compile Include="Controllers\DauSoController.cs" />
+    <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\LoaiGiaController.cs" />
+    <Compile Include="Controllers\LoaiSimSoController.cs" />
+    <Compile Include="Controllers\NhaMangController.cs" />
+    <Compile Include="Controllers\PhongThuyController.cs" />
+    <Compile Include="Controllers\SubLoaiSimSoController.cs" />
+    <Compile Include="Controllers\TimKiemController.cs" />
+    <Compile Include="DataBasesManager\EncryptPassword.cs" />
+    <Compile Include="DataBasesManager\EnumVariable.cs" />
+    <Compile Include="DataBasesManager\ISimSoDepRepository.cs" />
+    <Compile Include="DataBasesManager\SimSoDepRepository.cs" />
+    <Compile Include="DataBasesManager\SimSoHelper.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Areas\Administrator\Models\AccountModels.cs" />
+    <Compile Include="Models\BatQuaiModel.cs" />
+    <Compile Include="Models\DanhMucModel.cs" />
+    <Compile Include="Models\KetQuaPhongThuyModel.cs" />
+    <Compile Include="Models\KhachHangModel.cs" />
+    <Compile Include="Models\KinhDichModel.cs" />
+    <Compile Include="Models\NamSinhModel.cs" />
+    <Compile Include="Models\NguHanhModel.cs" />
+    <Compile Include="Models\PhongThuyModel.cs" />
+    <Compile Include="Models\SessionManagerModel.cs" />
+    <Compile Include="Models\SimSoModel.cs" />
+    <Compile Include="Models\TangTrietKhauModel.cs" />
+    <Compile Include="Models\ThongKeSimModel.cs" />
+    <Compile Include="Models\TimKiemModel.cs" />
+    <Compile Include="Models\ViewBagModel.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Models\ImportModel.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\css\ie.css" />
+    <Content Include="Content\css\print.css" />
+    <Content Include="Content\css\screen.css" />
+    <Content Include="Content\default.css" />
+    <Content Include="Content\formDatMua.css" />
+    <Content Include="Content\googleSearch.css" />
+    <Content Include="Content\images\background.png" />
+    <Content Include="Content\images\bullet.gif" />
+    <Content Include="Content\images\comments.png" />
+    <Content Include="Content\images\content-background.png" />
+    <Content Include="Content\images\date.png" />
+    <Content Include="Content\images\edit.png" />
+    <Content Include="Content\images\folder.png" />
+    <Content Include="Content\images\ico-search.png" />
+    <Content Include="Content\images\img01.gif" />
+    <Content Include="Content\images\img02.jpg" />
+    <Content Include="Content\images\img03.gif" />
+    <Content Include="Content\images\img04.gif" />
+    <Content Include="Content\images\img05.gif" />
+    <Content Include="Content\images\img06.gif" />
+    <Content Include="Content\images\img07.gif" />
+    <Content Include="Content\images\img08.gif" />
+    <Content Include="Content\images\img09.gif" />
+    <Content Include="Content\images\img10.gif" />
+    <Content Include="Content\images\img11.gif" />
+    <Content Include="Content\images\img12.gif" />
+    <Content Include="Content\images\img13.gif" />
+    <Content Include="Content\images\img14.gif" />
+    <Content Include="Content\images\logo.png" />
+    <Content Include="Content\images\nav-hover.png" />
+    <Content Include="Content\images\rss.png" />
+    <Content Include="Content\images\search.gif" />
+    <Content Include="Content\images\sidebar-tab.png" />
+    <Content Include="Content\images\tag.png" />
+    <Content Include="Content\images\twitter.png" />
+    <Content Include="Content\images\user.png" />
+    <Content Include="Content\menu\img\carrow1.gif" />
+    <Content Include="Content\menu\img\carrow2.gif" />
+    <Content Include="Content\menu\img\closebox.gif" />
+    <Content Include="Content\menu\img\closebox.png" />
+    <Content Include="Content\menu\img\fleche1.gif" />
+    <Content Include="Content\menu\img\fleche1.png" />
+    <Content Include="Content\menu\img\fleche2.gif" />
+    <Content Include="Content\menu\img\fleche2.png" />
+    <Content Include="Content\menu\img\loading-bar-black.gif" />
+    <Content Include="Content\menu\img\open.gif" />
+    <Content Include="Content\menu\img\open.png" />
+    <Content Include="Content\menu\img\remo_bg_e.png" />
+    <Content Include="Content\menu\img\remo_bg_n.png" />
+    <Content Include="Content\menu\img\remo_bg_ne.png" />
+    <Content Include="Content\menu\img\remo_bg_nw.png" />
+    <Content Include="Content\menu\img\remo_bg_s.png" />
+    <Content Include="Content\menu\img\remo_bg_se.png" />
+    <Content Include="Content\menu\img\remo_bg_sw.png" />
+    <Content Include="Content\menu\img\remo_bg_w.png" />
+    <Content Include="Content\menu\img\spinner.gif" />
+    <Content Include="Content\menu\MenuMatic-ie6.css" />
+    <Content Include="Content\menu\MenuMatic.css" />
+    <Content Include="Content\style.css" />
+    <Content Include="Content\themes\base\images\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <Content Include="Content\themes\base\images\ui-bg_flat_75_ffffff_40x100.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_55_fbf9ee_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_75_dadada_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_75_e6e6e6_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_95_fef1ec_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_highlight-soft_75_cccccc_1x100.png" />
+    <Content Include="Content\themes\base\images\ui-icons_222222_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_2e83ff_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_454545_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_888888_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="Content\themes\base\jquery.ui.accordion.css" />
+    <Content Include="Content\themes\base\jquery.ui.all.css" />
+    <Content Include="Content\themes\base\jquery.ui.autocomplete.css" />
+    <Content Include="Content\themes\base\jquery.ui.base.css" />
+    <Content Include="Content\themes\base\jquery.ui.button.css" />
+    <Content Include="Content\themes\base\jquery.ui.core.css" />
+    <Content Include="Content\themes\base\jquery.ui.datepicker.css" />
+    <Content Include="Content\themes\base\jquery.ui.dialog.css" />
+    <Content Include="Content\themes\base\jquery.ui.progressbar.css" />
+    <Content Include="Content\themes\base\jquery.ui.resizable.css" />
+    <Content Include="Content\themes\base\jquery.ui.selectable.css" />
+    <Content Include="Content\themes\base\jquery.ui.slider.css" />
+    <Content Include="Content\themes\base\jquery.ui.tabs.css" />
+    <Content Include="Content\themes\base\jquery.ui.theme.css" />
+    <Content Include="Content\webgridtable.css" />
+    <Content Include="Global.asax" />
+    <Content Include="Scripts\hightlightsearch.js" />
+    <Content Include="Scripts\jquery-1.5.1-vsdoc.js" />
+    <Content Include="Scripts\jquery-1.5.1.js" />
+    <Content Include="Scripts\jquery-1.5.1.min.js" />
+    <Content Include="Scripts\jquery-ui-1.8.11.js" />
+    <Content Include="Scripts\jquery-ui-1.8.11.min.js" />
+    <Content Include="Scripts\jquery.validate-vsdoc.js" />
+    <Content Include="Scripts\jquery.validate.js" />
+    <Content Include="Scripts\jquery.validate.min.js" />
+    <Content Include="Scripts\modernizr-1.7.js" />
+    <Content Include="Scripts\modernizr-1.7.min.js" />
+    <Content Include="Scripts\jquery.nestedAccordion.js" />
+    <Content Include="Scripts\SimSoDep.js" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Content\Site.css" />
+    <Content Include="Scripts\jquery.unobtrusive-ajax.js" />
+    <Content Include="Scripts\jquery.unobtrusive-ajax.min.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
+    <Content Include="Scripts\MicrosoftAjax.js" />
+    <Content Include="Scripts\MicrosoftAjax.debug.js" />
+    <Content Include="Scripts\MicrosoftMvcAjax.js" />
+    <Content Include="Scripts\MicrosoftMvcAjax.debug.js" />
+    <Content Include="Scripts\MicrosoftMvcValidation.js" />
+    <Content Include="Scripts\MicrosoftMvcValidation.debug.js" />
+    <Content Include="Views\_ViewStart.cshtml" />
+    <Content Include="Areas\Administrator\Views\Account\ChangePassword.cshtml" />
+    <Content Include="Areas\Administrator\Views\Account\ChangePasswordSuccess.cshtml" />
+    <Content Include="Areas\Administrator\Views\Account\LogOn.cshtml" />
+    <Content Include="Views\Home\About.cshtml" />
+    <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Shared\Error.cshtml" />
+    <Content Include="Areas\Administrator\Views\Shared\_LogOnPartial.cshtml" />
+    <Content Include="Views\Shared\_Layout.cshtml" />
+    <Content Include="Views\Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\Uploads\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Areas\Administrator\Views\Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Areas\Administrator\Views\_ViewStart.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Areas\Administrator\Views\Shared\_Layout.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Areas\Administrator\Views\ImportExcel\Index.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Areas\Administrator\Views\AdminHome\Index.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Areas\Administrator\Views\Shared\_LayoutLogon.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SimSoDepStore\SimSoDepStore.csproj">
+      <Project>{01A331DA-7806-442A-B6B1-609B2B3CA6A4}</Project>
+      <Name>SimSoDepStore</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Shared\MenuLoaSim.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\LoaiSimSo\GetMenuLoaiSim.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\NhaMang\GetMenuNhaMang.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\NhaMang\Index.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Areas\Administrator\Views\Catagory\Index.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Areas\Administrator\Views\Shared\_CatagoryMenu.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Areas\Administrator\Views\Catagory\LoaiSimSo.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Areas\Administrator\Views\Catagory\NhaMang.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Areas\Administrator\Views\LoaiSimSoManager\Edit.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Areas\Administrator\Views\LoaiSimSoManager\Delete.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Areas\Administrator\Views\NhaMangManager\Edit.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Areas\Administrator\Views\Catagory\LoaiSimSoChiTiet.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Areas\Administrator\Views\LoaiSimSoChiTietManager\Edit.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Areas\Administrator\Views\LoaiSimSoChiTietManager\Delete.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Areas\Administrator\Views\Catagory\DauSo.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Areas\Administrator\Views\DauSoManager\Edit.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Areas\Administrator\Views\Catagory\LoaiGia.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Areas\Administrator\Views\LoaiSimSoManager\Add.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Areas\Administrator\Views\LoaiSimSoChiTietManager\Add.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Areas\Administrator\Views\NhaMangManager\Delete.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Areas\Administrator\Views\NhaMangManager\Add.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Areas\Administrator\Views\DauSoManager\Delete.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Areas\Administrator\Views\DauSoManager\Add.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Areas\Administrator\Views\LoaiGiaManager\Edit.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Areas\Administrator\Views\LoaiGiaManager\Delete.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Areas\Administrator\Views\LoaiGiaManager\Add.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Areas\Administrator\Views\DaiLyManager\Index.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Areas\Administrator\Views\DaiLyManager\Create.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Areas\Administrator\Views\DaiLyManager\Edit.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Areas\Administrator\Views\DaiLyManager\Delete.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Areas\Administrator\Views\DaiLyManager\AddTrietKhau.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Areas\Administrator\Views\DaiLyManager\EditTrietKhau.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Areas\Administrator\Views\DaiLyManager\DeleteTrietKhau.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Areas\Administrator\Views\DaiLyManager\AddTangThem.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Areas\Administrator\Views\DaiLyManager\EditTangThem.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Areas\Administrator\Views\DaiLyManager\DeleteTangThem.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Areas\Administrator\Views\ImportExcel\Import.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Shared\_ListNumber.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Areas\Administrator\Views\Shared\_BoiSimSoMenu.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Areas\Administrator\Views\BoiSimSo\Index.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Areas\Administrator\Views\NamSinhManager\Index.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Areas\Administrator\Views\NamSinhManager\Create.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Areas\Administrator\Views\NamSinhManager\Edit.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Areas\Administrator\Views\NamSinhManager\Delete.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Areas\Administrator\Views\BatQuaiManager\Index.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Areas\Administrator\Views\BatQuaiManager\Create.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Areas\Administrator\Views\BatQuaiManager\Edit.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Areas\Administrator\Views\BatQuaiManager\Delete.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Areas\Administrator\Views\KinhDichManager\Index.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Areas\Administrator\Views\KinhDichManager\Create.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Areas\Administrator\Views\KinhDichManager\Edit.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Areas\Administrator\Views\KinhDichManager\Delete.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Shared\_TimKiem.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\TimKiem\Index.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\DatMua\DatSim.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\DatMua\Index.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\DatMua\Loi.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\PhongThuy\NgayThangKhongDung.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\PhongThuy\ExceptionBreak.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\PhongThuy\BoiPhongThuy.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\DauSo\GetMenuDauSo.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\LoaiGia\GetMenuLoaiGia.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Areas\Administrator\Views\TimKiemManager\Index.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Areas\Administrator\Views\TimKiemManager\TimSo.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Shared\ChiTiet.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Shared\_PhongThuy.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\PhongThuy\Index.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Areas\Administrator\Views\CheckSim\Index.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Areas\Administrator\Views\CheckSim\Details.cshtml" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target> -->
+  <Target Name="MvcBuildViews" AfterTargets="AfterBuild" Condition="'$(MvcBuildViews)'=='true'">
+    <AspNetCompiler VirtualPath="temp" PhysicalPath="$(WebProjectOutputDir)" />
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>2962</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost/SimSoDep</IISUrl>
+          <OverrideIISAppRootUrl>True</OverrideIISAppRootUrl>
+          <IISAppRootUrl>http://localhost/SimSoDep</IISAppRootUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

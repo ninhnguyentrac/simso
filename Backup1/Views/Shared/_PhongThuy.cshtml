@@ -1,0 +1,102 @@
+﻿@model SimSoDep.Models.PhongThuyModel
+<style>
+    .ptLabel
+    {
+        display: inline-block;
+        width: 140px;
+    }
+    
+    .inputValue
+    {
+        display: inline-block;
+    }
+    
+    #fPhongThuy
+    {
+        margin-left: 20px;
+    }
+    
+    #btnXemPhongThuy
+    {
+        height: 27px;   
+        width: 50px;
+    }
+    #thangSinh, #namSinh
+    {
+        margin-left: 10px;
+    }
+    #ngaySinh
+    {
+        margin-left: 5px;
+    }
+</style>
+<fieldset>
+    <legend>Xem phong thủy</legend>
+    <div id="fPhongThuy">
+        @using (Html.BeginForm("Index", "PhongThuy", FormMethod.Post, new { id = "frmPhongThuy", onsubmit="return CheckInputPhongThuy()" }))
+    {
+            <div class="ptLabel">
+                <label>
+                    Số điện thoại:</label></div>
+            <div class="inputValue">
+                <input type="text" name="SoDienThoai" id="SoDienThoai" value="@Model.SoDienThoai"/></div>
+            <div style="clear: both; height: 15px">
+            </div>
+            <div class="ptLabel">
+                <label>
+                    Ngày sinh (dương lịch):</label></div>
+            <div class="inputValue">
+                <select id="ngaySinh" name="Ngay">
+                </select><select id="thangSinh" name="Thang"></select><select id="namSinh" name="Nam"></select></div>
+            <div style="clear: both; height: 15px">
+            </div>
+            <div class="ptLabel">
+            </div>
+            <input type="submit" value="Xem" id="btnXemPhongThuy" />
+
+    }
+    </div>
+</fieldset>
+<script type="text/javascript">
+    $(document).ready(function () {
+        var ngay = @Model.Ngay ;
+        for (var i = 1; i < 32; i++) {
+            if (i < 10) {
+                var vl = "0" + i.toString(); ;
+                if(i=ngay) {
+                    $('#ngaySinh').append($("<option></option>").attr('selected',true).attr("value", i).text(vl));
+                }else {
+                    $('#ngaySinh').append($("<option></option>").attr("value", i).text(vl));
+                }
+                
+            } else {
+                $('#ngaySinh').append($("<option></option>").attr("value", i).text(i));
+            }
+        }
+
+        for (var j = 1; j < 13; j++) {
+            if (j < 10) {
+                var vt = "0" + j.toString(); ;
+                $('#thangSinh').append($("<option></option>").attr("value", j).text(vt));
+            } else {
+                $('#thangSinh').append($("<option></option>").attr("value", j).text(j));
+            }
+        }
+
+        for (var k = 1950; k < 2014; k++) {
+            if (k == 1989) {
+                $('#namSinh').append($("<option selected='selected'></option>").attr("value", k).text(k));
+            } else {
+                $('#namSinh').append($("<option></option>").attr("value", k).text(k));
+            }
+
+        }
+    });
+    function CheckInputPhongThuy() {
+        if ($.trim($("#SoDienThoai").val()) == '') {
+            alert("Bạn chưa nhập số điện thoại");
+            return false;
+        }
+        return true;
+    }
+</script>

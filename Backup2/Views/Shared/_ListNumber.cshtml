@@ -1,0 +1,24 @@
+﻿@using SimSoDep.Models
+@model List<SimSoModel>
+@{
+    var webGrid = new WebGrid(Model, rowsPerPage: 50);
+}
+@webGrid.GetHtml(
+mode: WebGridPagerModes.All,
+numericLinksCount: 5,
+firstText: "<<",
+lastText: ">>",
+previousText: "<",
+nextText: ">",
+tableStyle: "gridTable",
+    headerStyle: "gridHead",
+    footerStyle: "gridFooter",
+    rowStyle: "gridRow",
+    alternatingRowStyle: "gridAltRow",
+        columns:
+        webGrid.Columns(
+            webGrid.Column(columnName: "SoDienThoai", header: "Số Sim", format: @<b>@item.SoDienThoai</b>),
+            webGrid.Column(columnName: "NhaMang", header: "Nhà Mạng"),
+            webGrid.Column(columnName: "GiaTien", header: "Giá Tiền", format: @<text>@string.Format("{0:0,0}", item.GiaTien)</text>),
+                            webGrid.Column(columnName: "", header: "", format: (item) => Html.ActionLink("Đặt Mua", "DatSim", new { controller = "DatMua", id = item.MaSoDienThoai }))
+))

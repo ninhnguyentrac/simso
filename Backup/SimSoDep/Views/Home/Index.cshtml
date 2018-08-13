@@ -1,0 +1,16 @@
+﻿@using SimSoDep.Models
+@model List<SimSoModel>
+@{
+    ViewBag.Title = "Sim số đẹp";
+}
+<script type="text/javascript">
+//    $(document).ready(function() {
+//        $("#btnXemPhongThuy").live('click', function () {
+//            document.getElementById("frmPhongThuy").submit();
+//        });
+//    });
+</script>
+
+@Html.Partial("_TimKiem", new TimKiemModel())
+@Html.Partial("_PhongThuy",new PhongThuyModel())
+@Html.Partial("_ListNumber",@Model)

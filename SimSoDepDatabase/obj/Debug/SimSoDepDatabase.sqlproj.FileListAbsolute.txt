@@ -1,0 +1,9 @@
+E:\simsodep\SimSoDepDatabase\sql\debug\SimSoDepDatabase.dacpac
+E:\simsodep\SimSoDepDatabase\sql\debug\SimSoDepDatabase.dll
+E:\simsodep\SimSoDepDatabase\sql\debug\SimSoDepDatabase.pdb
+E:\simsodep\SimSoDepDatabase\obj\Debug\Model.xml
+E:\simsodep\SimSoDepDatabase\obj\Debug\refactor.xml
+E:\simsodep\SimSoDepDatabase\obj\Debug\postdeploy.sql
+E:\simsodep\SimSoDepDatabase\obj\Debug\predeploy.sql
+E:\simsodep\SimSoDepDatabase\obj\Debug\SimSoDepDatabase.dll
+E:\simsodep\SimSoDepDatabase\obj\Debug\SimSoDepDatabase.pdb

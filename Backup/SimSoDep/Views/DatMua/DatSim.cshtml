@@ -1,0 +1,93 @@
+﻿@model SimSoDep.Models.KhachHangModel
+@{
+    ViewBag.Title = "Đặt Sim";
+}
+<link href="@Url.Content("~/Content/formDatMua.css")" rel="stylesheet" type="text/css" />
+<h3>Đặt sim</h3>
+
+<script src="@Url.Content("~/Scripts/jquery.validate.min.js")" type="text/javascript"></script>
+<script src="@Url.Content("~/Scripts/jquery.validate.unobtrusive.min.js")" type="text/javascript"></script>
+
+<fieldset>
+    <legend>Chi tiết sim số</legend>
+
+    <div class="display-label">Sim số:</div>
+    <div class="display-field">
+        <b style="color: red">@Html.DisplayFor(model => model.SimSoModel.SoDienThoai)</b>
+    </div>
+
+    <div class="display-label">Giá bán:</div>
+    <div class="display-field">
+        <b style="color:red">@string.Format("{0:0,0}", Model.SimSoModel.GiaTien)<label>(VNĐ)</label></b>
+    </div>
+    <div class="display-label">Nhà mạng:</div>
+    <div class="display-field">
+        <b>@Html.DisplayFor(model => model.SimSoModel.NhaMang)</b>
+    </div>
+    <div class="display-label">Trạng thái:</div>
+    <div class="display-field">
+    <b>
+        + Bộ simcard nguyên Kit có sẵn tài khoản<br/>
+        + Hưởng khuyến mãi hiện hành của nhà mạng<br/>
+        + Khách hàng sẽ được đăng ký thông tin khi mua sim</b>
+    </div>
+</fieldset>
+
+@using (Html.BeginForm())
+{
+    @Html.ValidationSummary(true)
+    <fieldset>
+        <legend>Thông tin khách hàng</legend>
+        @Html.HiddenFor(model=>model.SimSoModel.MaSoDienThoai)
+        @Html.HiddenFor(model=>model.SimSoModel.SoDienThoai)
+        @Html.HiddenFor(model=>model.SimSoModel.GiaTien)
+        <div class="editor-label">
+            @Html.LabelFor(model => model.TenKhachHang)<em>*</em>
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.TenKhachHang)
+            @Html.ValidationMessageFor(model => model.TenKhachHang)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.DiaChi)<em>*</em>
+        </div>
+        <div class="editor-field" id="DiaChi">
+            @Html.EditorFor(model => model.DiaChi)
+            @Html.ValidationMessageFor(model => model.DiaChi)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.SoDienThoai)<em>*</em>
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.SoDienThoai)
+            @Html.ValidationMessageFor(model => model.SoDienThoai)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Email)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Email)
+            @Html.ValidationMessageFor(model => model.Email)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.GhiChu)
+        </div>
+        <div class="editor-field">
+            @Html.TextAreaFor(model => model.GhiChu)
+            @Html.ValidationMessageFor(model => model.GhiChu)
+        </div>
+        <br/>
+        <p>
+            <input type="submit" value="Đặt sim" />
+            <input type="reset" value="Làm lại"/>
+        </p>
+    </fieldset>
+}
+
+<div>
+    @Html.ActionLink("Trở về trang chủ", "Index","Home")
+</div>

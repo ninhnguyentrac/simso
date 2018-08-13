@@ -1,0 +1,96 @@
+﻿@model SimSoDep.Models.DauSoModel
+
+@{
+    ViewBag.Title = "Edit";
+}
+
+<h2>Edit</h2>
+
+<script src="@Url.Content("~/Scripts/jquery.validate.min.js")" type="text/javascript"></script>
+<script src="@Url.Content("~/Scripts/jquery.validate.unobtrusive.min.js")" type="text/javascript"></script>
+
+@using (Html.BeginForm()) {
+    @Html.ValidationSummary(true)
+    <fieldset>
+        <legend>DauSoModel</legend>
+
+        @Html.HiddenFor(model => model.Id)
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Ten)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Ten)
+            @Html.ValidationMessageFor(model => model.Ten)
+        </div>
+
+         <div class="editor-label">
+            @Html.LabelFor(model => model.MaNhaMang)
+        </div>
+        <div class="editor-field">
+           @Html.DropDownList("MaNhaMang", ViewBag.NhaMang as SelectList)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.SapXep)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.SapXep)
+            @Html.ValidationMessageFor(model => model.SapXep)
+        </div>
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Status)
+        </div>
+        <div class="editor-field">
+           @Html.DropDownList("Status", ViewBag.StatusId as SelectList)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Alias)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Alias)
+            @Html.ValidationMessageFor(model => model.Alias)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.EnumFixed)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.EnumFixed)
+            @Html.ValidationMessageFor(model => model.EnumFixed)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.MoTa)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.MoTa)
+            @Html.ValidationMessageFor(model => model.MoTa)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.MetaDescription)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.MetaDescription)
+            @Html.ValidationMessageFor(model => model.MetaDescription)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.MetaKeyword)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.MetaKeyword)
+            @Html.ValidationMessageFor(model => model.MetaKeyword)
+        </div>
+
+        <p>
+            <input type="submit" value="Save" />
+        </p>
+    </fieldset>
+}
+
+<div>
+       @Html.ActionLink("Back to List", "DauSo","Catagory")
+</div>

@@ -1,0 +1,26 @@
+﻿@model SimSoDep.Models.TimKiemModel
+@*<link href="@Url.Content("~/Content/googleSearch.css")" rel="stylesheet" type="text/css" />*@
+<style>
+#field
+{
+    margin-left: 15%;
+    
+    width: 50%;
+}
+h3
+{
+    margin-bottom: 0.3em;
+}
+#searchContainer
+{
+    margin-bottom: 2em;
+
+}
+</style>
+<div id="searchContainer">
+    @using(Html.BeginForm("Index", "TimKiem", FormMethod.Get, new { name = "SUY", }))
+    {
+    <input type="text" id="field" name="SearchString" placeholder="Tìm kiếm" />
+    <input type="submit" name="submit" id="submit" value="Tìm kiếm" />
+    }
+</div>

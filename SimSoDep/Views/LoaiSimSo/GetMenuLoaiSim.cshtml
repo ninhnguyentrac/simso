@@ -1,0 +1,20 @@
+﻿@model List<SimSoDep.Models.LoaiSimModel> 
+<ul class="accordion">
+    @foreach (var loaiSim in Model)
+    { 
+        <li>
+            @Html.ActionLink(loaiSim.Ten, "ChiTiet", new { id = loaiSim.Alias }, new { @class="trigger"})
+            @if (loaiSim.ListLoaiSimChiTiet != null && loaiSim.ListLoaiSimChiTiet.Count > 0)
+            {
+                foreach (var chitiet in loaiSim.ListLoaiSimChiTiet)
+                { 
+                <ul class="subdanhmuc">
+                    <li>
+                        @Html.ActionLink(chitiet.Ten, "ChiTiet","SubLoaiSimSo", new { id = chitiet.Alias }, new { @class = "trigger" })
+                    </li>
+                </ul>
+                }
+            }
+        </li>
+    }
+</ul>

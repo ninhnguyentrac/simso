@@ -1,0 +1,52 @@
+﻿@model SimSoDep.Models.TangThemModel
+
+@{
+    ViewBag.Title = "EditTangThem";
+}
+
+<h2>EditTangThem</h2>
+
+<script src="@Url.Content("~/Scripts/jquery.validate.min.js")" type="text/javascript"></script>
+<script src="@Url.Content("~/Scripts/jquery.validate.unobtrusive.min.js")" type="text/javascript"></script>
+
+@using (Html.BeginForm()) {
+    <input type="hidden" name="MaDaiLy" value="@Model.MaDaiLy"/>
+    @Html.ValidationSummary(true)
+    <fieldset>
+        <legend>TangThemModel</legend>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.TangThem)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.TangThem)<span style="font-weight: bold">%</span>
+            @Html.ValidationMessageFor(model => model.TangThem)
+        </div>
+
+        @Html.HiddenFor(model => model.Id)
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.GiaTu)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.GiaTu)
+            @Html.ValidationMessageFor(model => model.GiaTu)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Den)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Den)
+            @Html.ValidationMessageFor(model => model.Den)
+        </div>
+
+        <p>
+            <input type="submit" value="Save" />
+        </p>
+    </fieldset>
+}
+
+<div>
+    @Html.ActionLink("Back to List", "Edit", new { id = Model.MaDaiLy })
+</div>

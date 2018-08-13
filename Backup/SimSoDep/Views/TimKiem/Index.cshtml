@@ -1,0 +1,20 @@
+﻿@using SimSoDep.Models
+@model List<SimSoModel>
+@{
+    ViewBag.Title = ViewBag.SearchStr + " - Tìm với simsodepphongthuy.net";
+    
+}
+<script src="@Url.Content("~/Scripts/hightlightsearch.js")" type="text/javascript"></script>
+<script type="text/javascript">
+    var searchStr = @Html.Raw(Json.Encode(ViewBag.SearchStr));
+    jQuery(document).ready(function () {
+        $("#searchContainer #field").val(searchStr);
+        $(".gridTable").highlight(searchStr);
+    });
+</script>
+@Html.Partial("_TimKiem", new TimKiemModel())
+<h3>
+Kết quả tìm kiếm
+</h3>
+
+@Html.Partial("_ListNumber", Model)

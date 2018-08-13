@@ -1,0 +1,48 @@
+﻿@model SimSoDep.Models.NamSinhModel
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<fieldset>
+    <legend>NamSinhModel</legend>
+
+    <div class="display-label">IdNamSinh</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.IdNamSinh)
+    </div>
+
+    <div class="display-label">Nam</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Nam)
+    </div>
+
+    <div class="display-label">IdNguHanh</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.IdNguHanh)
+    </div>
+
+    <div class="display-label">TenNguHanh</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.TenNguHanh)
+    </div>
+
+    <div class="display-label">TenBanMenh</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.TenBanMenh)
+    </div>
+
+    <div class="display-label">MoTa</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.MoTa)
+    </div>
+</fieldset>
+@using (Html.BeginForm()) {
+    <p>
+        <input type="submit" value="Delete" /> |
+        @Html.ActionLink("Back to List", "Index")
+    </p>
+}

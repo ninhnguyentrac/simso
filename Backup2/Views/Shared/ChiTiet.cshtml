@@ -1,0 +1,14 @@
+﻿@using SimSoDep.Models
+@model List<SimSoModel>
+@{
+    ViewBag.Title = ViewBag.DataDisplay.Title;
+}
+@section MetaSection{
+
+}
+@Html.Partial("_TimKiem", new TimKiemModel())
+<h3>
+@ViewBag.DataDisplay.DisplayName
+</h3>
+
+@Html.Partial("_ListNumber", Model)

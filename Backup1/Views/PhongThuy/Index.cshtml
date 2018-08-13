@@ -1,0 +1,25 @@
+﻿@using SimSoDep.Models
+@model SimSoDep.Models.KetQuaPhongThuyModel
+@{
+    ViewBag.Title = "Index";
+}
+<script type="text/javascript">
+    $(document).ready(function () {
+        $("#btnXemPhongThuy").live('click', function () {
+            $.ajax({
+                type: "POST",
+                url: "some.php",
+                data: { name: "John", location: "Boston" },
+                dataType: "html"
+            }).success(function (respone, status, jshrm) {
+                $("#boiPhongThuy").html(respone);
+            });
+        });
+    });
+</script>
+@Html.Partial("_PhongThuy", new PhongThuyModel(ViewBag.phongThuyModel.SoDienThoai,ViewBag.phongThuyModel.Ngay,ViewBag.phongThuyModel.Thang,ViewBag.phongThuyModel.Nam))
+@*<h3>
+    Xem phong thủy</h3>*@
+<div id="boiPhongThuy">
+    @Html.Partial("BoiPhongThuy", Model)
+</div>
